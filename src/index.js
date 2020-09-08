@@ -1,12 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from "./component/app/app";
-import HeaderInfo from "./component/header-info";
+import {Provider} from 'react-redux';
+import ErrorBoundry from "./component/error-boundry";
+import TicketService from "./sevices/ticketService";
+import TicketsServiceContext from "./resto-service-context";
+import store from "./store";
+
+const ticketService = new TicketService();
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <Provider store={store}>
+        <ErrorBoundry>
+            <TicketsServiceContext.Provider value={ticketService}>
+                <App/>
+            </TicketsServiceContext.Provider>
+        </ErrorBoundry>
+    </Provider>
+    , document.getElementById('root')
 );
 

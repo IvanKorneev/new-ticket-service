@@ -25,7 +25,6 @@ export default class HeaderInfo extends Component {
                             <i className="fab fa-twitter"/>
                             <i className="fab fa-instagram"/>
                             <i className="fa fa-odnoklassniki" aria-hidden="true"/>
-
                     </section>
 
                 </section>
