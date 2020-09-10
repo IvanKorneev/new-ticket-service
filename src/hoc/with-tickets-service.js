@@ -1,5 +1,5 @@
 import React from "react";
-import TicketsServiceContext from "../resto-service-context";
+import TicketsServiceContext from "../ticket-service-context";
 
 const WithTicketsService = () => (Wrapped) => {
     return (props) => {

@@ -1,12 +1,13 @@
 const initialState ={
-    events: {}
+    eventsState: []
 };
+
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case 'EVENT_LOADED':
             return {
-                events: action.payload
+                eventsState: action.payload
             };
         default:
             return state;
