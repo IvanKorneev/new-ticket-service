@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0704845-c2ac-4a6c-9668-e59f88e6b723" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/app/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/main/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/main/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/main/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/main/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hoc/with-tickets-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hoc/with-tickets-service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resto-service-context/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ticket-service-context/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resto-service-context/tickets-service-context.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ticket-service-context/tickets-service-context.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/footer-info/footer-info.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/footer-info/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/footer-info/footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/header-info/header-info.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/header-info/header-info.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/header-info/header-info.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +21,7 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="Sass File" />
       </list>
     </option>
   </component>
@@ -42,7 +42,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Хлам/ticket_service" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -88,7 +88,8 @@
       <workItem from="1599466834920" duration="12945000" />
       <workItem from="1599552056076" duration="14150000" />
       <workItem from="1599641641847" duration="12290000" />
-      <workItem from="1599725497011" duration="13954000" />
+      <workItem from="1599725497011" duration="14233000" />
+      <workItem from="1599981774655" duration="7733000" />
     </task>
     <task id="LOCAL-00001" summary="&#10;creating a project structure">
       <created>1599552635453</created>
@@ -97,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599552635453</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="mapStateToProps  mapDispatchToProps getevents">
+      <created>1599743857786</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1599743857786</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,41 +113,54 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&#10;creating a project structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;creating a project structure" />
+    <MESSAGE value="mapStateToProps  mapDispatchToProps getevents" />
+    <option name="LAST_COMMIT_MESSAGE" value="mapStateToProps  mapDispatchToProps getevents" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="361" y="71" key="#File_Watchers" timestamp="1599983520096">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#File_Watchers/0.0.1536.824@0.0.1536.824" timestamp="1599983520096" />
     <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1599728052337">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1599728052337" />
-    <state x="719" y="0" key="CommitChangelistDialog2" timestamp="1599743756721">
+    <state x="556" y="0" key="CommitChangelistDialog2" timestamp="1599743856548">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="719" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599743756721" />
+    <state x="556" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599743856548" />
+    <state x="405" y="191" key="EditFileWatcherDialog" timestamp="1599983409920">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="405" y="191" key="EditFileWatcherDialog/0.0.1536.824@0.0.1536.824" timestamp="1599983409920" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1599740013042">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599740013042" />
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1599726353576">
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1599981845432">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599726353576" />
-    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1599726353576">
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599981845432" />
+    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1599981845432">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599726353576" />
-    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1599726353575">
+    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599981845432" />
+    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1599981845431">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599726353575" />
-    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1599726353576">
+    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599981845431" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1599981845432">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599726353576" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1599552642024">
+    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599981845432" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1599743861400">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1599552642024" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1599743861400" />
+    <state x="463" y="144" width="609" height="536" key="find.popup" timestamp="1599984375676">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="463" y="144" width="609" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1599984375676" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1599566747879">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

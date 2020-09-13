@@ -1,8 +1,9 @@
 import React from "react";
 import logo from "../images/logo_col.svg";
-import './footer-info.css'
-const Footer = ()=>{
-    return(
+import './footer-info.sass'
+
+const Footer = () => {
+    return (
         <section className='footer'>
             <div className='footer-img'>
                 <img src={logo} alt='logo'/>
@@ -27,8 +28,6 @@ const Footer = ()=>{
 
                 </div>
             </div>
-
-
         </section>
     )
 };

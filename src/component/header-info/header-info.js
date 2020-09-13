@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import logo from '../images/logo_col.svg'
-import './header-info.css'
+import './header-info.sass'
 
 export default class HeaderInfo extends Component {
     render() {
