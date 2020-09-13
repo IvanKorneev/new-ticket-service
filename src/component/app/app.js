@@ -4,9 +4,6 @@ import Eside from "../eside/eside";
 import Main from "../main";
 import Footer from "../footer-info";
 
-import EventsList from "../events-list/events-list";
-
-
 const App = () => {
     return (
         <div>
@@ -15,8 +12,6 @@ const App = () => {
             <Main/>
             <Footer/>
         </div>
-
-
     )
 };
 export default App;
