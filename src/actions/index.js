@@ -4,7 +4,14 @@ const eventLoaded = (newEvent) => {
         payload: newEvent
     }
 };
+const asideLoaded = (newAside)=>{
+    return{
+        type:'ASIDE_LOADED',
+        payload:newAside
+    }
+};
 
 export {
-    eventLoaded
+    eventLoaded,
+    asideLoaded
 };

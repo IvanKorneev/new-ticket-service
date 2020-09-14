@@ -1,16 +1,17 @@
 import React from "react";
 import HeaderInfo from "../header-info";
-import Eside from "../eside/eside";
 import Main from "../main";
 import Footer from "../footer-info";
+import AsideList from "../aside-list/aside-list";
 
 const App = () => {
     return (
         <div>
             <HeaderInfo/>
-            <Eside/>
+            <AsideList/>
             <Main/>
             <Footer/>
+
         </div>
     )
 };

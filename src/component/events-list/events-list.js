@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import './events-list.css'
 import EventsItem from "../events-item";
 import {connect} from 'react-redux'
 import WithTicketsService from "../../hoc";
@@ -16,7 +15,7 @@ class EventsList extends Component {
 
     render() {
         const {events} = this.props;
-        // console.log(events);
+        console.log(events);
         return (
             <div>
                 {
