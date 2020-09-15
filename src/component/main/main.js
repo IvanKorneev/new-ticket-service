@@ -1,5 +1,5 @@
 import React,{Component} from "react";
-import './main.css';
+import './main.sass';
 import EventsList from "../events-list/events-list";
 
 export default class Main extends Component{

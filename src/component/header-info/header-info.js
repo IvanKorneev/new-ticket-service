@@ -1,9 +1,25 @@
 import React, {Component} from "react";
-import logo from '../images/logo_col.svg'
-import './header-info.sass'
+import logo from '../images/logo_col.svg';
+import './header-info.sass';
+import {connect} from 'react-redux';
+import {showBar} from "../../actions"
+import HeaderMenuBar from "../header-menu-bar";
 
-export default class HeaderInfo extends Component {
+class HeaderInfo extends Component {
+    showBar = () => {
+
+    };
+
+
     render() {
+        //
+        // if(this.props.showBar){
+        //     console.log(this.props.showBar());
+        //     return <HeaderMenuBar/>
+        // }
+
+
+
         return (
             <header className='header'>
                 <section className='header-img'>
@@ -19,18 +35,36 @@ export default class HeaderInfo extends Component {
                             <p>RU</p>
                         </div>
                     </section>
-                    <section className='social'>
+                    <section className='social-container'>
+                        <div className='social'>
                             <i className="fab fa-youtube"/>
                             <i className="fab fa-facebook-square"/>
                             <i className="fab fa-twitter"/>
                             <i className="fab fa-instagram"/>
                             <i className="fa fa-odnoklassniki" aria-hidden="true"/>
+                        </div>
+                        <div className='header-button' onClick={() => {
+                            this.showBar()
+                        }}>
+                            <div className='header-button-row'></div>
+                            <div className='header-button-row'></div>
+                            <div className='header-button-row'></div>
+                        </div>
                     </section>
-
                 </section>
-
             </header>
         )
-
     };
+}
+
+const mapStateToProps = (state) => {
+
+    return {
+        showBar: state.showBar
+    }
 };
+const mapDispatchToProps = {
+    showBar
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(HeaderInfo)

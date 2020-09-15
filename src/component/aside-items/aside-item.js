@@ -10,8 +10,8 @@ const AsideItem = ({eventsPropsItem}) => {
             <img src={images[0]} alt={artist}/>
             <div className='aside-items-artist'>{artist}</div>
             <div className='aside-items-info'>
+                <div className='aside-items-start'>{getData(eventStart)}</div>
                 <div className='aside-items-time'>{getTime(eventStart)}</div>
-                <div className=''>{getData(eventStart)}</div>
                 <div className='aside-items-tickets'>
                    <div className='aside-items-tickets-text'>
                        Buy
