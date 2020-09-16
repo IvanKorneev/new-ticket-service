@@ -1,3 +1,5 @@
+
+
 const eventLoaded = (newEvent) => {
     return {
         type: 'EVENT_LOADED',
@@ -10,9 +12,11 @@ const asideLoaded = (newAside) => {
         payload: newAside
     }
 };
-const showBar = () => {
+
+const showBar = (newShowBar) => {
     return {
-        type: 'SHOW_BAR'
+        type: 'SHOW_BAR',
+        payload:newShowBar
 
     }
 };
@@ -28,10 +32,22 @@ const eventsError = (error) => {
     }
 };
 
+const fetchEvents = (TicketService,dispatch) => () => {
+    dispatch(eventsRequested());
+    TicketService.getEvents()
+        .then((data) => dispatch(eventLoaded(data)))
+        .catch((error) => dispatch(eventsError(error)))
+};
+const fetchAside = (TicketService,dispatch) => () => {
+    dispatch(eventsRequested());
+    TicketService.getUpcomingEvents()
+        .then((data) => dispatch(asideLoaded(data)))
+        .catch((error) => dispatch(eventsError(error)))
+};
+
+
 export {
-    eventLoaded,
-    asideLoaded,
-    showBar,
-    eventsRequested,
-    eventsError
+    fetchEvents,
+    fetchAside,
+    showBar
 };

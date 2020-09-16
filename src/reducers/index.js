@@ -33,12 +33,10 @@ const reducer = (state = initialState, action) => {
         case 'SHOW_BAR':
             return {
                 ...state,
-                showBar: state.showBar,
-                error: null
+                showBar: action.payload
             };
         case 'EVENTS_ERROR':
             return {
-
                 eventsState: [],
                 asideState: [],
                 loading: true,

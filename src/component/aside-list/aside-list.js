@@ -3,7 +3,7 @@ import './aside-list.sass'
 import Calendar from 'react-calendar';
 import {connect} from 'react-redux'
 import WithTicketsService from "../../hoc";
-import {asideLoaded, eventsRequested, eventsError} from "../../actions";
+import {fetchAside} from "../../actions";
 import AsideItem from "../aside-items";
 import Spinner from "../spinner";
 import Error from "../error";
@@ -12,16 +12,11 @@ import Error from "../error";
 class AsideList extends Component {
 
     componentDidMount() {
-        this.props.eventsRequested();
-        const {TicketService, asideLoaded, eventsError} = this.props;
-        TicketService.getUpcomingEvents()
-            .then((data) => asideLoaded(data))
-            .catch((error) => eventsError(error))
+       this.props.fetchAside()
     };
 
     render() {
         const {asideEvents, loading, error} = this.props;
-        console.log(asideEvents);
         if (loading) {
             return <Spinner/>
         }
@@ -54,10 +49,11 @@ const mapStateToProps = (state) => {
         error: state.error
     }
 };
-const mapDispatchToProps = {
-    asideLoaded,
-    eventsRequested,
-    eventsError
+const mapDispatchToProps = (dispatch, ownProps) => {
+    const {TicketService} = ownProps;
+    return {
+        fetchAside: fetchAside(TicketService,dispatch)
+    };
 };
 
 export default WithTicketsService()(

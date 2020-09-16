@@ -5,22 +5,18 @@ import {connect} from 'react-redux';
 import {showBar} from "../../actions"
 import HeaderMenuBar from "../header-menu-bar";
 
+
 class HeaderInfo extends Component {
-    showBar = () => {
-
-    };
-
-
     render() {
-        //
-        // if(this.props.showBar){
-        //     console.log(this.props.showBar());
+
+            //Проверка какой компонент отрисовать
+        // if(this.props.showBar) {
+        //     console.log(this.state);
         //     return <HeaderMenuBar/>
         // }
 
-
-
         return (
+
             <header className='header'>
                 <section className='header-img'>
                     <img src={logo} alt='logo'/>
@@ -43,9 +39,7 @@ class HeaderInfo extends Component {
                             <i className="fab fa-instagram"/>
                             <i className="fa fa-odnoklassniki" aria-hidden="true"/>
                         </div>
-                        <div className='header-button' onClick={() => {
-                            this.showBar()
-                        }}>
+                        <div className='header-button' onClick={()=>{}}>
                             <div className='header-button-row'></div>
                             <div className='header-button-row'></div>
                             <div className='header-button-row'></div>
@@ -58,13 +52,13 @@ class HeaderInfo extends Component {
 }
 
 const mapStateToProps = (state) => {
-
     return {
         showBar: state.showBar
     }
 };
-const mapDispatchToProps = {
+const mapDispatchToProps ={
+    //как я должен указатб функцию  и поменять стеит
     showBar
-};
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(HeaderInfo)

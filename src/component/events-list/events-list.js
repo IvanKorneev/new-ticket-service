@@ -2,23 +2,18 @@ import React, {Component} from "react";
 import EventsItem from "../events-item";
 import {connect} from 'react-redux'
 import WithTicketsService from "../../hoc";
-import {eventLoaded, eventsRequested, eventsError} from "../../actions";
+import {fetchEvents} from "../../actions";
 import Spinner from "../spinner";
 import Error from "../error";
 
 class EventsList extends Component {
 
     componentDidMount() {
-        this.props.eventsRequested();
-        const {TicketService, eventsError, eventLoaded} = this.props;
-        TicketService.getEvents()
-            .then((data) => eventLoaded(data))
-            .catch((error) => eventsError(error))
+        this.props.fetchEvents();
     }
 
     render() {
         const {events, loading, error} = this.props;
-        console.log();
         if (loading) {
             return <Spinner/>
         }
@@ -46,10 +41,11 @@ const mapStateToProps = (state) => {
         error: state.error
     }
 };
-const mapDispatchToProps = {
-    eventLoaded,
-    eventsRequested,
-    eventsError
+const mapDispatchToProps = (dispatch, ownProps) => {
+    const {TicketService} = ownProps;
+    return {
+        fetchEvents: fetchEvents(TicketService,dispatch)
+    };
 };
 
 export default WithTicketsService()(
