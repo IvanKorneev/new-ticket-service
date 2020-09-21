@@ -7,13 +7,14 @@ import HeaderMenuBar from "../header-menu-bar";
 
 
 class HeaderInfo extends Component {
-    render() {
+    clickHandler = () => {
+        this.props.showBarAction(true)
+    };
 
-            //Проверка какой компонент отрисовать
-        // if(this.props.showBar) {
-        //     console.log(this.state);
-        //     return <HeaderMenuBar/>
-        // }
+    render() {
+        if (this.props.showBar) {
+            return <HeaderMenuBar/>
+        }
 
         return (
 
@@ -34,12 +35,14 @@ class HeaderInfo extends Component {
                     <section className='social-container'>
                         <div className='social'>
                             <i className="fab fa-youtube"/>
-                            <i className="fab fa-facebook-square"/>
+                            <i className="fab fa-facebook"/>
                             <i className="fab fa-twitter"/>
-                            <i className="fab fa-instagram"/>
+                            <i className="fab fab fa-instagram-square"/>
                             <i className="fa fa-odnoklassniki" aria-hidden="true"/>
+                            <i className="fas fa-rss text-muted"/>
+
                         </div>
-                        <div className='header-button' onClick={()=>{}}>
+                        <div className='header-button' onClick={this.clickHandler}>
                             <div className='header-button-row'></div>
                             <div className='header-button-row'></div>
                             <div className='header-button-row'></div>
@@ -56,9 +59,9 @@ const mapStateToProps = (state) => {
         showBar: state.showBar
     }
 };
-const mapDispatchToProps ={
-    //как я должен указатб функцию  и поменять стеит
-    showBar
-}
+const mapDispatchToProps = (dispatch) => ({
+    showBarAction: (val) => dispatch(showBar(val)),
+});
+
 
 export default connect(mapStateToProps, mapDispatchToProps)(HeaderInfo)

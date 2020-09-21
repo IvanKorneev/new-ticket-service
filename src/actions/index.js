@@ -1,5 +1,3 @@
-
-
 const eventLoaded = (newEvent) => {
     return {
         type: 'EVENT_LOADED',
@@ -13,13 +11,13 @@ const asideLoaded = (newAside) => {
     }
 };
 
-const showBar = (newShowBar) => {
+const showBar = (newShowbar) => {
     return {
         type: 'SHOW_BAR',
-        payload:newShowBar
-
+        payload: newShowbar
     }
 };
+
 const eventsRequested = () => {
     return {
         type: 'EVENT_REQUESTED'
@@ -32,13 +30,13 @@ const eventsError = (error) => {
     }
 };
 
-const fetchEvents = (TicketService,dispatch) => () => {
+const fetchEvents = (TicketService, dispatch) => () => {
     dispatch(eventsRequested());
     TicketService.getEvents()
         .then((data) => dispatch(eventLoaded(data)))
         .catch((error) => dispatch(eventsError(error)))
 };
-const fetchAside = (TicketService,dispatch) => () => {
+const fetchAside = (TicketService, dispatch) => () => {
     dispatch(eventsRequested());
     TicketService.getUpcomingEvents()
         .then((data) => dispatch(asideLoaded(data)))

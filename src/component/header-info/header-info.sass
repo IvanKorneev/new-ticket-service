@@ -1,53 +1,55 @@
 .header
   width: 100%
   display: flex
-  flex-direction: row
+  flex-direction: column
   margin-bottom: 15px
 
   .header-img
-    width: 300px
+    img
+      width: 100%
 
   .header-lang-social
     display: flex
-    justify-content: space-between
-    align-items: flex-end
-    width: 100%
-
-  .lang
-    display: flex
     flex-direction: column
-    justify-content: flex-end
-    margin-left: 20px
+    width: 100%
+    font-size: 17px
+    color: slategray
 
     p
       margin: 0
 
+
   .social
     display: flex
-    margin-bottom: 10px
+    font-size: 23px
 
-    i
+    i:not(:first-child)
       margin-left: 10px
 
   .header-link
     display: flex
     margin-top: 16px
+    font-size: 17px
 
     p
       margin: 0 5px 0 0
 
   .header-button
-    width: 40px
-    height: 40px
+    width: 32px
+    height: 32px
+
+    .header-button-row
+      width: 100%
+      margin: 0
+      height: 6px
+      background-color: #868685
+      border-radius: 50px
+
+    .header-button-row:not(:first-child)
+      margin: 5px 0 0 0
 
   .social-container
     display: flex
-    flex-direction: column
-    align-items: flex-end
+    justify-content: space-between
+    align-items: center
 
-  .header-button-row
-    width: 100%
-    margin: 5px 0 0 0
-    height: 6px
-    background-color: #868685
-    border-radius: 50px

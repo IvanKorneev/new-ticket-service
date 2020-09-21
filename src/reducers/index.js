@@ -3,7 +3,8 @@ const initialState = {
     asideState: [],
     showBar: false,
     loading: false,
-    error:null
+    error: null
+
 };
 
 
