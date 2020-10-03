@@ -6,6 +6,7 @@ import ErrorBoundry from "./component/error-boundry";
 import TicketService from "./sevices/ticketService";
 import TicketsServiceContext from "./ticket-service-context";
 import store from "./store";
+import {BrowserRouter as Router} from 'react-router-dom'
 
 const ticketService = new TicketService();
 
@@ -13,7 +14,7 @@ ReactDOM.render(
     <Provider store={store}>
         <ErrorBoundry>
             <TicketsServiceContext.Provider value={ticketService}>
-                <App/>
+                   <App/>
             </TicketsServiceContext.Provider>
         </ErrorBoundry>
     </Provider>

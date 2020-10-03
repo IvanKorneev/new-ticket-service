@@ -3,14 +3,21 @@
   display: flex
   flex-direction: column
   margin-top: 15px
+  @media (min-width: 1200px)
+    flex-direction: row
 
   .footer-img
     width: 100%
+    @media (min-width: 1200px)
+      width: 15%
+      margin: 0 20px 0 0
 
   &-right-info
     display: flex
     justify-content: space-between
     width: 100%
+    @media (min-width: 1200px)
+      align-items: center
 
   &-address
     display: flex
@@ -18,9 +25,11 @@
     justify-content: flex-end
     font-size: 15px
     color: slategray
+    @media (min-width: 768px)
+      font-size: 25px
+    @media (min-width: 1200px)
+      font-size: 20px
 
-    span
-    margin: 0 0 10px 0
 
   &-info
     display: flex
@@ -29,12 +38,17 @@
     span
       color: slategray
       font-size: 15px
+      @media (min-width: 768px)
+       font-size: 25px
+      @media (min-width: 1200px)
+       font-size: 20px
 
   .footer-social
     i
       font-size: 15px
       color: slategray
       margin-right: 10px
-
-
-
+      @media (min-width: 768px)
+        font-size: 25px
+      @media (min-width: 1200px)
+        font-size: 20px

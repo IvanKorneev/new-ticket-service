@@ -17,6 +17,7 @@ class AsideList extends Component {
 
     render() {
         const {asideEvents, loading, error} = this.props;
+        console.log(asideEvents)
         if (loading) {
             return <Spinner/>
         }

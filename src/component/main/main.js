@@ -7,9 +7,7 @@ export default class Main extends Component{
         return (
             <section className='main-events'>
                 <h2>Events</h2>
-               <div className='main-events-items'>
                    <EventsList/>
-               </div>
             </section>
         );
     }

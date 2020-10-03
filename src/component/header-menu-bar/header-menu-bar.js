@@ -3,6 +3,7 @@ import './header-menu-bar.sass';
 import logoWhite from '../images/logo_white.svg';
 import {connect} from 'react-redux';
 import { showBar} from '../../actions'
+import {Link} from "react-router-dom";
 class HeaderMenuBar extends Component {
 
     clickClosedHandler = () => {
@@ -21,15 +22,8 @@ class HeaderMenuBar extends Component {
                     <img src={logoWhite} alt='logo'/>
                 </div>
                 <div className='header-menu-bar-data'>
-                    <p>Berlin City Hall | Events and Tickets</p>
                     <section className='header-menu-bar-social-container'>
-                        <div className='header-menu-bar-data-info'>
-                            <p>Berlin City Hall</p>
-                            <p>Freudstrasse 69, 10117 Berlin</p>
-                            <p>Tel.: 030 2223344</p>
-                            <p>Fax: 030 2223355</p>
-                            <p>E-Mail: info@bch.de</p>
-                        </div>
+                        <p>Berlin City Hall | Events and Tickets</p>
                         <div className='social'>
                             <i className="fab fa-youtube"/>
                             <i className="fab fa-facebook-square"/>
@@ -37,20 +31,24 @@ class HeaderMenuBar extends Component {
                             <i className="fab fa-instagram"/>
                             <i className="fab fa-odnoklassniki"/>
                             <i className="fas fa-rss text-muted"/>
-
+                        </div>
+                        <div className='header-menu-bar-data-info'>
+                            <p>Berlin City Hall</p>
+                            <p>Freudstrasse 69, 10117 Berlin</p>
+                            <p>Tel.: 030 2223344</p>
+                            <p>Fax: 030 2223355</p>
+                            <p>E-Mail: info@bch.de</p>
                         </div>
                     </section>
                 </div>
                 <div className='header-menu-bar-link'>
                     <ul>
-                        <li><a href="#">Login/Out</a></li>
-                        <li><a href="#">Events</a></li>
+                        <li><Link to="/login">Login</Link></li>
+                        <li><Link to="/events">Events</Link></li>
                         <li><a href="#">Shopping Cart</a></li>
                         <li><a href="#">Halls Scheme</a></li>
                         <li><a href="#">About Us</a></li>
-
                     </ul>
-
                 </div>
             </div>
         )

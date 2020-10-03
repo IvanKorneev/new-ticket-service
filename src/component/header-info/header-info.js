@@ -4,6 +4,7 @@ import './header-info.sass';
 import {connect} from 'react-redux';
 import {showBar} from "../../actions"
 import HeaderMenuBar from "../header-menu-bar";
+import {Link} from "react-router-dom";
 
 
 class HeaderInfo extends Component {
@@ -27,7 +28,7 @@ class HeaderInfo extends Component {
                     <section className='lang'>
                         <p>Berlin City Hall | Events and Tickets</p>
                         <div className='header-link'>
-                            <p>Login</p>
+                            <Link to="/login">Login</Link>
                             <p>DE</p>
                             <p>RU</p>
                         </div>
@@ -35,7 +36,7 @@ class HeaderInfo extends Component {
                     <section className='social-container'>
                         <div className='social'>
                             <i className="fab fa-youtube"/>
-                            <i className="fab fa-facebook"/>
+                            <i className="fab fa-facebook"></i>
                             <i className="fab fa-twitter"/>
                             <i className="fab fab fa-instagram-square"/>
                             <i className="fa fa-odnoklassniki" aria-hidden="true"/>

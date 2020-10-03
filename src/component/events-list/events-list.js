@@ -5,6 +5,8 @@ import WithTicketsService from "../../hoc";
 import {fetchEvents} from "../../actions";
 import Spinner from "../spinner";
 import Error from "../error";
+import './events-list.sass'
+
 
 class EventsList extends Component {
 
@@ -22,7 +24,7 @@ class EventsList extends Component {
             return <Error/>
         }
         return (
-            <div>
+            <div className='events-list'>
                 {
                     events.map(eventsItem => {
                         return <EventsItem key={eventsItem.eventId} eventsPropsItem={eventsItem}/>
