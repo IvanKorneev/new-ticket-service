@@ -12,6 +12,6 @@ const WithTicketsService = () => (Wrapped) => {
                 }
             </TicketsServiceContext.Consumer>
         )
-    }
+    };
 };
 export default WithTicketsService

@@ -1,3 +1,4 @@
+
 const eventLoaded = (newEvent) => {
     return {
         type: 'EVENT_LOADED',
@@ -47,7 +48,7 @@ const fetchAside = (TicketService, dispatch) => () => {
 export {
     fetchEvents,
     fetchAside,
-    showBar
+    showBar,
 };
 
 

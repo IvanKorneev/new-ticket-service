@@ -3,7 +3,11 @@ const initialState = {
     asideState: [],
     showBar: false,
     loading: false,
-    error: null
+    error: null,
+    pageSize: 3,
+    totalEventsCount:12,
+    currentPage:1
+
 
 };
 

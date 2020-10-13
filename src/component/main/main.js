@@ -1,6 +1,6 @@
 import React,{Component} from "react";
 import './main.sass';
-import EventsList from "../events-list/events-list";
+import EventsList from "../../container-component/events-list-container/events-list";
 
 export default class Main extends Component{
     render() {

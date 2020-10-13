@@ -4,10 +4,10 @@ import logoWhite from '../images/logo_white.svg';
 import {connect} from 'react-redux';
 import { showBar} from '../../actions'
 import {Link} from "react-router-dom";
+
 class HeaderMenuBar extends Component {
 
     clickClosedHandler = () => {
-        console.log('click');
         this.props.closeBarAction(false);
     };
 
@@ -45,6 +45,7 @@ class HeaderMenuBar extends Component {
                     <ul>
                         <li><Link to="/login">Login</Link></li>
                         <li><Link to="/events">Events</Link></li>
+                        <li><Link to="/aside">Shopping</Link></li>
                         <li><a href="#">Shopping Cart</a></li>
                         <li><a href="#">Halls Scheme</a></li>
                         <li><a href="#">About Us</a></li>

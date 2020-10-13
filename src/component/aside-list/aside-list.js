@@ -1,63 +1,23 @@
-import React, {Component} from "react";
-import './aside-list.sass'
-import Calendar from 'react-calendar';
-import {connect} from 'react-redux'
-import WithTicketsService from "../../hoc";
-import {fetchAside} from "../../actions";
+import Calendar from "react-calendar";
 import AsideItem from "../aside-items";
-import Spinner from "../spinner";
-import Error from "../error";
+import React from "react";
+import './aside-list.sass'
 
-
-class AsideList extends Component {
-
-    componentDidMount() {
-       this.props.fetchAside()
-    };
-
-    render() {
-        const {asideEvents, loading, error} = this.props;
-        console.log(asideEvents)
-        if (loading) {
-            return <Spinner/>
-        }
-        if (error) {
-            return <Error/>
-        }
-        return (
-            <section className='aside'>
-                <div className='aside-calendar'>
-                    <Calendar/>
-                </div>
-                <div className='aside-upcoming-events'>
-                    <h2>Upcoming Events</h2>
-                    {
-                        asideEvents.map((asideEvents) => {
-                            return <AsideItem key={asideEvents.eventId} eventsPropsItem={asideEvents}/>
-                        })
-                    }
-                </div>
-            </section>
-        )
-    };
-}
-
-const mapStateToProps = (state) => {
-
-    return {
-        asideEvents: state.asideState,
-        loading: state.loading,
-        error: state.error
-    }
+const AsideList = ({asideEvents}) => {
+    return (
+        <section className='aside'>
+            <div className='aside-calendar'>
+                <Calendar/>
+            </div>
+            <div className='aside-upcoming-events'>
+                <h2>Upcoming Events</h2>
+                {
+                    asideEvents.map(asideEvent => {
+                        return <AsideItem key={asideEvent.eventId} eventsPropsItem={asideEvent}/>
+                    })
+                }
+            </div>
+        </section>
+    )
 };
-const mapDispatchToProps = (dispatch, ownProps) => {
-    const {TicketService} = ownProps;
-    return {
-        fetchAside: fetchAside(TicketService,dispatch)
-    };
-};
-
-export default WithTicketsService()(
-    connect(mapStateToProps, mapDispatchToProps)(AsideList)
-);
-
+export default AsideList

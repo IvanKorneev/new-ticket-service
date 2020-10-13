@@ -1,2 +1,2 @@
-import EventsList from "./events-list";
-export default EventsList;
+import EventsList from "./event-list";
+export default EventsList
