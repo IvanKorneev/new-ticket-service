@@ -4,20 +4,22 @@ const initialState = {
     showBar: false,
     loading: false,
     error: null,
-    pageSize: 3,
-    totalEventsCount:12,
-    currentPage:1
-
-
+    pageSize: 4,
+    totalEventsCount: 12,
+    currentPage: 1
 };
-
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case 'EVENT_REQUESTED':
             return {
-                eventsState: [],
-                asideState: [],
+                ...state,
+                loading: true,
+                error: null
+            };
+        case 'ASIDE_REQUESTED':
+            return {
+                ...state,
                 loading: true,
                 error: null
             };
@@ -42,12 +44,18 @@ const reducer = (state = initialState, action) => {
             };
         case 'EVENTS_ERROR':
             return {
+                ...state,
                 eventsState: [],
                 asideState: [],
-                loading: true,
+                loading: false,
                 error: action.payload
             };
-
+        case 'SET_EVENTS_PAGE':{
+            return {
+                ...state ,
+                currentPage: action.payload
+            }
+        }
         default:
             return state;
     }

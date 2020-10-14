@@ -45,7 +45,6 @@ class HeaderMenuBar extends Component {
                     <ul>
                         <li><Link to="/login">Login</Link></li>
                         <li><Link to="/events">Events</Link></li>
-                        <li><Link to="/aside">Shopping</Link></li>
                         <li><a href="#">Shopping Cart</a></li>
                         <li><a href="#">Halls Scheme</a></li>
                         <li><a href="#">About Us</a></li>

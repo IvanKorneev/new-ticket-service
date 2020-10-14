@@ -2,8 +2,8 @@ export default class TicketService {
 
     _apiBase = 'https://ticket-service.herokuapp.com';
 
-    getEvents = async (authorization = '') => {
-        let response = await fetch(`${this._apiBase}/events?page=1&page-size=12`, {
+    getEvents = async (authorization = '',currentPage,pageSize) => {
+        let response = await fetch(`${this._apiBase}/events?page=${currentPage}&page-size=${pageSize}`, {
             method: "POST",
             headers: {
                 "Content-type": "application/json",

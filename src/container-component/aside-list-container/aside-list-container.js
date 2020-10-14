@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import './aside-list.sass'
+import './aside-list-container.sass'
 import {connect} from 'react-redux'
 import WithTicketsService from "../../hoc";
 import {fetchAside} from "../../actions";
@@ -13,13 +13,11 @@ class AsideListContainer extends Component {
 
     componentDidMount() {
         this.props.fetchAside();
-
     };
 
+
     render() {
-
         const {asideEvents, loading, error} = this.props;
-
         if (loading) {
             return <Spinner/>
         }

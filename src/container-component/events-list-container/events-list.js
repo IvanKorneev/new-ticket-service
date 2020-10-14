@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {connect} from 'react-redux'
 import WithTicketsService from "../../hoc";
-import {fetchEvents} from "../../actions";
+import {eventLoaded, eventsError, eventsRequested, setEventsPages} from "../../actions";
 import Spinner from "../../component/spinner";
 import Error from "../../component/error";
 import './events-list.sass'
@@ -10,15 +10,27 @@ import Pagination from "../../component/pagination";
 
 
 class EventsListContainer extends Component {
-
     componentDidMount() {
-        this.props.fetchEvents();
+        const {TicketService, eventLoaded, eventsError, eventsRequested, currentPage, pageSize} = this.props;
+        eventsRequested();
+        TicketService.getEvents('', currentPage, pageSize)
+            .then((data) => eventLoaded(data))
+            .catch((error) => eventsError(error))
+        // this.onPageChanged(currentPage);
+    };
+
+    onPageChanged = (pageNumber) => {
+        this.props.setEventsPages(pageNumber);
+        const {TicketService, eventLoaded, eventsError, eventsRequested, pageSize} = this.props;
+        eventsRequested();
+        TicketService.getEvents('', pageNumber, pageSize)
+            .then((data) => eventLoaded(data))
+            .catch((error) => eventsError(error))
     };
 
     render() {
 
         const {events, loading, error, pageSize, totalEventsCount, currentPage} = this.props;
-
         if (loading) {
             return <Spinner/>
         }
@@ -29,7 +41,9 @@ class EventsListContainer extends Component {
         return (
             <div>
                 <EventsList events={events}/>
-                <Pagination pageSize={pageSize} totalEventsCount={totalEventsCount} currentPage={currentPage} name='name'  />
+                <Pagination pageSize={pageSize} totalEventsCount={totalEventsCount}
+                            currentPage={currentPage} onPageChanged={this.onPageChanged} />
+
             </div>
 
         )
@@ -48,11 +62,12 @@ const mapStateToProps = (state) => {
 
     }
 };
-const mapDispatchToProps = (dispatch, ownProps) => {
-    const {TicketService} = ownProps;
-    return {
-        fetchEvents: fetchEvents(TicketService, dispatch)
-    };
+
+const mapDispatchToProps = {
+    eventLoaded,
+    eventsError,
+    eventsRequested,
+    setEventsPages
 };
 
 export default WithTicketsService()(

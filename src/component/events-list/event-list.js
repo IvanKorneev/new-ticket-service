@@ -9,7 +9,7 @@ const EventsList = ({events}) => {
                 events.map(eventsItem => {
                     return <EventsItem key={eventsItem.eventId} eventsPropsItem={eventsItem}/>
                 })
-            };
+            }
         </div>
     )
 };

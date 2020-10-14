@@ -1,4 +1,3 @@
-
 const eventLoaded = (newEvent) => {
     return {
         type: 'EVENT_LOADED',
@@ -24,6 +23,13 @@ const eventsRequested = () => {
         type: 'EVENT_REQUESTED'
     }
 };
+
+const asideRequested = () => {
+    return {
+        type: 'ASIDE_REQUESTED'
+    }
+};
+
 const eventsError = (error) => {
     return {
         type: 'EVENTS_ERROR',
@@ -31,14 +37,22 @@ const eventsError = (error) => {
     }
 };
 
-const fetchEvents = (TicketService, dispatch) => () => {
-    dispatch(eventsRequested());
-    TicketService.getEvents()
-        .then((data) => dispatch(eventLoaded(data)))
-        .catch((error) => dispatch(eventsError(error)))
+const setEventsPages = (currentPage) => {
+    return {
+        type: 'SET_EVENTS_PAGE',
+        currentPage: currentPage
+
+    }
 };
+
+// const fetchEvents = (TicketService, dispatch) => () => {
+//     dispatch(eventsRequested());
+//     TicketService.getEvents('',1,12)
+//         .then((data) => dispatch(eventLoaded(data)))
+//         .catch((error) => dispatch(eventsError(error)))
+// };
 const fetchAside = (TicketService, dispatch) => () => {
-    dispatch(eventsRequested());
+    dispatch(asideRequested());
     TicketService.getUpcomingEvents()
         .then((data) => dispatch(asideLoaded(data)))
         .catch((error) => dispatch(eventsError(error)))
@@ -46,9 +60,12 @@ const fetchAside = (TicketService, dispatch) => () => {
 
 
 export {
-    fetchEvents,
+    eventLoaded,
     fetchAside,
+    eventsError,
     showBar,
+    eventsRequested,
+    setEventsPages
 };
 
 

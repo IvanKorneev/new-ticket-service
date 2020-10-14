@@ -2,7 +2,7 @@ import React from "react";
 import HeaderInfo from "../header-info";
 import Main from "../main";
 import Footer from "../footer-info";
-import AsideList from "../../container-component/aside-list-container/aside-list";
+import AsideList from "../../container-component/aside-list-container/aside-list-container";
 import "./app.sass";
 import LoginPage from "../login-page";
 import { Route} from 'react-router-dom';
