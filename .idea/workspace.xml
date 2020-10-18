@@ -5,15 +5,15 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/app/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/error/error.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/error/error.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/error/error.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/error/error.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/events-list/event-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/events-list/event-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/events-list/events-list.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/events-list/events-list.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/header-menu-bar/header-menu-bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/header-menu-bar/header-menu-bar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/main/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/main/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/pagination/pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/pagination/pagination.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/pagination/pagination.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/pagination/pagination.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container-component/aside-list-container/aside-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/aside-list-container/aside-list-container.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container-component/aside-list-container/aside-list.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/aside-list-container/aside-list-container.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container-component/aside-list-container/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/aside-list-container/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container-component/aside-list-container/aside-list-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/aside-list-container/aside-list-container.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/container-component/events-list-container/events-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/events-list-container/events-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sevices/ticketService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sevices/ticketService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +46,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Хлам/ticket_service" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -116,7 +116,16 @@
       <workItem from="1602401671929" duration="3009000" />
       <workItem from="1602486401035" duration="12515000" />
       <workItem from="1602573071458" duration="15917000" />
-      <workItem from="1602661844889" duration="7320000" />
+      <workItem from="1602661844889" duration="11878000" />
+      <workItem from="1602680099675" duration="3260000" />
+      <workItem from="1602827427327" duration="730000" />
+      <workItem from="1602830684014" duration="584000" />
+      <workItem from="1602835297365" duration="20000" />
+      <workItem from="1602836132422" duration="425000" />
+      <workItem from="1602836841309" duration="1506000" />
+      <workItem from="1602843351382" duration="69000" />
+      <workItem from="1602846289422" duration="983000" />
+      <workItem from="1603006251029" duration="7626000" />
     </task>
     <task id="LOCAL-00001" summary="&#10;creating a project structure">
       <created>1599552635453</created>
@@ -181,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602575094563</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary=" refactoring pagination">
+      <created>1602674877903</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1602674877903</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +227,8 @@
     <MESSAGE value="add new Component header-menu-bar" />
     <MESSAGE value="add new Component login-page and react-router" />
     <MESSAGE value="pagination" />
-    <option name="LAST_COMMIT_MESSAGE" value="pagination" />
+    <MESSAGE value=" refactoring pagination" />
+    <option name="LAST_COMMIT_MESSAGE" value=" refactoring pagination" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#File_Watchers" timestamp="1599983520096">
@@ -226,45 +243,45 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1601893547249" />
-    <state x="556" y="0" key="CommitChangelistDialog2" timestamp="1602575093412">
+    <state x="556" y="0" key="CommitChangelistDialog2" timestamp="1602674876486">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="556" y="0" key="CommitChangelistDialog2/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1601712791466" />
-    <state x="556" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1602575093412" />
+    <state x="556" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1602674876486" />
     <state x="405" y="191" key="EditFileWatcherDialog" timestamp="1599983409920">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="405" y="191" key="EditFileWatcherDialog/0.0.1536.824@0.0.1536.824" timestamp="1599983409920" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1601993428070">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1602843365965">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1601035341843" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1602843365965" />
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1600605631539" />
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601993428070" />
-    <state width="1515" height="66" key="GridCell.Tab.0.bottom" timestamp="1602661861845">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602679913632" />
+    <state width="1515" height="66" key="GridCell.Tab.0.bottom" timestamp="1603006936803">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="66" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1602222487623" />
+    <state width="1515" height="66" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1602839747894" />
     <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1600598481642" />
-    <state width="1515" height="66" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602661861845" />
-    <state width="1515" height="66" key="GridCell.Tab.0.center" timestamp="1602661861845">
+    <state width="1515" height="66" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603006936803" />
+    <state width="1515" height="66" key="GridCell.Tab.0.center" timestamp="1603006936803">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="66" key="GridCell.Tab.0.center/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1602222487623" />
+    <state width="1515" height="66" key="GridCell.Tab.0.center/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1602839747893" />
     <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1600598481642" />
-    <state width="1515" height="66" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602661861845" />
-    <state width="1515" height="66" key="GridCell.Tab.0.left" timestamp="1602661861844">
+    <state width="1515" height="66" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603006936803" />
+    <state width="1515" height="66" key="GridCell.Tab.0.left" timestamp="1603006936801">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="66" key="GridCell.Tab.0.left/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1602222487623" />
+    <state width="1515" height="66" key="GridCell.Tab.0.left/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1602839747893" />
     <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1600598481642" />
-    <state width="1515" height="66" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602661861844" />
-    <state width="1515" height="66" key="GridCell.Tab.0.right" timestamp="1602661861845">
+    <state width="1515" height="66" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603006936801" />
+    <state width="1515" height="66" key="GridCell.Tab.0.right" timestamp="1603006936803">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="66" key="GridCell.Tab.0.right/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1602222487623" />
+    <state width="1515" height="66" key="GridCell.Tab.0.right/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1602839747893" />
     <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1600598481642" />
-    <state width="1515" height="66" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602661861845" />
+    <state width="1515" height="66" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603006936803" />
     <state x="550" y="123" key="RollbackChangesDialog" timestamp="1599995811266">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

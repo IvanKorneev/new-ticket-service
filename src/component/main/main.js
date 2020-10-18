@@ -6,7 +6,6 @@ export default class Main extends Component{
     render() {
         return (
             <section className='main-events'>
-                <h2>Events</h2>
                    <EventsList/>
             </section>
         );

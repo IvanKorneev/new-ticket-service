@@ -4,13 +4,16 @@ import './events-list.sass'
 
 const EventsList = ({events}) => {
     return (
-        <div className='events-list'>
-            {
-                events.map(eventsItem => {
-                    return <EventsItem key={eventsItem.eventId} eventsPropsItem={eventsItem}/>
-                })
-            }
-        </div>
+        <section className='events-container'>
+            <h2>Events</h2>
+            <div className='events-list'>
+                {
+                    events.map(eventsItem => {
+                        return <EventsItem key={eventsItem.eventId} eventsPropsItem={eventsItem}/>
+                    })
+                }
+            </div>
+        </section>
     )
 };
 export default EventsList

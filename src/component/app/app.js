@@ -6,6 +6,7 @@ import AsideList from "../../container-component/aside-list-container/aside-list
 import "./app.sass";
 import LoginPage from "../login-page";
 import { Route} from 'react-router-dom';
+import EventItemPadge from "../event-item-page";
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
                     <AsideList/>
                     <Route exact path="/events" component={Main}/>
                     <Route path="/login" component={LoginPage}/>
+                    <EventItemPadge/>
                 </section>
                 <Footer/>
             </div>

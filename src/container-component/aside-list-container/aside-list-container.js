@@ -18,12 +18,12 @@ class AsideListContainer extends Component {
 
     render() {
         const {asideEvents, loading, error} = this.props;
-        if (loading) {
-            return <Spinner/>
-        }
-        if (error) {
-            return <Error/>
-        }
+        // if (loading) {
+        //     return <Spinner/>
+        // }
+        // // if (error) {
+        // //     return <Error/>
+        // // }
         return (
             <AsideList asideEvents={asideEvents}/>
         )

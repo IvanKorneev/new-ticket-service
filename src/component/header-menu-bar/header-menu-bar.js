@@ -2,13 +2,14 @@ import React, {Component} from "react";
 import './header-menu-bar.sass';
 import logoWhite from '../images/logo_white.svg';
 import {connect} from 'react-redux';
-import { showBar} from '../../actions'
+import {showBar} from '../../actions'
 import {Link} from "react-router-dom";
 
 class HeaderMenuBar extends Component {
 
     clickClosedHandler = () => {
         this.props.closeBarAction(false);
+
     };
 
     render() {
@@ -57,11 +58,12 @@ class HeaderMenuBar extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        closeBar: state.closeBar
+        showBar: state.showBar
     }
 };
 const mapDispatchToProps = (dispatch) => ({
     closeBarAction: (val) => dispatch(showBar(val)),
 });
+
 
 export default connect(mapStateToProps, mapDispatchToProps)(HeaderMenuBar)

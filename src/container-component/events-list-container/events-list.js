@@ -21,8 +21,8 @@ class EventsListContainer extends Component {
 
     onPageChanged = (pageNumber) => {
         this.props.setEventsPages(pageNumber);
-        const {TicketService, eventLoaded, eventsError, eventsRequested, pageSize} = this.props;
-        eventsRequested();
+        const {TicketService, eventLoaded, eventsError,pageSize} = this.props;
+        // eventsRequested();
         TicketService.getEvents('', pageNumber, pageSize)
             .then((data) => eventLoaded(data))
             .catch((error) => eventsError(error))
@@ -43,7 +43,6 @@ class EventsListContainer extends Component {
                 <EventsList events={events}/>
                 <Pagination pageSize={pageSize} totalEventsCount={totalEventsCount}
                             currentPage={currentPage} onPageChanged={this.onPageChanged} />
-
             </div>
 
         )

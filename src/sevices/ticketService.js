@@ -120,8 +120,3 @@ export default class TicketService {
         return json;
     }
 }
-
-
-
-
-

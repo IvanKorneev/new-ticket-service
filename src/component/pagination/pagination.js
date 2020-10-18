@@ -12,8 +12,6 @@ const Pagination = ({totalEventsCount, pageSize, currentPage, onPageChanged}) =>
             {
                 pages.map(page => {
                     return <span key={page} onClick={() => {
-                        console.log('currentPage ', currentPage);
-                        console.log('page ', page);
                         onPageChanged(page)
                     }} className={currentPage === page ? 'pages-item active' : 'pages-item'}>
                         {page}

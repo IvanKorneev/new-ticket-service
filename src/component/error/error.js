@@ -1,9 +1,14 @@
 import React from "react";
-import './error.css'
+import './error.sass'
 
 const Error = () => {
     return (
-        <div>ERROR</div>
+        <div className='error'>
+            <h1>OOPS!</h1>
+            <p>Page not found crying face emoji </p>
+            <img src='https://www.garageclothing.com/on/demandware.static/-/Library-Sites-global_library_ca/default/dw209f52f1/Icons-Garage/crying_emoji.png'/>
+            <p>Come back later or go to our homepage to find what you're looking for.</p>
+        </div>
     )
 };
 
