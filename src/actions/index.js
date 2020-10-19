@@ -44,6 +44,12 @@ const setEventsPages = (currentPage) => {
 
     }
 };
+const eventPageLoaded = (newPage) => {
+    return{
+        type:'EVENT_PAGE_LOADED',
+        payload:newPage
+    }
+};
 
 // const fetchEvents = (TicketService, dispatch) => () => {
 //     dispatch(eventsRequested());
@@ -65,5 +71,6 @@ export {
     eventsError,
     showBar,
     eventsRequested,
-    setEventsPages
+    setEventsPages,
+    eventPageLoaded
 };

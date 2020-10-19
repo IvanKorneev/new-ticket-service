@@ -3,6 +3,7 @@ import AsideItem from "../aside-items";
 import React from "react";
 import './aside-list.sass'
 
+
 const AsideList = ({asideEvents}) => {
     return (
         <section className='aside'>
@@ -13,7 +14,9 @@ const AsideList = ({asideEvents}) => {
                 <h2>Upcoming Events</h2>
                 {
                     asideEvents.map(asideEvent => {
-                        return <AsideItem key={asideEvent.eventId} eventsPropsItem={asideEvent}/>
+                        return (
+                                <AsideItem key={asideEvent.eventId} eventsPropsItem={asideEvent}/>
+                        )
                     })
                 }
             </div>

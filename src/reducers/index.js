@@ -6,7 +6,8 @@ const initialState = {
     error: null,
     pageSize: 4,
     totalEventsCount: 12,
-    currentPage: 1
+    currentPage: 1,
+    event: {}
 };
 
 const reducer = (state = initialState, action) => {
@@ -50,12 +51,18 @@ const reducer = (state = initialState, action) => {
                 loading: false,
                 error: action.payload
             };
-        case 'SET_EVENTS_PAGE':{
+        case 'SET_EVENTS_PAGE':
             return {
                 ...state ,
                 currentPage: action.payload
-            }
-        }
+            };
+
+        case 'EVENT_PAGE_LOADED':
+            return {
+                ...state,
+                event: action.payload
+            };
+
         default:
             return state;
     }

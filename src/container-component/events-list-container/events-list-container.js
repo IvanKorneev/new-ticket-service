@@ -4,7 +4,7 @@ import WithTicketsService from "../../hoc";
 import {eventLoaded, eventsError, eventsRequested, setEventsPages} from "../../actions";
 import Spinner from "../../component/spinner";
 import Error from "../../component/error";
-import './events-list.sass'
+import './events-list-container.sass'
 import EventsList from "../../component/events-list";
 import Pagination from "../../component/pagination";
 
@@ -15,14 +15,14 @@ class EventsListContainer extends Component {
         eventsRequested();
         TicketService.getEvents('', currentPage, pageSize)
             .then((data) => eventLoaded(data))
-            .catch((error) => eventsError(error))
-        // this.onPageChanged(currentPage);
+            .catch((error) => eventsError(error));
     };
 
     onPageChanged = (pageNumber) => {
         this.props.setEventsPages(pageNumber);
-        const {TicketService, eventLoaded, eventsError,pageSize} = this.props;
-        // eventsRequested();
+        const {TicketService, eventLoaded, eventsError, pageSize} = this.props;
+
+
         TicketService.getEvents('', pageNumber, pageSize)
             .then((data) => eventLoaded(data))
             .catch((error) => eventsError(error))
