@@ -45,9 +45,15 @@ const setEventsPages = (currentPage) => {
     }
 };
 const eventPageLoaded = (newPage) => {
-    return{
-        type:'EVENT_PAGE_LOADED',
-        payload:newPage
+    return {
+        type: 'EVENT_PAGE_LOADED',
+        payload: newPage
+    }
+};
+const setUserData = (email, password, token, loginResult) => {
+    return {
+        type: 'SET_USER_DATA',
+        data: {email, password, token, loginResult}
     }
 };
 
@@ -72,5 +78,6 @@ export {
     showBar,
     eventsRequested,
     setEventsPages,
-    eventPageLoaded
+    eventPageLoaded,
+    setUserData
 };

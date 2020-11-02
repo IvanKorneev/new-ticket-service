@@ -7,7 +7,11 @@ const initialState = {
     pageSize: 4,
     totalEventsCount: 12,
     currentPage: 1,
-    event: {}
+    event: {},
+    email: "",
+    password: "",
+    token: "",
+    loginResult: ""
 };
 
 const reducer = (state = initialState, action) => {
@@ -61,6 +65,11 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 event: action.payload
+            };
+        case 'SET_USER_DATA':
+            return {
+                ...state,
+                ...action.data
             };
 
         default:

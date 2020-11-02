@@ -7,6 +7,7 @@ import LoginPage from "../login-page";
 import {Route} from 'react-router-dom';
 import EventPageContainer from '../../container-component/event-page-container';
 import AsideListContainer from "../../container-component/aside-list-container/aside-list-container";
+import LoginPageContainer from "../../container-component/login-page-container";
 
 
 const App = () => {
@@ -16,8 +17,8 @@ const App = () => {
                 <section className='app-events'>
                     <AsideListContainer/>
                     <Route exact path="/events" component={Main}/>
-                    <Route path="/login" component={LoginPage}/>
-                    <Route path='/event' component={EventPageContainer}/>
+                    <Route path="/login" component={LoginPageContainer}/>
+                    <Route path='/event/:eventId' component={EventPageContainer}/>
                 </section>
                 <Footer/>
             </div>

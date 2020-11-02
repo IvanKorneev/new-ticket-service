@@ -8,7 +8,7 @@ import {Link} from "react-router-dom";
 class HeaderMenuBar extends Component {
 
     clickClosedHandler = () => {
-        this.props.closeBarAction(false);
+        this.props.closeBarAction(!this.props.showBar);
 
     };
 
@@ -61,9 +61,10 @@ const mapStateToProps = (state) => {
         showBar: state.showBar
     }
 };
-const mapDispatchToProps = (dispatch) => ({
-    closeBarAction: (val) => dispatch(showBar(val)),
-});
+
+const mapDispatchToProps = {
+    closeBarAction: (val) => showBar(val)
+};
 
 
 export default connect(mapStateToProps, mapDispatchToProps)(HeaderMenuBar)
