@@ -63,17 +63,18 @@ const setUserData = (email, password, token, loginResult) => {
 //         .then((data) => dispatch(eventLoaded(data)))
 //         .catch((error) => dispatch(eventsError(error)))
 // };
-const fetchAside = (TicketService, dispatch) => () => {
-    dispatch(asideRequested());
-    TicketService.getUpcomingEvents()
-        .then((data) => dispatch(asideLoaded(data)))
-        .catch((error) => dispatch(eventsError(error)))
-};
+// const fetchAside = (TicketService, dispatch) => () => {
+//     dispatch(asideRequested());
+//     TicketService.getUpcomingEvents()
+//         .then((data) => dispatch(asideLoaded(data)))
+//         .catch((error) => dispatch(eventsError(error)))
+// };
 
 
 export {
+    asideLoaded,
     eventLoaded,
-    fetchAside,
+    // fetchAside,
     eventsError,
     showBar,
     eventsRequested,

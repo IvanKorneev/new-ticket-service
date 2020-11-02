@@ -7,15 +7,17 @@ import Error from "../../component/error";
 import './events-list-container.sass'
 import EventsList from "../../component/events-list";
 import Pagination from "../../component/pagination";
+import {getEvents} from "../../api/api";
 
 
 class EventsListContainer extends Component {
     componentDidMount() {
-        const {TicketService, eventLoaded, eventsError, eventsRequested, currentPage, pageSize} = this.props;
+        const { eventLoaded, eventsError, eventsRequested, currentPage, pageSize} = this.props;
         eventsRequested();
-        TicketService.getEvents('', currentPage, pageSize)
-            .then((data) => eventLoaded(data))
+        getEvents('', currentPage, pageSize)
+            .then((response) => eventLoaded(response.data.event))
             .catch((error) => eventsError(error));
+        // getEvents('', currentPage, pageSize).then(response => console.log("response", response))
     };
 
     onPageChanged = (pageNumber) => {
