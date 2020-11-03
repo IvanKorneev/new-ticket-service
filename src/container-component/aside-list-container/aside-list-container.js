@@ -1,8 +1,7 @@
 import React, {Component} from "react";
 import './aside-list-container.sass'
 import {connect} from 'react-redux'
-import WithTicketsService from "../../hoc";
-import {asideLoaded,  eventsError} from "../../actions";
+import {asideLoaded,  eventsError} from "../../store/actions";
 import Spinner from "../../component/spinner";
 import Error from "../../component/error";
 import AsideList from "../../component/aside-list";
@@ -13,10 +12,8 @@ import {getUpcomingEvents} from "../../api/api";
 class AsideListContainer extends Component {
     componentDidMount() {
         const { eventsError, asideLoaded,} = this.props;
-
         getUpcomingEvents().then((response) => asideLoaded(response.data.events))
             .catch((error) => eventsError(error))
-
     };
 
 
@@ -43,12 +40,7 @@ const mapStateToProps = (state) => {
     }
 };
 
-// const mapDispatchToProps = (dispatch, ownProps) => {
-//     const {TicketService} = ownProps;
-//     return {
-//         fetchAside: fetchAside(TicketService, dispatch)
-//     };
-// };
+
 
 
 const mapDispatchToProps = {
@@ -57,7 +49,6 @@ const mapDispatchToProps = {
 
 };
 
-export default WithTicketsService()(
-    connect(mapStateToProps, mapDispatchToProps)(AsideListContainer)
-);
+export default
+    connect(mapStateToProps, mapDispatchToProps)(AsideListContainer);
 

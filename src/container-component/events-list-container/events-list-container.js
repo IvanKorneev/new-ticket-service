@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import {connect} from 'react-redux'
-import WithTicketsService from "../../hoc";
-import {eventLoaded, eventsError, eventsRequested, setEventsPages} from "../../actions";
+import {eventLoaded, eventsError, eventsRequested, setEventsPages} from "../../store/actions";
 import Spinner from "../../component/spinner";
 import Error from "../../component/error";
 import './events-list-container.sass'
@@ -12,22 +11,19 @@ import {getEvents} from "../../api/api";
 
 class EventsListContainer extends Component {
     componentDidMount() {
-        const { eventLoaded, eventsError, eventsRequested, currentPage, pageSize} = this.props;
-        
+        const {eventLoaded, eventsError, eventsRequested, currentPage, pageSize} = this.props;
         eventsRequested();
         getEvents('', currentPage, pageSize)
-            .then((response) => eventLoaded(response.data.event))
+            .then((response) => eventLoaded(response.data.events))
             .catch((error) => eventsError(error));
-        // getEvents('', currentPage, pageSize).then(response => console.log("response", response))
+
     };
 
     onPageChanged = (pageNumber) => {
         this.props.setEventsPages(pageNumber);
-        const {TicketService, eventLoaded, eventsError, pageSize} = this.props;
-
-
-        TicketService.getEvents('', pageNumber, pageSize)
-            .then((data) => eventLoaded(data))
+        const {eventLoaded, eventsError, pageSize} = this.props;
+        getEvents('', pageNumber, pageSize)
+            .then((response) => eventLoaded(response.data.events))
             .catch((error) => eventsError(error))
     };
 
@@ -45,7 +41,7 @@ class EventsListContainer extends Component {
             <div>
                 <EventsList events={events}/>
                 <Pagination pageSize={pageSize} totalEventsCount={totalEventsCount}
-                            currentPage={currentPage} onPageChanged={this.onPageChanged} />
+                            currentPage={currentPage} onPageChanged={this.onPageChanged}/>
             </div>
 
         )
@@ -72,7 +68,6 @@ const mapDispatchToProps = {
     setEventsPages
 };
 
-export default WithTicketsService()(
-    connect(mapStateToProps, mapDispatchToProps)(EventsListContainer)
-);
+export default connect(mapStateToProps, mapDispatchToProps)(EventsListContainer)
+
 

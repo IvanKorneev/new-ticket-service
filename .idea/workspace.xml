@@ -3,7 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="a0704845-c2ac-4a6c-9668-e59f88e6b723" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/app/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/header-info/header-info.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/header-info/header-info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/header-menu-bar/header-menu-bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/header-menu-bar/header-menu-bar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container-component/aside-list-container/aside-list-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/aside-list-container/aside-list-container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container-component/event-page-container/event-page-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/event-page-container/event-page-container.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/container-component/events-list-container/events-list-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/events-list-container/events-list-container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,12 +55,13 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\User\WebstormProjects\new-ticket-service\src\container-component" />
-      <recent name="C:\Users\User\WebstormProjects\new-ticket-service\src\component\app" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\WebstormProjects\new-ticket-service\src\component" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\new-ticket-service\src\store" />
+      <recent name="C:\Users\User\WebstormProjects\new-ticket-service\src\container-component" />
+      <recent name="C:\Users\User\WebstormProjects\new-ticket-service\src\component\app" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -135,7 +146,8 @@
       <workItem from="1604219490455" duration="1131000" />
       <workItem from="1604223038064" duration="2482000" />
       <workItem from="1604304899408" duration="8786000" />
-      <workItem from="1604388936232" duration="242000" />
+      <workItem from="1604388936232" duration="6240000" />
+      <workItem from="1604396341597" duration="10424000" />
     </task>
     <task id="LOCAL-00001" summary="&#10;creating a project structure">
       <created>1599552635453</created>
@@ -235,7 +247,21 @@
       <option name="project" value="LOCAL" />
       <updated>1604327380299</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="add axios">
+      <created>1604389263441</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1604389263441</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add axios step 1">
+      <created>1604389357302</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1604389357302</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +296,8 @@
     <MESSAGE value=" pagination refactor" />
     <MESSAGE value="login-page changes" />
     <MESSAGE value="add axios" />
-    <option name="LAST_COMMIT_MESSAGE" value="add axios" />
+    <MESSAGE value="add axios step 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="add axios step 1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#File_Watchers" timestamp="1599983520096">
@@ -285,11 +312,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1601893547249" />
-    <state x="556" y="0" key="CommitChangelistDialog2" timestamp="1604389262798">
+    <state x="556" y="0" key="CommitChangelistDialog2" timestamp="1604389356674">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="556" y="0" key="CommitChangelistDialog2/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1601712791466" />
-    <state x="556" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1604389262798" />
+    <state x="556" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1604389356674" />
     <state x="405" y="191" key="EditFileWatcherDialog" timestamp="1599983409920">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -300,39 +327,39 @@
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1602843365965" />
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1600605631539" />
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603789599334" />
-    <state width="1515" height="66" key="GridCell.Tab.0.bottom" timestamp="1604389231938">
+    <state width="1515" height="66" key="GridCell.Tab.0.bottom" timestamp="1604412778671">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="66" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1604062799081" />
     <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1600598481642" />
-    <state width="1515" height="66" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604389231938" />
-    <state width="1515" height="66" key="GridCell.Tab.0.center" timestamp="1604389231938">
+    <state width="1515" height="66" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604412778671" />
+    <state width="1515" height="66" key="GridCell.Tab.0.center" timestamp="1604412778671">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="66" key="GridCell.Tab.0.center/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1604062799081" />
     <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1600598481642" />
-    <state width="1515" height="66" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604389231938" />
-    <state width="1515" height="66" key="GridCell.Tab.0.left" timestamp="1604389231937">
+    <state width="1515" height="66" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604412778671" />
+    <state width="1515" height="66" key="GridCell.Tab.0.left" timestamp="1604412778671">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="66" key="GridCell.Tab.0.left/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1604062799081" />
     <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1600598481642" />
-    <state width="1515" height="66" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604389231937" />
-    <state width="1515" height="66" key="GridCell.Tab.0.right" timestamp="1604389231938">
+    <state width="1515" height="66" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604412778671" />
+    <state width="1515" height="66" key="GridCell.Tab.0.right" timestamp="1604412778671">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="66" key="GridCell.Tab.0.right/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1604062799081" />
     <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1600598481642" />
-    <state width="1515" height="66" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604389231938" />
+    <state width="1515" height="66" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604412778671" />
     <state x="550" y="123" key="RollbackChangesDialog" timestamp="1599995811266">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="550" y="123" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599995811266" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1604389265464">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1604389359158">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1601712795363" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604389265464" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604389359158" />
     <state x="463" y="144" width="609" height="536" key="find.popup" timestamp="1601460356402">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -342,15 +369,5 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1599566747879" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/component/error-boundry/error-boundry.js</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

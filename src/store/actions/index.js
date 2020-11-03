@@ -24,11 +24,11 @@ const eventsRequested = () => {
     }
 };
 
-const asideRequested = () => {
-    return {
-        type: 'ASIDE_REQUESTED'
-    }
-};
+// const asideRequested = () => {
+//     return {
+//         type: 'ASIDE_REQUESTED'
+//     }
+// };
 
 const eventsError = (error) => {
     return {

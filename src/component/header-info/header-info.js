@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import logo from '../images/logo_col.svg';
 import './header-info.sass';
 import {connect} from 'react-redux';
-import {showBar} from "../../actions"
+import {showBar} from "../../store/actions"
 import HeaderMenuBar from "../header-menu-bar";
 import {Link} from "react-router-dom";
 

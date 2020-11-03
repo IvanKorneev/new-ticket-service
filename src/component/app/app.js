@@ -3,7 +3,6 @@ import HeaderInfo from "../header-info";
 import Main from "../main";
 import Footer from "../footer-info";
 import "./app.sass";
-import LoginPage from "../login-page";
 import {Route} from 'react-router-dom';
 import EventPageContainer from '../../container-component/event-page-container';
 import AsideListContainer from "../../container-component/aside-list-container/aside-list-container";

@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import './header-menu-bar.sass';
 import logoWhite from '../images/logo_white.svg';
 import {connect} from 'react-redux';
-import {showBar} from '../../actions'
+import {showBar} from '../../store/actions'
 import {Link} from "react-router-dom";
 
 class HeaderMenuBar extends Component {
