@@ -3,7 +3,7 @@ const initialState = {
     loading: false,
     error: null
 };
-const aside = (state = initialState, action) => {
+export default (state = initialState, action) => {
     switch (action.type) {
         case 'ASIDE_REQUESTED':
             return {
@@ -22,5 +22,5 @@ const aside = (state = initialState, action) => {
             return state;
     }
 };
-export default aside;
+
 

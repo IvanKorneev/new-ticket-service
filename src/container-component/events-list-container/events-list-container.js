@@ -51,12 +51,12 @@ class EventsListContainer extends Component {
 const mapStateToProps = (state) => {
 
     return {
-        events: state.eventsState,
-        loading: state.loading,
-        error: state.error,
-        pageSize: state.pageSize,
-        totalEventsCount: state.totalEventsCount,
-        currentPage: state.currentPage
+        events: state.events.eventsState,
+        loading: state.events.loading,
+        error: state.events.error,
+        pageSize: state.events.pageSize,
+        totalEventsCount: state.events.totalEventsCount,
+        currentPage: state.events.currentPage
 
     }
 };

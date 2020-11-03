@@ -6,7 +6,7 @@ const initialState = {
     totalEventsCount: 12,
     currentPage: 1
 };
-const events = (state = initialState, action) => {
+export default  (state = initialState, action) => {
     switch (action.type) {
         case 'EVENT_REQUESTED':
             return {
@@ -41,4 +41,4 @@ const events = (state = initialState, action) => {
             return state;
     }
 };
-export default events;
+

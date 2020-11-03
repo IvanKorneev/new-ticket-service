@@ -58,7 +58,7 @@ class HeaderMenuBar extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        showBar: state.showBar
+        showBar: state.showBar.showBar
     }
 };
 

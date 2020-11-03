@@ -34,9 +34,9 @@ class AsideListContainer extends Component {
 const mapStateToProps = (state) => {
 
     return {
-        asideEvents: state.asideState,
-        loading: state.loading,
-        error: state.error
+        asideEvents: state.aside.asideState,
+        loading: state.aside.loading,
+        error: state.aside.error
     }
 };
 

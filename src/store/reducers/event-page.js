@@ -1,7 +1,7 @@
 const initialState = {
     event: {}
 };
- const eventPage =(state = initialState, action) => {
+export default (state = initialState, action) => {
     switch (action.type) {
         case 'EVENT_PAGE_LOADED':
             return {
@@ -12,4 +12,3 @@ const initialState = {
             return state;
     }
 };
- export default eventPage;

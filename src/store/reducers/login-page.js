@@ -4,7 +4,7 @@ const initialState = {
     token: "",
     loginResult: ""
 };
-const loginPage = (state = initialState, action) => {
+export default  (state = initialState, action) => {
     switch (action.type) {
         case 'SET_USER_DATA':
             return {
@@ -15,4 +15,4 @@ const loginPage = (state = initialState, action) => {
             return state;
     }
 };
-export default loginPage;
+

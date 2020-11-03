@@ -1,7 +1,7 @@
 const initialState = {
     showBar: false
 };
-const showBar = (state = initialState, action) => {
+export default  (state = initialState, action) => {
     switch (action.type) {
         case 'SHOW_BAR':
             return {
@@ -12,4 +12,4 @@ const showBar = (state = initialState, action) => {
             return state;
     }
 };
-export default showBar;
+
