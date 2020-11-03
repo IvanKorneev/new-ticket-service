@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a0704845-c2ac-4a6c-9668-e59f88e6b723" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container-component/aside-list-container/aside-list-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/aside-list-container/aside-list-container.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/container-component/events-list-container/events-list-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/events-list-container/events-list-container.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -138,7 +134,8 @@
       <workItem from="1604219214033" duration="145000" />
       <workItem from="1604219490455" duration="1131000" />
       <workItem from="1604223038064" duration="2482000" />
-      <workItem from="1604304899408" duration="8111000" />
+      <workItem from="1604304899408" duration="8786000" />
+      <workItem from="1604388936232" duration="242000" />
     </task>
     <task id="LOCAL-00001" summary="&#10;creating a project structure">
       <created>1599552635453</created>
@@ -231,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604305033901</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add axios">
+      <created>1604327380299</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1604327380299</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,7 +269,8 @@
     <MESSAGE value=" add new pagination and add component event-page" />
     <MESSAGE value=" pagination refactor" />
     <MESSAGE value="login-page changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="login-page changes" />
+    <MESSAGE value="add axios" />
+    <option name="LAST_COMMIT_MESSAGE" value="add axios" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#File_Watchers" timestamp="1599983520096">
@@ -280,11 +285,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1601893547249" />
-    <state x="556" y="0" key="CommitChangelistDialog2" timestamp="1604305033075">
+    <state x="556" y="0" key="CommitChangelistDialog2" timestamp="1604327379491">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="556" y="0" key="CommitChangelistDialog2/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1601712791466" />
-    <state x="556" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1604305033075" />
+    <state x="556" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1604327379491" />
     <state x="405" y="191" key="EditFileWatcherDialog" timestamp="1599983409920">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -295,39 +300,39 @@
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1602843365965" />
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1600605631539" />
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603789599334" />
-    <state width="1515" height="66" key="GridCell.Tab.0.bottom" timestamp="1604306023509">
+    <state width="1515" height="66" key="GridCell.Tab.0.bottom" timestamp="1604389231938">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="66" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1604062799081" />
     <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1600598481642" />
-    <state width="1515" height="66" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604306023509" />
-    <state width="1515" height="66" key="GridCell.Tab.0.center" timestamp="1604306023509">
+    <state width="1515" height="66" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604389231938" />
+    <state width="1515" height="66" key="GridCell.Tab.0.center" timestamp="1604389231938">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="66" key="GridCell.Tab.0.center/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1604062799081" />
     <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1600598481642" />
-    <state width="1515" height="66" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604306023509" />
-    <state width="1515" height="66" key="GridCell.Tab.0.left" timestamp="1604306023508">
+    <state width="1515" height="66" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604389231938" />
+    <state width="1515" height="66" key="GridCell.Tab.0.left" timestamp="1604389231937">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="66" key="GridCell.Tab.0.left/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1604062799081" />
     <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1600598481642" />
-    <state width="1515" height="66" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604306023508" />
-    <state width="1515" height="66" key="GridCell.Tab.0.right" timestamp="1604306023509">
+    <state width="1515" height="66" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604389231937" />
+    <state width="1515" height="66" key="GridCell.Tab.0.right" timestamp="1604389231938">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="66" key="GridCell.Tab.0.right/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1604062799081" />
     <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1600598481642" />
-    <state width="1515" height="66" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604306023509" />
+    <state width="1515" height="66" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604389231938" />
     <state x="550" y="123" key="RollbackChangesDialog" timestamp="1599995811266">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="550" y="123" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599995811266" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603115149526">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1604327383061">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1601712795363" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603115149526" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604327383061" />
     <state x="463" y="144" width="609" height="536" key="find.popup" timestamp="1601460356402">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

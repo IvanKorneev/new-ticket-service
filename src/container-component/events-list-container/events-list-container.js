@@ -13,6 +13,7 @@ import {getEvents} from "../../api/api";
 class EventsListContainer extends Component {
     componentDidMount() {
         const { eventLoaded, eventsError, eventsRequested, currentPage, pageSize} = this.props;
+        
         eventsRequested();
         getEvents('', currentPage, pageSize)
             .then((response) => eventLoaded(response.data.event))
