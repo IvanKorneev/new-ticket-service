@@ -36,7 +36,7 @@ class HeaderInfo extends Component {
                     <section className='social-container'>
                         <div className='social'>
                             <i className="fab fa-youtube"/>
-                            <i className="fab fa-facebook"></i>
+                            <i className="fab fa-facebook"/>
                             <i className="fab fa-twitter"/>
                             <i className="fab fab fa-instagram-square"/>
                             <i className="fa fa-odnoklassniki" aria-hidden="true"/>
@@ -44,9 +44,9 @@ class HeaderInfo extends Component {
 
                         </div>
                         <div className='header-button' onClick={this.clickHandler}>
-                            <div className='header-button-row'></div>
-                            <div className='header-button-row'></div>
-                            <div className='header-button-row'></div>
+                            <div className='header-button-row'/>
+                            <div className='header-button-row'/>
+                            <div className='header-button-row'/>
                         </div>
                     </section>
                 </section>

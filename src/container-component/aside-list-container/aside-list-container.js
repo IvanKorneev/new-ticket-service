@@ -1,21 +1,16 @@
 import React, {Component} from "react";
 import './aside-list-container.sass'
 import {connect} from 'react-redux'
-import {asideLoaded,  eventsError} from "../../store/actions";
+import {fetchAside} from "../../store/actions";
 import Spinner from "../../component/spinner";
 import Error from "../../component/error";
 import AsideList from "../../component/aside-list";
-import {getUpcomingEvents} from "../../api/api";
-
 
 
 class AsideListContainer extends Component {
     componentDidMount() {
-        const { eventsError, asideLoaded,} = this.props;
-        getUpcomingEvents().then((response) => asideLoaded(response.data.events))
-            .catch((error) => eventsError(error))
+        this.props.fetchAside()
     };
-
 
     render() {
         const {asideEvents, loading, error} = this.props;
@@ -40,15 +35,9 @@ const mapStateToProps = (state) => {
     }
 };
 
-
-
-
 const mapDispatchToProps = {
-    asideLoaded,
-    eventsError,
-
+    fetchAside
 };
 
-export default
-    connect(mapStateToProps, mapDispatchToProps)(AsideListContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(AsideListContainer);
 

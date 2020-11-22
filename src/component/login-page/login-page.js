@@ -1,21 +1,25 @@
 import React from "react";
 import './login-page.sass'
+import {Field} from "redux-form";
+import {maxLength, requiredField} from "../helpers/validator/validator";
+import FormControlsInput from "../forms-controls";
 
-const LoginPage = ({handleSubmit}) => {
-
+const LoginPage = (props) => {
     return (
         <section className='login-page-container'>
             <h1>REGISTRATION</h1>
             <div className='login-page'>
                 <div className='login-page-left'>
                     <span>I am already a customer.</span>
-                    <form>
+                    <form onSubmit={props.handleSubmit}>
                         <div className='login-page-input'>
-                            <input type="text" name="code" placeholder="Email"/>
-                            <input type="text" name="code" placeholder="Password"/>
+                            <Field placeholder="Email" component={FormControlsInput} name={'email'}
+                                   validate={[requiredField, maxLength]}/>
+                            <Field placeholder="Password" component={FormControlsInput} name={'password'}
+                                   validate={[requiredField, maxLength]}/>
                         </div>
                         <div>
-                            <button type="submit" onClick={handleSubmit}>Login</button>
+                            <button type="submit">Login</button>
                         </div>
                     </form>
                 </div>
@@ -29,5 +33,6 @@ const LoginPage = ({handleSubmit}) => {
         </section>
     )
 };
+export default LoginPage;
 
-export default LoginPage
+

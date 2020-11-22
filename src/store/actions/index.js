@@ -1,3 +1,5 @@
+import {getEventInfo, getEvents, getUpcomingEvents, login} from "../../api/api";
+
 const eventLoaded = (newEvent) => {
     return {
         type: 'EVENT_LOADED',
@@ -24,11 +26,11 @@ const eventsRequested = () => {
     }
 };
 
-// const asideRequested = () => {
-//     return {
-//         type: 'ASIDE_REQUESTED'
-//     }
-// };
+const asideRequested = () => {
+    return {
+        type: 'ASIDE_REQUESTED'
+    }
+};
 
 const eventsError = (error) => {
     return {
@@ -50,35 +52,46 @@ const eventPageLoaded = (newPage) => {
         payload: newPage
     }
 };
-const setUserData = (email, password, token, loginResult) => {
+const setUserData = (newEmail, newPassword) => {
     return {
         type: 'SET_USER_DATA',
-        data: {email, password, token, loginResult}
+        payload: {newEmail, newPassword}
     }
 };
 
-// const fetchEvents = (TicketService, dispatch) => () => {
-//     dispatch(eventsRequested());
-//     TicketService.getEvents('',1,12)
-//         .then((data) => dispatch(eventLoaded(data)))
-//         .catch((error) => dispatch(eventsError(error)))
-// };
-// const fetchAside = (TicketService, dispatch) => () => {
-//     dispatch(asideRequested());
-//     TicketService.getUpcomingEvents()
-//         .then((data) => dispatch(asideLoaded(data)))
-//         .catch((error) => dispatch(eventsError(error)))
-// };
+export const fetchEvents = (currentPage, pageSize) => {
+    return (dispatch) => {
+        getEvents('', currentPage, pageSize)
+            .then((response) => dispatch(eventLoaded(response.data.events)))
+            .catch((error) => dispatch(eventsError(error)))
+    };
+};
+export const fetchAside = () => {
+    return (dispatch) => {
+        getUpcomingEvents().then((response) => dispatch(asideLoaded(response.data.events)))
+            .catch((error) => dispatch(eventsError(error)))
+    }
+};
+
+export const fetchEventInfo = (eventId) => {
+    return (dispatch) => {
+        getEventInfo(eventId).then((response) => dispatch(eventPageLoaded(response.data)))
+    }
+};
+
+export const fetchLogin = (email, password) => {
+    return (dispatch) => {
+        login(email, password).then((response) => {
+            console.log(response);
+            dispatch(setUserData(response))
+        })
+    }
+};
 
 
 export {
-    asideLoaded,
-    eventLoaded,
-    // fetchAside,
-    eventsError,
     showBar,
     eventsRequested,
     setEventsPages,
-    eventPageLoaded,
-    setUserData
+    setUserData,
 };

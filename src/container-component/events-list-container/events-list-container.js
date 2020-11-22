@@ -1,34 +1,30 @@
 import React, {Component} from "react";
 import {connect} from 'react-redux'
-import {eventLoaded, eventsError, eventsRequested, setEventsPages} from "../../store/actions";
+import {eventsRequested, fetchEvents, setEventsPages} from "../../store/actions";
 import Spinner from "../../component/spinner";
 import Error from "../../component/error";
 import './events-list-container.sass'
 import EventsList from "../../component/events-list";
 import Pagination from "../../component/pagination";
-import {getEvents} from "../../api/api";
 
 
 class EventsListContainer extends Component {
     componentDidMount() {
-        const {eventLoaded, eventsError, eventsRequested, currentPage, pageSize} = this.props;
+        const {eventsRequested, currentPage, pageSize} = this.props;
         eventsRequested();
-        getEvents('', currentPage, pageSize)
-            .then((response) => eventLoaded(response.data.events))
-            .catch((error) => eventsError(error));
+        this.props.fetchEvents(currentPage, pageSize);
+
 
     };
 
     onPageChanged = (pageNumber) => {
         this.props.setEventsPages(pageNumber);
-        const {eventLoaded, eventsError, pageSize} = this.props;
-        getEvents('', pageNumber, pageSize)
-            .then((response) => eventLoaded(response.data.events))
-            .catch((error) => eventsError(error))
+        const {pageSize} = this.props;
+        this.props.fetchEvents(pageNumber, pageSize);
+
     };
 
     render() {
-
         const {events, loading, error, pageSize, totalEventsCount, currentPage} = this.props;
         if (loading) {
             return <Spinner/>
@@ -62,10 +58,9 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = {
-    eventLoaded,
-    eventsError,
     eventsRequested,
-    setEventsPages
+    setEventsPages,
+    fetchEvents
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(EventsListContainer)

@@ -14,7 +14,7 @@ const EventsItem = ({eventsPropsItem}) => {
             </Link>
             <div className='events-item-artist'>{artist}</div>
             <div className='events-item-event-name'>{eventName}</div>
-            <div className='events-item-line'></div>
+            <div className='events-item-line'/>
             <div className='events-item-event-date'>{getData(eventStart)}</div>
         </div>
     )

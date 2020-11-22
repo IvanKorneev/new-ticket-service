@@ -12,7 +12,10 @@ const EventItemPage = ({event}) => {
             <div className='event-item-page-container'>
                 <div className='event-item-page'>
                     <img src={images} alt={artist}/>
-                    <div className='events-item-line-page'></div>
+                    <div className='events-item-artist'>{artist}</div>
+                    <div className='events-item-event-name'>{eventName}</div>
+                    <div className='events-item-line'/>
+                    <div className='events-item-event-date'>{getData(eventStart)}</div>
                 </div>
                 <div className='event-item-description'>
                     <div className='event-item-info'>

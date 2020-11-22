@@ -2,16 +2,15 @@ import React, {Component} from "react";
 import './event-page-container.sass'
 import {connect} from "react-redux";
 import EventItemPage from "../../component/event-item-page";
-import {eventPageLoaded} from "../../store/actions";
-import {withRouter} from "react-router-dom";
-import {getEventInfo} from "../../api/api";
+import {fetchEventInfo} from "../../store/actions";
+
+
 
 class EventPageContainer extends Component {
 
     componentDidMount() {
         const eventId = this.props.match.params.eventId;
-        const {eventPageLoaded} = this.props;
-        getEventInfo(eventId).then((response) => eventPageLoaded(response.data))
+        this.props.fetchEventInfo(eventId)
     }
 
     render() {
@@ -21,7 +20,6 @@ class EventPageContainer extends Component {
             <div>
                 <EventItemPage event={event}/>
             </div>
-
         );
     }
 }
@@ -33,8 +31,7 @@ const mapStateToProps = (state) => {
     }
 };
 const mapDispatchToProps = {
-    eventPageLoaded
+    fetchEventInfo
 };
 
-export default withRouter((
-    connect(mapStateToProps, mapDispatchToProps)(EventPageContainer)))
+export default (connect(mapStateToProps, mapDispatchToProps)(EventPageContainer));
