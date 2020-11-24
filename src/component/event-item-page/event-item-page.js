@@ -4,7 +4,7 @@ import {getData} from "../helpers";
 
 
 const EventItemPage = ({event}) => {
-    const {eventName, artist, eventStart, description, ticketsAvailable, minPrice, maxPrice, images, eventId} = event;
+    const {eventName, artist, eventStart, description, ticketsAvailable, minPrice, maxPrice, images} = event;
 
     return (
         <div className='event-item-page'>

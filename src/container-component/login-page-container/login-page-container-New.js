@@ -1,8 +1,9 @@
-import React from "react";
+import React, {Component} from "react";
 import {fetchLogin} from "../../store/actions";
 import {connect} from "react-redux";
 import {reduxForm} from "redux-form";
 import LoginPage from "../../component/login-page";
+import LoginDone from "../../component/login-done";
 
 
 const LoginReduxForm = reduxForm({
@@ -10,23 +11,31 @@ const LoginReduxForm = reduxForm({
 })(LoginPage);
 
 
-const LoginPageContainer = (props) => {
 
-    const onClickForm = (formData) => {
-        console.log(formData);
-        // console.log(this.props);
+class LoginPageContainer extends Component {
 
-       props.fetchLogin(formData.email,formData.password);
-
+    onClickForm = (formData) => {
+        const {fetchLogin} = this.props;
+        fetchLogin(formData.email, formData.password);
     };
-    return (
-        <div>
-            <LoginReduxForm onSubmit={onClickForm}/>
-        </div>
-    );
+    render() {
+        if(this.props.loginData.token){
+            return <LoginDone data={this.props.loginData}/>
+        }
+
+        return (
+            <LoginReduxForm onSubmit={this.onClickForm}/>
+        )
+    }
+}
+const mapStateToProps = (state) => {
+    return {
+        loginData: state.loginPage.loginData
+    }
 };
+
 
 const mapDispatchToProps = {
     fetchLogin
 };
-export default connect(null, mapDispatchToProps)(LoginPageContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(LoginPageContainer);

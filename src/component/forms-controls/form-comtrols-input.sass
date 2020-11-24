@@ -1,8 +1,24 @@
 .formControl
+  margin: 20px 0
+  display: flex
+  flex-direction: column
+
   input
-    border: 2px solid green
-.error
-   input
-     border: 2px solid red
-   span
-     color: red
+    border: 0
+    border-bottom: 1px solid gray
+    font-size: 18px
+    @media (min-width: 768px)
+      width: 350px
+      @media (min-width: 1024px)
+        width: 250px
+
+  .errors
+    margin-top: 10px
+    font-size: 20px
+
+.formError
+  input
+    border: 2px solid red
+
+  span
+    color: red

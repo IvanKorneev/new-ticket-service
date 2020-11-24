@@ -3,19 +3,19 @@ import axios from 'axios';
 const _apiBase = 'https://ticket-service.herokuapp.com';
 
 export const getUpcomingEvents = async () => {
-    let response = await axios.get(`${_apiBase}/events/upcoming?size=3&page=2`);
-    if (!response) {
-        throw new Error(`Getting events isn\`t ok.`);
-    }
+    let response = await axios.get(`${_apiBase}/events/upcoming?size=3&page=2`)
+        .catch(error => {
+            throw new Error(`${error}Getting events isn\`t ok.`)
+        });
     return response
 };
 
 
 export const getEventInfo = async (eventId) => {
-    let response = await axios.get(`${_apiBase}/events/${eventId}`);
-    if (!response) {
-        throw new Error(`Getting events info\`t ok.`);
-    }
+    let response = await axios.get(`${_apiBase}/events/${eventId}`)
+        .catch(error => {
+            throw new Error(`${error}Getting events isn\`t ok.`)
+        });
 
     return response
 };
@@ -31,23 +31,14 @@ export const login = async (email, password) => {
         "Content-type": "application/json"
     };
     const response = await axios.post(url, body, {headers})
-        .then((res)=>{
-            return res
-        })
-        .catch(function (error) {
+        .then((response) => {
+            return response
+        }).catch(error => {
+            console.log(error.response)
+            throw  new Error(`${error.response.data.message}`);
         });
 
     return response;
-    if (!response) {
-        let json = await response.json();
-        let errorMsg = '';
-        for (let prop in json.body) {
-            errorMsg += `${json.body[prop][0]}`
-        }
-        throw new Error(`${json.message}. ${errorMsg}`);
-    }
-    let json = await response.json();
-    return json.token;
 };
 export const getEvents = async (authorization = '', currentPage = 1, pageSize = 4) => {
     let url = `${_apiBase}/events?page=${currentPage}&page-size=${pageSize}`;
@@ -65,7 +56,7 @@ export const getEvents = async (authorization = '', currentPage = 1, pageSize = 
             return res;
         })
         .catch(function (error) {
-            console.log(error);
+
         });
     return getEventsResponse;
 };

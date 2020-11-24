@@ -26,11 +26,11 @@ const eventsRequested = () => {
     }
 };
 
-const asideRequested = () => {
-    return {
-        type: 'ASIDE_REQUESTED'
-    }
-};
+// const asideRequested = () => {
+//     return {
+//         type: 'ASIDE_REQUESTED'
+//     }
+// };
 
 const eventsError = (error) => {
     return {
@@ -52,10 +52,16 @@ const eventPageLoaded = (newPage) => {
         payload: newPage
     }
 };
-const setUserData = (newEmail, newPassword) => {
+const setUserData = (email, token) => {
     return {
         type: 'SET_USER_DATA',
-        payload: {newEmail, newPassword}
+        payload: {email, token}
+    }
+};
+const loginError = (error) => {
+    return {
+        type: 'LOGIN_ERROR',
+        payload: error
     }
 };
 
@@ -82,9 +88,12 @@ export const fetchEventInfo = (eventId) => {
 export const fetchLogin = (email, password) => {
     return (dispatch) => {
         login(email, password).then((response) => {
-            console.log(response);
-            dispatch(setUserData(response))
+            dispatch(setUserData(email, response.data.token));
+            localStorage.setItem(email, 'email');
+            localStorage.setItem(response.data.token, 'token')
         })
+            .catch((error) => dispatch(loginError(error.message)));
+
     }
 };
 

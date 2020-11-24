@@ -1,20 +1,17 @@
 const initialState = {
-    email: '',
-    password: '',
-    token: '',
-    loginResult: '',
-    loading: '',
-    error: '',
+    loginData:{}
 };
-export default  (state = initialState, action) => {
+export default (state = initialState, action) => {
     switch (action.type) {
         case 'SET_USER_DATA':
             return {
                 ...state,
-                email: action.payload,
-                password:action.payload,
-                token:action.payload,
-                loginResult:action.payload
+                loginData: action.payload
+            };
+        case 'LOGIN_ERROR':
+            return {
+                ...state,
+                error:action.payload
             };
         default:
             return state;
