@@ -3,18 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a0704845-c2ac-4a6c-9668-e59f88e6b723" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/aside-list/aside-list.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/aside-list/aside-list.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/error/error.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/error/error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/event-item-page/event-item-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/event-item-page/event-item-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/forms-controls/form-comtrols-input.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/forms-controls/form-comtrols-input.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/forms-controls/forms-controls-imput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/forms-controls/forms-controls-imput.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/helpers/validator/validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/helpers/validator/validator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/login-page/login-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/login-page/login-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/aside-list/aside-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/aside-list/aside-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/header-menu-bar/header-menu-bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/header-menu-bar/header-menu-bar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/login-done/login-done.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/login-done/login-done.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/login-page/login-page.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/login-page/login-page.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container-component/login-page-container/login-page-container-New.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/login-page-container/login-page-container-New.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/login-page.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,13 +48,13 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\WebstormProjects\new-ticket-service\src\component" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\WebstormProjects\new-ticket-service\src\store" />
       <recent name="C:\Users\User\WebstormProjects\new-ticket-service\src\container-component" />
       <recent name="C:\Users\User\WebstormProjects\new-ticket-service\src\component\app" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\new-ticket-service\src\component" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -163,7 +155,9 @@
       <workItem from="1605718108103" duration="78000" />
       <workItem from="1605855632512" duration="12035000" />
       <workItem from="1606029987228" duration="12364000" />
-      <workItem from="1606119230417" duration="29887000" />
+      <workItem from="1606119230417" duration="30813000" />
+      <workItem from="1606235583494" duration="1467000" />
+      <workItem from="1606298025065" duration="2597000" />
     </task>
     <task id="LOCAL-00001" summary="&#10;creating a project structure">
       <created>1599552635453</created>
@@ -298,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606030542027</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="fixed bugs redux-form and add component loginDone">
+      <created>1606228056503</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1606228056503</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +338,8 @@
     <MESSAGE value="add combineReducers" />
     <MESSAGE value="fixed combineReducers" />
     <MESSAGE value="add Redux-Form add Sunk" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Redux-Form add Sunk" />
+    <MESSAGE value="fixed bugs redux-form and add component loginDone" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed bugs redux-form and add component loginDone" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#File_Watchers" timestamp="1599983520096">
@@ -356,11 +358,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1601893547249" />
-    <state x="548" y="0" key="CommitChangelistDialog2" timestamp="1606030540465">
+    <state x="548" y="0" key="CommitChangelistDialog2" timestamp="1606228055353">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="556" y="0" key="CommitChangelistDialog2/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1601712791466" />
-    <state x="548" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1606030540465" />
+    <state x="548" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1606228055353" />
     <state x="405" y="191" key="EditFileWatcherDialog" timestamp="1599983409920">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -371,39 +373,39 @@
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1605860450363" />
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1600605631539" />
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606226944614" />
-    <state width="1515" height="66" key="GridCell.Tab.0.bottom" timestamp="1606206161358">
+    <state width="1515" height="66" key="GridCell.Tab.0.bottom" timestamp="1606298458957">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="66" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1605892619058" />
     <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1600598481642" />
-    <state width="1515" height="66" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606206161358" />
-    <state width="1515" height="66" key="GridCell.Tab.0.center" timestamp="1606206161358">
+    <state width="1515" height="66" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606298458957" />
+    <state width="1515" height="66" key="GridCell.Tab.0.center" timestamp="1606298458956">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="66" key="GridCell.Tab.0.center/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1605892619057" />
     <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1600598481642" />
-    <state width="1515" height="66" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606206161358" />
-    <state width="1515" height="66" key="GridCell.Tab.0.left" timestamp="1606206161358">
+    <state width="1515" height="66" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606298458956" />
+    <state width="1515" height="66" key="GridCell.Tab.0.left" timestamp="1606298458956">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="66" key="GridCell.Tab.0.left/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1605892619057" />
     <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1600598481642" />
-    <state width="1515" height="66" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606206161358" />
-    <state width="1515" height="66" key="GridCell.Tab.0.right" timestamp="1606206161358">
+    <state width="1515" height="66" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606298458956" />
+    <state width="1515" height="66" key="GridCell.Tab.0.right" timestamp="1606298458956">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="66" key="GridCell.Tab.0.right/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1605892619058" />
     <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1600598481642" />
-    <state width="1515" height="66" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606206161358" />
+    <state width="1515" height="66" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606298458956" />
     <state x="550" y="123" key="RollbackChangesDialog" timestamp="1604429063463">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="550" y="123" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604429063463" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1606030544227">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1606228059393">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.-420.1920.1040@0.0.1536.824" timestamp="1601712795363" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606030544227" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606228059393" />
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1606036450242">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

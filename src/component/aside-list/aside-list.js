@@ -18,7 +18,7 @@ const AsideList = ({asideEvents}) => {
                                 <AsideItem key={asideEvent.eventId} eventsPropsItem={asideEvent}/>
                         )
                     })
-                }
+                };
             </div>
         </section>
     )

@@ -10,8 +10,6 @@ const LoginDone = ({data}) => {
                 <button type='click' className='button-login-page'>Return to main</button>
                 <button type='click' className='button-login-page'>Logout</button>
             </div>
-
-
         </section>
     )
 };
