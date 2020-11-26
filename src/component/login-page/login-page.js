@@ -3,11 +3,11 @@ import './login-page.sass'
 import {Field} from "redux-form";
 import {email, maxLength, requiredField} from "../helpers/validator/validator";
 import FormControlsInput from "../forms-controls";
+import {Link} from "react-router-dom";
 
 
 const LoginPage = (props) => {
     const {handleSubmit} = props;
-
     return (
         <section className='login-page-container'>
             <h1><a href='#'>REGISTRATION</a></h1>
@@ -36,12 +36,11 @@ const LoginPage = (props) => {
                 </div>
                 <div className='login-page-right'>
                     <span>New customer</span>
-                    <button type="button" className='button-login-page'>Register</button>
+                   <Link to='/registration'> <button type="button" className='button-login-page'>Register</button></Link>
                     <button type="button" className='button-login-page'>Login with invitation</button>
 
                 </div>
             </div>
-
         </section>
     )
 };

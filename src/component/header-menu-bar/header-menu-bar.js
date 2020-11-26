@@ -5,12 +5,14 @@ import {connect} from 'react-redux';
 import {showBar} from '../../store/actions'
 import {Link} from "react-router-dom";
 
-const clickClosedHandler = (props) => {
-    props.closeBarAction(!showBar);
 
-};
 
-const HeaderMenuBar = () => {
+const HeaderMenuBar = ({closeBarAction,showBar}) => {
+
+    const clickClosedHandler = () => {
+        closeBarAction(!showBar);
+
+    };
     return (
         <div className='header-menu-bar'>
             <div className='header-menu-bar-btn'>
