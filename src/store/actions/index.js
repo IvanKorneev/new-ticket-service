@@ -52,17 +52,30 @@ const eventPageLoaded = (newPage) => {
         payload: newPage
     }
 };
-const setUserData = (email, token) => {
+const setUserData = (email, token,...params) => {
     return {
         type: 'SET_USER_DATA',
-        payload: {email, token}
+        payload: {email, token, ...params}
     }
 };
+// const setRegisData = (email, token) => {
+//     return {
+//         type: 'SET_REGIS_DATA',
+//         payload: {email, token}
+//     }
+// };
 const loginError = (error) => {
     return {
         type: 'LOGIN_ERROR',
         payload: error
     }
+};
+
+const resetUserData = () => {
+   return{
+       type:'RESET_USER_DATA',
+       payload:{}
+   }
 };
 
 export const fetchEvents = (currentPage, pageSize) => {
@@ -85,15 +98,14 @@ export const fetchEventInfo = (eventId) => {
     }
 };
 
-export const fetchLogin = (email, password) => {
+export const fetchLogin = (email, password,...params) => {
     return (dispatch) => {
         login(email, password).then((response) => {
-            dispatch(setUserData(email, response.data.token));
-            localStorage.setItem(email, 'email');
-            localStorage.setItem(response.data.token, 'token')
+            dispatch(setUserData(email, response.data.token,...params));
+            localStorage.setItem('email', email);
+            localStorage.setItem('token', response.data.token)
         })
             .catch((error) => dispatch(loginError(error.message)));
-
     }
 };
 
@@ -103,4 +115,5 @@ export {
     eventsRequested,
     setEventsPages,
     setUserData,
+    resetUserData
 };

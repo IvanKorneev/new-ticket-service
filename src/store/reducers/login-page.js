@@ -1,6 +1,7 @@
 const initialState = {
-    loading:false,
-    loginData:{}
+    loading: false,
+    loginData: {},
+    // registrationData: {}
 };
 export default (state = initialState, action) => {
     switch (action.type) {
@@ -10,13 +11,20 @@ export default (state = initialState, action) => {
                 loading: true,
                 loginData: action.payload
             };
+
         case 'LOGIN_ERROR':
             return {
                 ...state,
-                error:action.payload
+                error: action.payload
+            };
+        case 'RESET_USER_DATA':
+            return {
+                ...state,
+                loginData: action.payload
             };
         default:
             return state;
     }
 };
+
 

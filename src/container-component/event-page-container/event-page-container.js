@@ -25,8 +25,10 @@ class EventPageContainer extends Component {
 }
 
 const mapStateToProps = (state) => {
+    console.log(state.loginPage.loginData)
     return {
-        event: state.eventPage.event
+        event: state.eventPage.event,
+
 
     }
 };
