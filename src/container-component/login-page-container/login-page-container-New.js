@@ -8,7 +8,7 @@ import LoginDone from "../../component/login-done";
 
 const LoginReduxForm = reduxForm({form: 'Login'})(LoginPage);
 
-const LoginPageContainer = ({fetchLogin, loginData}) => {
+const LoginPageContainer = ({fetchLogin, loginData,error}) => {
 
     const onClickFormLogin = (formData) => {
         fetchLogin(formData.email, formData.password);
@@ -17,12 +17,13 @@ const LoginPageContainer = ({fetchLogin, loginData}) => {
         return <LoginDone data={loginData}/>
     }
     return (
-        <LoginReduxForm onSubmit={onClickFormLogin}/>
+        <LoginReduxForm onSubmit={onClickFormLogin} errorlogin={error}/>
     )
 };
 const mapStateToProps = (state) => {
     return {
-        loginData: state.loginPage.loginData
+        loginData: state.loginPage.loginData,
+        error: state.loginPage.error
     }
 };
 const mapDispatchToProps = {

@@ -103,6 +103,7 @@ export default class TicketService {
             throw new Error(`${json.message}. ${errorMsg}`);
         }
     };
+
     getHallStructureByEventId = async (eventId, isShort = false, authorization = '') => {
         let response = await fetch(`${this._apiBase}/hall/${eventId}/${isShort}`, {
             method: "GET",

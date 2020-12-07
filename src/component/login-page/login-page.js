@@ -7,13 +7,15 @@ import {Link} from "react-router-dom";
 
 
 const LoginPage = (props) => {
-    const {handleSubmit} = props;
+    const {handleSubmit, errorlogin} = props;
+
     return (
         <section className='login-page-container'>
-            <h1><a href='#'>REGISTRATION</a></h1>
+            <h1>REGISTRATION</h1>
             <div className='login-page'>
                 <div className='login-page-left'>
                     <span>I am already a customer.</span>
+                    <span className='login-page-error'>{errorlogin}</span>
                     <form onSubmit={handleSubmit}>
                         <div className='login-page-input-container'>
                             <div className='login-page-input'>

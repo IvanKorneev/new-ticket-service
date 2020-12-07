@@ -6,32 +6,25 @@
 
   .event-item-page-container
     @media (min-width: 1440px)
-     display: flex
-     justify-content: center
+      display: flex
+      justify-content: center
 
-  .event-item-page
+  .event-item-page-img
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: relative
 
-   //.events-item-line-page
-   // position: absolute
-   // background-color: #ffc800
-   // width: 95%
-   // bottom: 25%
-   // height: 5px
-   //
-   //@media (min-width: 768px)
-   // width: 100%
-
-
-   img
-    object-fit: cover
-    width: 100%
-    height: 250px
-    margin: 10px 0
-    @media (min-width: 768px)
-      height: 485px
-    @media (min-width: 1200px)
-      height: 350px
-      margin:  0 0 0 15px
+    img
+      object-fit: cover
+      width: 100%
+      height: 250px
+      margin: 10px 0
+      @media (min-width: 768px)
+        height: 485px
+      @media (min-width: 1200px)
+        width: 400px
+        height: 400px
 
   .event-item-description
     @media (min-width: 768px)
@@ -42,6 +35,8 @@
     color: slategray
     @media (min-width: 768px)
       font-size: 45px
+    @media (min-width: 1024px)
+      margin-top: 0
     @media (min-width: 1200px)
       font-size: 55px
       text-align: center
@@ -59,10 +54,11 @@
 
   .event-item-info
     color: slategray
+
     p
       font-size: 15px
       @media (min-width: 768px)
-       font-size: 20px
+        font-size: 20px
       @media (min-width: 1200px)
         margin: 30px
 
@@ -73,7 +69,7 @@
       font-weight: bold
       color: #ffc800
       @media (min-width: 1200px)
-       font-size: 25px
+        font-size: 25px
 
     span
       font-size: 18px
@@ -95,8 +91,10 @@
     font-weight: bold
     font-size: 30px
     color: #ffc800
+
     &:hover
       cursor: pointer
+
     @media (min-width: 1200px)
       margin: 30px 0 0 30px
       font-size: 40px

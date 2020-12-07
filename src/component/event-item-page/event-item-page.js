@@ -10,7 +10,7 @@ const EventItemPage = ({event}) => {
         <div className='event-item-page'>
             <h1>Events</h1>
             <div className='event-item-page-container'>
-                <div className='event-item-page'>
+                <div className='event-item-page-img'>
                     <img src={images} alt={artist}/>
                     <div className='events-item-artist'>{artist}</div>
                     <div className='events-item-event-name'>{eventName}</div>

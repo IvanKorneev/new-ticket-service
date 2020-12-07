@@ -9,6 +9,7 @@ import AsideListContainer from "../../container-component/aside-list-container";
 import LoginPageContainer from "../../container-component/login-page-container";
 import RegistrationPageContainer
     from "../../container-component/registration-page-container";
+import ConditionsPage from "../conditions-page";
 
 
 
@@ -18,10 +19,11 @@ const App = () => {
                 <HeaderInfo/>
                 <section className='app-events'>
                     <AsideListContainer/>
+                    <Route path="/conditions" component={ConditionsPage}/>
                     <Route exact path="/events" component={Main}/>
                     <Route path="/login" component={LoginPageContainer}/>
-                    <Route path='/registration' component={RegistrationPageContainer}/>
-                    <Route path='/event/:eventId' component={EventPageContainer}/>
+                    <Route path="/registration" component={RegistrationPageContainer}/>
+                    <Route path="/event/:eventId" component={EventPageContainer}/>
                 </section>
                 <Footer/>
             </div>

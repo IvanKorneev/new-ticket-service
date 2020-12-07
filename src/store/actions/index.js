@@ -58,12 +58,7 @@ const setUserData = (email, token,...params) => {
         payload: {email, token, ...params}
     }
 };
-// const setRegisData = (email, token) => {
-//     return {
-//         type: 'SET_REGIS_DATA',
-//         payload: {email, token}
-//     }
-// };
+
 const loginError = (error) => {
     return {
         type: 'LOGIN_ERROR',

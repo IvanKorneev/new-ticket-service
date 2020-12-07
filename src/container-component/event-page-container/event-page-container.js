@@ -17,19 +17,16 @@ class EventPageContainer extends Component {
         const {event} = this.props;
 
         return (
-            <div>
+            <section className='event-item-page-container'>
                 <EventItemPage event={event}/>
-            </div>
+            </section>
         );
     }
 }
 
 const mapStateToProps = (state) => {
-    console.log(state.loginPage.loginData)
     return {
         event: state.eventPage.event,
-
-
     }
 };
 const mapDispatchToProps = {

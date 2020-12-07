@@ -34,7 +34,6 @@ export const login = async (email, password) => {
         .then((response) => {
             return response
         }).catch(error => {
-            console.log(error.response)
             throw  new Error(`${error.response.data.message}`);
         });
 
@@ -55,7 +54,7 @@ export const getEvents = async (authorization = '', currentPage = 1, pageSize = 
         .then((res) => {
             return res;
         })
-        .catch(function (error) {
+        .catch(error => {
 
         });
     return getEventsResponse;
