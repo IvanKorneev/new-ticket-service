@@ -1,2 +1,2 @@
-import FormControlsInput from "./forms-controls-imput";
+import FormControlsInput from "./forms-controls-input";
 export default FormControlsInput

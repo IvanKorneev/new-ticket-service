@@ -16,4 +16,4 @@ const EventsList = ({events}) => {
         </section>
     )
 };
-export default EventsList
+export default EventsList;

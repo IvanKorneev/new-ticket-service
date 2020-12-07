@@ -5,6 +5,7 @@ import {fetchAside} from "../../store/actions";
 import Spinner from "../../component/spinner";
 import Error from "../../component/error";
 import AsideList from "../../component/aside-list";
+import {getAsideEvents, getErrorAside, getLoadingAside} from "../../store/selectors/aside-list-selectors";
 
 
 class AsideListContainer extends Component {
@@ -29,9 +30,9 @@ class AsideListContainer extends Component {
 const mapStateToProps = (state) => {
 
     return {
-        asideEvents: state.aside.asideState,
-        loading: state.aside.loading,
-        error: state.aside.error
+        asideEvents: getAsideEvents(state),
+        loading: getLoadingAside(state),
+        error: getErrorAside(state)
     }
 };
 

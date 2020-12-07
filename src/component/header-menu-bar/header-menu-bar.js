@@ -64,4 +64,4 @@ const mapDispatchToProps = {
     closeBarAction: (val) => showBar(val)
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(HeaderMenuBar)
+export default connect(mapStateToProps, mapDispatchToProps)(HeaderMenuBar);

@@ -21,4 +21,4 @@ const Pagination = ({totalEventsCount, pageSize, currentPage, onPageChanged}) =>
         </div>
     )
 };
-export default Pagination
+export default Pagination;

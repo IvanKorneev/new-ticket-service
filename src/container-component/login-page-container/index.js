@@ -1,2 +1,2 @@
-import LoginPageContainer from "./login-page-container-New";
+import LoginPageContainer from "./login-page-container";
 export default LoginPageContainer;

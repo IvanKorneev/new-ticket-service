@@ -35,4 +35,4 @@ const EventItemPage = ({event}) => {
         </div>
     )
 };
-export default EventItemPage
+export default EventItemPage;

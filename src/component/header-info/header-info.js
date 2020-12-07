@@ -54,15 +54,13 @@ const HeaderInfo = ({showBarAction, showBar}) => {
     )
 };
 
-
 const mapStateToProps = (state) => {
     return {
         showBar: state.showBar.showBar
     }
 };
-const mapDispatchToProps =  {
+const mapDispatchToProps = {
     showBarAction: (val) => showBar(val),
 };
 
-
-export default connect(mapStateToProps, mapDispatchToProps)(HeaderInfo)
+export default connect(mapStateToProps, mapDispatchToProps)(HeaderInfo);

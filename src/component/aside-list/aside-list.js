@@ -15,7 +15,7 @@ const AsideList = ({asideEvents}) => {
                 {
                     asideEvents.map(asideEvent => {
                         return (
-                                <AsideItem key={asideEvent.eventId} eventsPropsItem={asideEvent}/>
+                            <AsideItem key={asideEvent.eventId} eventsPropsItem={asideEvent}/>
                         )
                     })
                 }
@@ -23,4 +23,4 @@ const AsideList = ({asideEvents}) => {
         </section>
     )
 };
-export default AsideList
+export default AsideList;

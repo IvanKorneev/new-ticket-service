@@ -12,21 +12,20 @@ import RegistrationPageContainer
 import ConditionsPage from "../conditions-page";
 
 
-
 const App = () => {
     return (
-            <div>
-                <HeaderInfo/>
-                <section className='app-events'>
-                    <AsideListContainer/>
-                    <Route path="/conditions" component={ConditionsPage}/>
-                    <Route exact path="/events" component={Main}/>
-                    <Route path="/login" component={LoginPageContainer}/>
-                    <Route path="/registration" component={RegistrationPageContainer}/>
-                    <Route path="/event/:eventId" component={EventPageContainer}/>
-                </section>
-                <Footer/>
-            </div>
+        <div>
+            <HeaderInfo/>
+            <section className='app-events'>
+                <AsideListContainer/>
+                <Route path="/conditions" component={ConditionsPage}/>
+                <Route exact path="/events" component={Main}/>
+                <Route path="/login" component={LoginPageContainer}/>
+                <Route path="/registration" component={RegistrationPageContainer}/>
+                <Route path="/event/:eventId" component={EventPageContainer}/>
+            </section>
+            <Footer/>
+        </div>
     )
 };
 export default App;

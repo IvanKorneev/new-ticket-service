@@ -6,6 +6,14 @@ import Error from "../../component/error";
 import './events-list-container.sass'
 import EventsList from "../../component/events-list";
 import Pagination from "../../component/pagination";
+import {
+    getCurrentPage,
+    getError,
+    getEvents,
+    getLoading,
+    getPageSize,
+    getTotalEventsCount
+} from "../../store/selectors/events-list-selectors";
 
 
 class EventsListContainer extends Component {
@@ -47,12 +55,12 @@ class EventsListContainer extends Component {
 const mapStateToProps = (state) => {
 
     return {
-        events: state.events.eventsState,
-        loading: state.events.loading,
-        error: state.events.error,
-        pageSize: state.events.pageSize,
-        totalEventsCount: state.events.totalEventsCount,
-        currentPage: state.events.currentPage
+        events: getEvents(state),
+        loading: getLoading(state),
+        error:getError(state),
+        pageSize: getPageSize(state),
+        totalEventsCount: getTotalEventsCount(state),
+        currentPage: getCurrentPage(state)
 
     }
 };
@@ -63,6 +71,6 @@ const mapDispatchToProps = {
     fetchEvents
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(EventsListContainer)
+export default connect(mapStateToProps, mapDispatchToProps)(EventsListContainer);
 
 

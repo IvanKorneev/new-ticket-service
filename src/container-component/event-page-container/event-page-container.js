@@ -3,7 +3,7 @@ import './event-page-container.sass'
 import {connect} from "react-redux";
 import EventItemPage from "../../component/event-item-page";
 import {fetchEventInfo} from "../../store/actions";
-
+import {getEvent} from "../../store/selectors/event-page-selectors";
 
 
 class EventPageContainer extends Component {
@@ -26,7 +26,7 @@ class EventPageContainer extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        event: state.eventPage.event,
+        event: getEvent(state)
     }
 };
 const mapDispatchToProps = {

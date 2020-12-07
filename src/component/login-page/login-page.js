@@ -38,7 +38,9 @@ const LoginPage = (props) => {
                 </div>
                 <div className='login-page-right'>
                     <span>New customer</span>
-                   <Link to='/registration'><button type="button" className='button-login-page'>Register</button></Link>
+                    <Link to='/registration'>
+                        <button type="button" className='button-login-page'>Register</button>
+                    </Link>
                     <button type="button" className='button-login-page'>Login with invitation</button>
 
                 </div>

@@ -4,6 +4,7 @@ import {connect} from "react-redux";
 import {reduxForm} from "redux-form";
 import LoginPage from "../../component/login-page";
 import LoginDone from "../../component/login-done";
+import {getLoginData} from "../../store/selectors/login-page-selectors";
 
 
 const LoginReduxForm = reduxForm({form: 'Login'})(LoginPage);
@@ -22,7 +23,7 @@ const LoginPageContainer = ({fetchLogin, loginData,error}) => {
 };
 const mapStateToProps = (state) => {
     return {
-        loginData: state.loginPage.loginData,
+        loginData: getLoginData(state),
         error: state.loginPage.error
     }
 };

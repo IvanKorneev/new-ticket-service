@@ -7,7 +7,6 @@ const FormControlsInput = ({input, meta, ...props}) => {
         <div className={`formControl ${hasError ? 'formError' : ''}`}>
             <input{...input} {...props}/>
             {hasError && <span className='errors'>{meta.error}</span>}
-
         </div>
     )
 };

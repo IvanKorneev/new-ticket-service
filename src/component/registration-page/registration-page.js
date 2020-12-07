@@ -7,9 +7,7 @@ import {Link} from "react-router-dom";
 
 
 const RegistrationPage = (props) => {
-
     const {handleSubmit} = props;
-
     return (
         <section className='registration-container-page'>
             <h1>REGISTRATION</h1>

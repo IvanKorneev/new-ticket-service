@@ -13,9 +13,9 @@ const AsideItem = ({eventsPropsItem}) => {
                 <div className='aside-items-start'>{getData(eventStart)}</div>
                 <div className='aside-items-time'>{getTime(eventStart)}</div>
                 <div className='aside-items-tickets'>
-                   <div className='aside-items-tickets-text'>
-                       Buy
-                   </div>
+                    <div className='aside-items-tickets-text'>
+                        Buy
+                    </div>
                 </div>
             </div>
 

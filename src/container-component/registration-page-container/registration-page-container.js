@@ -5,6 +5,7 @@ import {reduxForm} from "redux-form";
 import RegistrationPage from "../../component/registration-page";
 import {fetchLogin} from "../../store/actions";
 import LoginDone from "../../component/login-done";
+import {getLoginData} from "../../store/selectors/login-page-selectors";
 
 
 
@@ -25,7 +26,7 @@ const RegistrationPageContainer = ({fetchLogin, loginData}) => {
 };
 const mapStateToProps = (state) => {
     return {
-        loginData: state.loginPage.loginData
+        loginData: getLoginData(state)
     }
 };
 const mapDispatchToProps = {
