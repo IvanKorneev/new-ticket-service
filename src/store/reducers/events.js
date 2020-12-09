@@ -8,7 +8,7 @@ const initialState = {
 };
 export default  (state = initialState, action) => {
     switch (action.type) {
-        case 'EVENT_REQUESTED':
+        case 'LOADING_INDICATOR':
             return {
                 ...state,
                 loading: true,
@@ -27,7 +27,6 @@ export default  (state = initialState, action) => {
             return {
                 ...state,
                 eventsState: [],
-                // asideState: [],
                 loading: false,
                 error: action.payload
             };

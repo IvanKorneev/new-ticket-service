@@ -1,6 +1,5 @@
 const initialState = {
     asideState: [],
-    loading: false,
     error: null
 };
 export default (state = initialState, action) => {
@@ -8,14 +7,12 @@ export default (state = initialState, action) => {
         case 'ASIDE_REQUESTED':
             return {
                 ...state,
-                loading: true,
                 error: null
             };
         case 'ASIDE_LOADED':
             return {
                 ...state,
                 asideState: action.payload,
-                loading: false,
                 error: null
             };
         default:

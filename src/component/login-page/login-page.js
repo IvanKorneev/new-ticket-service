@@ -7,7 +7,7 @@ import {Link} from "react-router-dom";
 
 
 const LoginPage = (props) => {
-    const {handleSubmit, errorlogin} = props;
+    const {handleSubmit, errorlogin,reset} = props;
 
     return (
         <section className='login-page-container'>
@@ -16,18 +16,18 @@ const LoginPage = (props) => {
                 <div className='login-page-left'>
                     <span>I am already a customer.</span>
                     <span className='login-page-error'>{errorlogin}</span>
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={handleSubmit} >
                         <div className='login-page-input-container'>
                             <div className='login-page-input'>
                                 <Field placeholder="Email" component={FormControlsInput} name={'email'}
                                        validate={[requiredField, maxLength, email]}/>
-                                <i className="fas fa-times"/>
+                                <i className="fas fa-times" onClick={reset}/>
                             </div>
                             <div className='login-page-input'>
                                 <Field placeholder="Password" type='password' component={FormControlsInput}
                                        name={'password'}
                                        validate={[requiredField, maxLength]}/>
-                                <i className="fas fa-times"/>
+                                <i className="fas fa-times" onClick={reset}/>
                             </div>
                             <span className='password'>Forget password</span>
                         </div>

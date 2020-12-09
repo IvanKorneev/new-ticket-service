@@ -1,22 +1,28 @@
 import React from "react";
-import {fetchLogin} from "../../store/actions";
+import {fetchLogin, loadingIndicatorLogin} from "../../store/actions";
 import {connect} from "react-redux";
 import {reduxForm} from "redux-form";
 import LoginPage from "../../component/login-page";
 import LoginDone from "../../component/login-done";
-import {getLoginData} from "../../store/selectors/login-page-selectors";
+import {getLoginData, getLoading} from "../../store/selectors/login-page-selectors";
+import Spinner from "../../component/spinner";
 
 
 const LoginReduxForm = reduxForm({form: 'Login'})(LoginPage);
 
-const LoginPageContainer = ({fetchLogin, loginData,error}) => {
+const LoginPageContainer = ({fetchLogin, loginData, error, loading, loadingIndicatorLogin}) => {
 
     const onClickFormLogin = (formData) => {
         fetchLogin(formData.email, formData.password);
+        loadingIndicatorLogin()
     };
     if (loginData.token) {
         return <LoginDone data={loginData}/>
     }
+    if (loading) {
+        return <Spinner/>
+    }
+
     return (
         <LoginReduxForm onSubmit={onClickFormLogin} errorlogin={error}/>
     )
@@ -24,10 +30,12 @@ const LoginPageContainer = ({fetchLogin, loginData,error}) => {
 const mapStateToProps = (state) => {
     return {
         loginData: getLoginData(state),
-        error: state.loginPage.error
+        error: state.loginPage.error,
+        loading: getLoading(state)
     }
 };
 const mapDispatchToProps = {
-    fetchLogin
+    fetchLogin,
+    loadingIndicatorLogin
 };
 export default connect(mapStateToProps, mapDispatchToProps)(LoginPageContainer);

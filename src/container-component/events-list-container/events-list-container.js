@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {connect} from 'react-redux'
-import {eventsRequested, fetchEvents, setEventsPages} from "../../store/actions";
+import {loadingIndicator, fetchEvents, setEventsPages} from "../../store/actions";
 import Spinner from "../../component/spinner";
 import Error from "../../component/error";
 import './events-list-container.sass'
@@ -18,18 +18,15 @@ import {
 
 class EventsListContainer extends Component {
     componentDidMount() {
-        const {eventsRequested, currentPage, pageSize} = this.props;
-        eventsRequested();
+        const {loadingIndicator, currentPage, pageSize} = this.props;
+        loadingIndicator();
         this.props.fetchEvents(currentPage, pageSize);
-
-
     };
 
     onPageChanged = (pageNumber) => {
         this.props.setEventsPages(pageNumber);
         const {pageSize} = this.props;
         this.props.fetchEvents(pageNumber, pageSize);
-
     };
 
     render() {
@@ -66,7 +63,7 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = {
-    eventsRequested,
+    loadingIndicator,
     setEventsPages,
     fetchEvents
 };

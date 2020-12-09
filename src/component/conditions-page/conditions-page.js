@@ -4,7 +4,7 @@ import './conditions-page.sass'
 
 const ConditionsPage = () => {
     return (
-        <section className='info-conditions'>
+        <section className='conditions'>
             <h1>TERMS AND CONDITIONS</h1>
             <div>
                 1. Scope of validity

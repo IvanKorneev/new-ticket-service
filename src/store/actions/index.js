@@ -12,38 +12,32 @@ const asideLoaded = (newAside) => {
         payload: newAside
     }
 };
-
 const showBar = (newShowbar) => {
     return {
         type: 'SHOW_BAR',
         payload: newShowbar
     }
 };
-
-const eventsRequested = () => {
+const loadingIndicator = () => {
     return {
-        type: 'EVENT_REQUESTED'
+        type: 'LOADING_INDICATOR'
     }
 };
-
-// const asideRequested = () => {
-//     return {
-//         type: 'ASIDE_REQUESTED'
-//     }
-// };
-
+const loadingIndicatorLogin = () => {
+    return {
+        type: 'LOADING_INDICATOR_LOGIN'
+    }
+};
 const eventsError = (error) => {
     return {
         type: 'EVENTS_ERROR',
         payload: error
     }
 };
-
 const setEventsPages = (currentPage) => {
     return {
         type: 'SET_EVENTS_PAGE',
         currentPage: currentPage
-
     }
 };
 const eventPageLoaded = (newPage) => {
@@ -52,27 +46,31 @@ const eventPageLoaded = (newPage) => {
         payload: newPage
     }
 };
-const setUserData = (email, token,...params) => {
+const setUserData = (email, token, ...params) => {
     return {
         type: 'SET_USER_DATA',
         payload: {email, token, ...params}
     }
 };
-
 const loginError = (error) => {
     return {
         type: 'LOGIN_ERROR',
         payload: error
     }
 };
-
-const resetUserData = () => {
-   return{
-       type:'RESET_USER_DATA',
-       payload:{}
-   }
+const resetLoginError = () => {
+    return {
+        type: 'RESET_LOGIN_ERROR',
+        payload: ''
+    }
 };
 
+const resetUserData = () => {
+    return {
+        type: 'RESET_USER_DATA',
+        payload: {}
+    }
+};
 export const fetchEvents = (currentPage, pageSize) => {
     return (dispatch) => {
         getEvents('', currentPage, pageSize)
@@ -93,10 +91,10 @@ export const fetchEventInfo = (eventId) => {
     }
 };
 
-export const fetchLogin = (email, password,...params) => {
+export const fetchLogin = (email, password, ...params) => {
     return (dispatch) => {
         login(email, password).then((response) => {
-            dispatch(setUserData(email, response.data.token,...params));
+            dispatch(setUserData(email, response.data.token, ...params));
             localStorage.setItem('email', email);
             localStorage.setItem('token', response.data.token)
         })
@@ -107,8 +105,10 @@ export const fetchLogin = (email, password,...params) => {
 
 export {
     showBar,
-    eventsRequested,
+    loadingIndicator,
     setEventsPages,
     setUserData,
-    resetUserData
+    resetUserData,
+    resetLoginError,
+    loadingIndicatorLogin,
 };

@@ -2,14 +2,14 @@ import React from "react";
 import './login-done.sass'
 import {Link} from "react-router-dom";
 import {connect} from "react-redux";
-import {resetUserData} from "../../store/actions";
-import {email} from "../helpers/validator/validator";
+import {resetLoginError, resetUserData} from "../../store/actions";
 
 
-const LoginDone = ({data, logOut, resetUserData}) => {
+const LoginDone = ({data, logOut, resetUserData, resetLoginError,resetError}) => {
 
     const onLogOut = () => {
         logOut(resetUserData);
+        resetError(resetLoginError);
         localStorage.removeItem('email');
         localStorage.removeItem('token');
     };
@@ -31,11 +31,12 @@ const mapStateToProps = (state) => {
         loginData: state.loginPage.loginData
     }
 };
-const mapDispatchToProps = {
-    logOut: (val) => resetUserData(val)
-};
+// const mapDispatchToProps = {
+//     logOut: (val) => resetUserData(val)
+// };
 
-// const mapDispatchToProps = (dispatch) => ({
-//     logOut: (val) => dispatch(resetUserData(val)),
-// });
+const mapDispatchToProps = (dispatch) => ({
+    logOut: (val) => dispatch(resetUserData(val)),
+    resetError: (val) => dispatch(resetLoginError(val))
+});
 export default connect(mapStateToProps, mapDispatchToProps)(LoginDone);
