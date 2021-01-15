@@ -1,31 +1,25 @@
-import React, {Component} from "react";
+import React, {useEffect} from "react";
 import './aside-list-container.sass'
 import {connect} from 'react-redux'
 import {fetchAside} from "../../store/actions";
-import Spinner from "../../component/spinner";
 import Error from "../../component/error";
 import AsideList from "../../component/aside-list";
 import {getAsideEvents, getErrorAside, getLoadingAside} from "../../store/selectors/aside-list-selectors";
 
 
-class AsideListContainer extends Component {
-    componentDidMount() {
-        this.props.fetchAside()
-    };
+const AsideListContainer = ({asideEvents, error, fetchAside}) => {
 
-    render() {
-        const {asideEvents, loading, error} = this.props;
-        if (loading) {
-            return <Spinner/>
-        }
-        if (error) {
-            return <Error/>
-        }
-        return (
-            <AsideList asideEvents={asideEvents}/>
-        )
-    };
-}
+    useEffect(() => {
+        fetchAside()
+    },[]);
+
+    if (error) {
+        return <Error/>
+    }
+    return (
+        <AsideList asideEvents={asideEvents}/>
+    )
+};
 
 const mapStateToProps = (state) => {
 

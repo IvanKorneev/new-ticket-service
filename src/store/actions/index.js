@@ -37,7 +37,7 @@ const eventsError = (error) => {
 const setEventsPages = (currentPage) => {
     return {
         type: 'SET_EVENTS_PAGE',
-        currentPage: currentPage
+        payload: currentPage
     }
 };
 const eventPageLoaded = (newPage) => {

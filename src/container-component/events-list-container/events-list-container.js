@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, {useEffect} from "react";
 import {connect} from 'react-redux'
 import {loadingIndicator, fetchEvents, setEventsPages} from "../../store/actions";
 import Spinner from "../../component/spinner";
@@ -16,45 +16,41 @@ import {
 } from "../../store/selectors/events-list-selectors";
 
 
-class EventsListContainer extends Component {
-    componentDidMount() {
-        const {loadingIndicator, currentPage, pageSize} = this.props;
+const EventsListContainer = ({events, loading, error, pageSize,setEventsPages, totalEventsCount, currentPage, loadingIndicator, fetchEvents}) => {
+    useEffect(() => {
         loadingIndicator();
-        this.props.fetchEvents(currentPage, pageSize);
+        fetchEvents(currentPage, pageSize)
+    }, []);
+
+    const onPageChanged = (pageNumber) => {
+        setEventsPages(pageNumber);
+        fetchEvents(pageNumber, pageSize);
     };
 
-    onPageChanged = (pageNumber) => {
-        this.props.setEventsPages(pageNumber);
-        const {pageSize} = this.props;
-        this.props.fetchEvents(pageNumber, pageSize);
-    };
+    if (loading) {
+        return <Spinner/>
+    }
 
-    render() {
-        const {events, loading, error, pageSize, totalEventsCount, currentPage} = this.props;
-        if (loading) {
-            return <Spinner/>
-        }
+    if (error) {
+        return <Error/>
+    }
+    return (
+        <div>
+            <EventsList events={events}/>
+            <Pagination pageSize={pageSize} totalEventsCount={totalEventsCount}
+                        currentPage={currentPage} onPageChanged={onPageChanged}/>
+        </div>
 
-        if (error) {
-            return <Error/>
-        }
-        return (
-            <div>
-                <EventsList events={events}/>
-                <Pagination pageSize={pageSize} totalEventsCount={totalEventsCount}
-                            currentPage={currentPage} onPageChanged={this.onPageChanged}/>
-            </div>
+    )
+};
 
-        )
-    };
-}
 
 const mapStateToProps = (state) => {
 
     return {
         events: getEvents(state),
         loading: getLoading(state),
-        error:getError(state),
+        error: getError(state),
         pageSize: getPageSize(state),
         totalEventsCount: getTotalEventsCount(state),
         currentPage: getCurrentPage(state)

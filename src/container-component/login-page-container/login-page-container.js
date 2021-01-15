@@ -11,7 +11,6 @@ import Spinner from "../../component/spinner";
 const LoginReduxForm = reduxForm({form: 'Login'})(LoginPage);
 
 const LoginPageContainer = ({fetchLogin, loginData, error, loading, loadingIndicatorLogin}) => {
-
     const onClickFormLogin = (formData) => {
         fetchLogin(formData.email, formData.password);
         loadingIndicatorLogin()
