@@ -6,9 +6,6 @@ import ErrorBoundry from "./component/error-boundry";
 import store from "./store/store";
 import {BrowserRouter as Router} from 'react-router-dom';
 
-
-
-
 ReactDOM.render(
     <Provider store={store}>
         <ErrorBoundry>
