@@ -7,7 +7,7 @@ const ConditionsPage = () => {
         <section className='conditions'>
             <h1>TERMS AND CONDITIONS</h1>
             <div>
-                1. Scope of validity
+               <h4> 1. Scope of validity</h4>
                 The Terms and Conditions apply to legal relations between patrons, on the one hand, and the Berlin City
                 Hall Foundation, on the other, concerning the latter’s artistic establishments (Deutsche Oper Berlin,
                 Staatsoper Unter den Linden, Komische Oper Berlin and Staatsballett Berlin). Where the following refers
@@ -17,13 +17,13 @@ const ConditionsPage = () => {
                 their members, if not waived by a separate agreement.
             </div>
             <div>
-                2. Schedules and start times
+                <h4>2. Schedules and start times</h4>
                 The valid schedules and start times can be found in the official publications of the Berlin City Hall
                 Foundation. The Berlin City Hall Foundation reserves the right to alter the schedules and casts. The
                 Berlin City Hall Foundation accepts no responsibility for information on posters or other publications.
             </div>
             <div>
-                3. Entrance fee
+                <h4>3. Entrance fee</h4>
                 The Berlin City Hall Foundation will publish the valid entrance fees and make them known at the ticket
                 offices. Discounts are available to groups of persons with special entitlements, upon presentation of an
                 appropriate certificate at the ticket office. Discounted tickets are valid only with this certificate.
@@ -31,7 +31,7 @@ const ConditionsPage = () => {
                 must be paid in full.
             </div>
             <div>
-                4. Provision of tickets
+               <h4> 4. Provision of tickets</h4>
                 Tickets will be sold in advance for a season at the times listed in the publications of the Berlin City
                 Hall Foundation. The Berlin City Hall Foundation reserves the right to limit the number of tickets per
                 buyer in individual cases. Severely disabled people can be given preferential treatment. Ticket orders
@@ -48,7 +48,7 @@ const ConditionsPage = () => {
                 offices by the Berlin City Hall Foundation.
             </div>
             <div>
-                5. Ticket refunds
+                <h4>5. Ticket refunds</h4>
                 Sold tickets will not be refunded, nor will compensation be paid for expired tickets, except in the
                 cases listed below. The Berlin City Hall Foundation reserves the right to alter casts, and cast
                 alterations do not entitle ticket holders to have their tickets refunded. If the work performed is
@@ -64,17 +64,19 @@ const ConditionsPage = () => {
                 damages claimed by patrons will be paid.
             </div>
             <div>
-                6. Lost tickets
+                <h4> 6. Lost tickets</h4>
                 If a patron loses his or her ticket, he or she will be provided with a replacement ticket at the ticket
                 office, as long as he or she gives a believable account of which ticket he or she has purchased. The
                 holder of an original ticket takes precedence over the holder of a replacement ticket.
             </div>
             <div>
+                <h4> 7. Entry</h4>
                 The audience cloakrooms and foyers are ordinarily opened one hour before the beginning of a performance.
                 No one is entitled to enter after the performance has begun. If a patron is denied entry on account of
                 his or her lateness, he or she has no right to have his or her ticket refunded.
             </div>
             <div>
+                <h4> 8. Cloakroom</h4>
                 Objects and clothing carried by the guest, in particular backpacks, suitcases or larger bags have to be
                 deposited at the cloakroom during the performance. Animals will categorically not be supervised. The
                 Berlin City Hall Foundation reserves the right to charge a cloakroom fee. Coats left for supervision are
@@ -87,12 +89,13 @@ const ConditionsPage = () => {
                 personnel. If a tag is lost, the patron is liable for replacement costs.
             </div>
             <div>
+                <h4> 9. Lost property </h4>
                 Lost property of any description found in the performance venues of the Berlin City Hall Foundation must
                 be handed in to the house or cloakroom personnel. Lost property will be dealt with in accordance with
                 the provisions of §§ 978ff. of the German Civil Code.
             </div>
             <div>
-                10. Householders’ rights
+                <h4> 10. Householders’ rights</h4>
                 Householders’ rights are attributed to the Directors, who entrust their employees, in particular, their
                 evening personnel, to exercise these rights. The instructions of the personnel at the performance venues
                 must be followed. Patrons can be refused entry to the performance venues if there is reason to believe
@@ -112,6 +115,7 @@ const ConditionsPage = () => {
                 areas.
             </div>
             <div>
+                <h4> 11. Image and sound recording</h4>
                 Patrons are forbidden to make image and/or sound recordings of any kind. Patrons can be sent out of the
                 performance venues for violations of this rule. If image and sound recordings during a performance are
                 carried out by persons authorised by the Berlin City Hall Foundation, the patrons agree, by their
@@ -119,12 +123,14 @@ const ConditionsPage = () => {
                 remuneration if these are broadcast or published.
             </div>
             <div>
+                <h4> 12. Liability</h4>
                 The Berlin City Hall Foundation, its representatives and its employees accept no liability for damages
                 of any kind suffered by patrons of its performance venues, except for those caused by malice or gross
                 negligence. Liability for injury to life, limb and health remains unaffected, if the damages in question
                 could ordinarily have been expected.
             </div>
             <div>
+                <h4> 13. Data privacy</h4>
                 The personal order data can be collected, processed and used for the purpose of customer care by the
                 Berlin City Hall Foundation (Deutsche Oper Berlin, Staatsoper Unter den Linden, Komische Oper Berlin und
                 Staatsballett Berlin) if the visitor has given his consent during the purchase process. Customer care is
@@ -134,10 +140,12 @@ const ConditionsPage = () => {
                 ensured and that the data will not be transmitted to third parties.
             </div>
             <div>
+                <h4> 14. Term of validity</h4>
                 These General Terms and Conditions will come into force on 1st September 2017. At the same time, the
                 General Terms and Conditions of the Berlin City Hall Foundation valid up to that point will expire.
             </div>
             <div>
+                <h4>15. Conclude clause</h4>
                 Should any stipulation of these General Terms and Conditions be invalid, the legal validity of the
                 remaining Terms and Conditions will remain unaffected. The Berlin City Hall Foundation is neither
                 prepared nor obliged to take part in dispute settlement procedures by any consumer dispute settlement
