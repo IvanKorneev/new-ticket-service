@@ -45,9 +45,9 @@ const HeaderMenuBar = ({closeBarAction,showBar}) => {
                 <ul>
                     <li><Link to="/login">Login</Link></li>
                     <li><Link to="/events">Events</Link></li>
-                    <li><a href="#">Shopping Cart</a></li>
-                    <li><a href="#">Halls Scheme</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li>Shopping Cart</li>
+                    <li><Link to="/halls">Halls Scheme</Link></li>
+                    <li>About Us</li>
                 </ul>
             </div>
         </div>

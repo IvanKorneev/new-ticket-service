@@ -31,9 +31,7 @@ const mapStateToProps = (state) => {
         loginData: state.loginPage.loginData
     }
 };
-// const mapDispatchToProps = {
-//     logOut: (val) => resetUserData(val)
-// };
+
 
 const mapDispatchToProps = (dispatch) => ({
     logOut: (val) => dispatch(resetUserData(val)),

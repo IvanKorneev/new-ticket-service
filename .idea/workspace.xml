@@ -3,9 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="a0704845-c2ac-4a6c-9668-e59f88e6b723" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/conditions-page/conditions-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/conditions-page/conditions-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/conditions-page/conditions-page.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/conditions-page/conditions-page.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/app/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/error/error.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/error/error.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/events-list/event-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/events-list/event-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/header-info/header-info.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/header-info/header-info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/header-menu-bar/header-menu-bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/header-menu-bar/header-menu-bar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/login-done/login-done.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/login-done/login-done.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/login-done/login-done.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/login-done/login-done.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/registration-page/registration-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/registration-page/registration-page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/registration-page/registration-page.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/registration-page/registration-page.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container-component/events-list-container/events-list-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/events-list-container/events-list-container.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Sass File" />
         <option value="JavaScript File" />
+        <option value="Sass File" />
       </list>
     </option>
   </component>
@@ -36,7 +43,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Хлам/ticket_service" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -176,7 +183,9 @@
       <workItem from="1610730979454" duration="2100000" />
       <workItem from="1610733196445" duration="673000" />
       <workItem from="1610872428877" duration="1922000" />
-      <workItem from="1610874572919" duration="3080000" />
+      <workItem from="1610874572919" duration="13385000" />
+      <workItem from="1610957996541" duration="5056000" />
+      <workItem from="1610972018474" duration="4638000" />
     </task>
     <task id="LOCAL-00001" summary="&#10;creating a project structure">
       <created>1599552635453</created>
@@ -367,7 +376,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610875003280</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="add style component Conditions-page">
+      <created>1610877710380</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1610877710380</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,7 +402,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add component aside" />
     <MESSAGE value="add Spinner or Error indicator" />
     <MESSAGE value="add Spinner and Error indicator" />
     <MESSAGE value="add refactoring" />
@@ -411,6 +426,7 @@
     <MESSAGE value="&#10;bug fix error message and loading indicator" />
     <MESSAGE value="changed class components to hooks" />
     <MESSAGE value="small bug fixes registration-page-container.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="small bug fixes registration-page-container.js" />
+    <MESSAGE value="add style component Conditions-page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add style component Conditions-page" />
   </component>
 </project>

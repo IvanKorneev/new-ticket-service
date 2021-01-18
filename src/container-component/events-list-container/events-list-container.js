@@ -20,7 +20,7 @@ const EventsListContainer = ({events, loading, error, pageSize,setEventsPages, t
     useEffect(() => {
         loadingIndicator();
         fetchEvents(currentPage, pageSize)
-    },[]);
+    },[currentPage,fetchEvents,loadingIndicator,pageSize]);
 
     const onPageChanged = (pageNumber) => {
         setEventsPages(pageNumber);

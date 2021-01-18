@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React from "react";
 import logo from '../images/logo_col.svg';
 import './header-info.sass';
 import {connect} from 'react-redux';

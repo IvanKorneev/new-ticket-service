@@ -14,7 +14,7 @@ const RegistrationPage = (props) => {
             <div className='registration-page'>
                 <span>Contact information</span>
                 <form onSubmit={handleSubmit} className='form-registration'>
-                    <div>
+                    <div className='input-form'>
                         {fieldsData.map(({placeholder, name, validate, type}, index) => {
                             return <Field key={index} placeholder={placeholder} component={FormControlsInput}
                                           name={name}
