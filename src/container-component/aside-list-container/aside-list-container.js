@@ -11,7 +11,7 @@ const AsideListContainer = ({asideEvents, error, fetchAside}) => {
 
     useEffect(() => {
         fetchAside()
-    },);
+    },[fetchAside]);
 
     if (error) {
         return <Error/>
