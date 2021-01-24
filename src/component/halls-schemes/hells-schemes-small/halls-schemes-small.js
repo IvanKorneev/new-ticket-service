@@ -1,6 +1,6 @@
 import React from "react";
 import './halls-schemes-small.sass'
-import GenerateSeats from "../generate-seats";
+import GenerateSeats from "../../generate-seats";
 
 const HallsSchemesSmall = () => {
     return (

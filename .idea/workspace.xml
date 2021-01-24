@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0704845-c2ac-4a6c-9668-e59f88e6b723" name="Default Changelist" comment="styles to the HallsSchemes component">
-      <change afterPath="$PROJECT_DIR$/src/component/halls-schemes/halls-schemes-small.js" afterDir="false" />
+    <list default="true" id="a0704845-c2ac-4a6c-9668-e59f88e6b723" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/halls-schemes/halls-schemes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/halls-schemes/halls-schemes.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/halls-schemes/halls-schemes-small.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/halls-schemes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/halls-schemes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/app/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/halls-schemes/halls-schemes-small.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/halls-schemes/hells-schemes-small/halls-schemes-small.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/halls-schemes/halls-schemes-small.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/halls-schemes/hells-schemes-small/halls-schemes-small.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/halls-schemes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/halls-schemes/hells-schemes-small/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/container-component/halls-schemes-container/halls-schemes-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/halls-schemes-container/halls-schemes-container.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,9 +17,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="Sass File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -40,8 +39,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="Sass" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Хлам/ticket_service" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -55,6 +54,7 @@
       <recent name="C:\Users\User\WebstormProjects\new-ticket-service\src\component" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\new-ticket-service\src\component\halls-schemes\hells-schemes-small" />
       <recent name="C:\Users\User\WebstormProjects\new-ticket-service\src\store" />
       <recent name="C:\Users\User\WebstormProjects\new-ticket-service\src\container-component" />
       <recent name="C:\Users\User\WebstormProjects\new-ticket-service\src\component\app" />
@@ -189,7 +189,7 @@
       <workItem from="1611303497252" duration="87000" />
       <workItem from="1611303773106" duration="4344000" />
       <workItem from="1611308326624" duration="2917000" />
-      <workItem from="1611478995520" duration="1395000" />
+      <workItem from="1611478995520" duration="9831000" />
     </task>
     <task id="LOCAL-00001" summary="&#10;creating a project structure">
       <created>1599552635453</created>
@@ -401,7 +401,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611150424628</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="refactor to the HallsSchemes component add Media queries">
+      <created>1611480442682</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1611480442682</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -420,7 +427,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add refactoring" />
     <MESSAGE value="add new Component header-menu-bar" />
     <MESSAGE value="add new Component login-page and react-router" />
     <MESSAGE value="pagination" />
@@ -445,6 +451,7 @@
     <MESSAGE value="add style component Conditions-page" />
     <MESSAGE value="add component halls-scheme" />
     <MESSAGE value="added styles to the HallsSchemes component" />
-    <option name="LAST_COMMIT_MESSAGE" value="added styles to the HallsSchemes component" />
+    <MESSAGE value="refactor to the HallsSchemes component add Media queries" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor to the HallsSchemes component add Media queries" />
   </component>
 </project>
