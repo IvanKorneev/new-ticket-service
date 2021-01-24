@@ -1,9 +1,9 @@
 import React from "react";
-import HallsSchemes from "../../component/halls-schemes";
+import HallsSchemesSmall from "../../component/halls-schemes";
 
 const HallsSchemesContainer = () => {
     return (
-        <HallsSchemes/>
+        <HallsSchemesSmall/>
     )
 }
 export default HallsSchemesContainer;

@@ -1,6 +1,15 @@
-.hall
-  margin: 0 auto
+.hall-container
+  @media (min-width: 768px)
+    display: flex
+    flex-direction: column
+    @media (min-width: 1024px)
+      margin: 0 auto
 
+  .hall
+    display: flex
+    overflow-x: auto
+    @media (min-width: 768px)
+      margin: 0 auto
 
   .hall-seat
     overflow-x: auto
@@ -49,10 +58,6 @@
     display: flex
     flex-direction: column
 
-
-  h1
-    font-size: 40px
-
   h2
     width: 80%
     text-align: center
@@ -68,3 +73,7 @@
     color: #3575b8
     font-weight: bold
     font-size: 20px
+
+  h1
+    font-size: 45px
+    margin-top: 20px

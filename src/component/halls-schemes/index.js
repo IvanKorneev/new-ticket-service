@@ -1,2 +1,2 @@
-import HallsSchemes from "./halls-schemes";
-export default HallsSchemes;
+import HallsSchemesSmall from "./halls-schemes-small";
+export default HallsSchemesSmall;
