@@ -10,8 +10,7 @@ import LoginPageContainer from "../../container-component/login-page-container";
 import RegistrationPageContainer
     from "../../container-component/registration-page-container";
 import ConditionsPage from "../conditions-page";
-import HallsSchemesSmall from "../halls-schemes/hells-schemes-small";
-import HallsSchemesLarge from "../halls-schemes/halls-schemes-large";
+import HallsSchemesContainer from "../../container-component/halls-schemes-container";
 
 
 const App = () => {
@@ -26,7 +25,7 @@ const App = () => {
                 <Route path="/login" component={LoginPageContainer}/>
                 <Route path="/registration" component={RegistrationPageContainer}/>
                 <Route path="/event/:eventId" component={EventPageContainer}/>
-                <Route path="/halls" component={HallsSchemesLarge}/>
+                <Route path="/halls" component={HallsSchemesContainer}/>
                 <Redirect to="/events"/>
                 </Switch>
             </section>

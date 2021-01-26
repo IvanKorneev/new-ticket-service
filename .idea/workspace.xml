@@ -4,10 +4,14 @@
     <list default="true" id="a0704845-c2ac-4a6c-9668-e59f88e6b723" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/app/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/halls-schemes/halls-schemes-small.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/halls-schemes/hells-schemes-small/halls-schemes-small.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/halls-schemes/halls-schemes-small.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/halls-schemes/hells-schemes-small/halls-schemes-small.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/halls-schemes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/halls-schemes/hells-schemes-small/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/forms-controls/forms-controls-input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/forms-controls/form-controls-input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/forms-controls/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/forms-controls/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/halls-schemes/halls-schemes-large/halls-schemes-large.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/halls-schemes/halls-schemes-large/halls-schemes-large.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/halls-schemes/halls-schemes-large/halls-schemes-large.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/halls-schemes/halls-schemes-large/halls-schemes-large.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/halls-schemes/hells-schemes-small/halls-schemes-small.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/halls-schemes/hells-schemes-small/halls-schemes-small.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/halls-schemes/hells-schemes-small/halls-schemes-small.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/halls-schemes/hells-schemes-small/halls-schemes-small.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/container-component/halls-schemes-container/halls-schemes-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/halls-schemes-container/halls-schemes-container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container-component/halls-schemes-container/halls-schemes-container.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/halls-schemes-container/halls-schemes-container.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +193,10 @@
       <workItem from="1611303497252" duration="87000" />
       <workItem from="1611303773106" duration="4344000" />
       <workItem from="1611308326624" duration="2917000" />
-      <workItem from="1611478995520" duration="9831000" />
+      <workItem from="1611478995520" duration="9931000" />
+      <workItem from="1611511468156" duration="1297000" />
+      <workItem from="1611652844133" duration="2284000" />
+      <workItem from="1611655532970" duration="13235000" />
     </task>
     <task id="LOCAL-00001" summary="&#10;creating a project structure">
       <created>1599552635453</created>
@@ -408,7 +415,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611480442682</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="add component halls-schemes-large end add style">
+      <created>1611499809781</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1611499809781</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -427,7 +441,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add new Component header-menu-bar" />
     <MESSAGE value="add new Component login-page and react-router" />
     <MESSAGE value="pagination" />
     <MESSAGE value=" refactoring pagination" />
@@ -452,6 +465,7 @@
     <MESSAGE value="add component halls-scheme" />
     <MESSAGE value="added styles to the HallsSchemes component" />
     <MESSAGE value="refactor to the HallsSchemes component add Media queries" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor to the HallsSchemes component add Media queries" />
+    <MESSAGE value="add component halls-schemes-large end add style" />
+    <option name="LAST_COMMIT_MESSAGE" value="add component halls-schemes-large end add style" />
   </component>
 </project>
