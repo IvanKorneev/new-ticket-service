@@ -11,6 +11,7 @@ const EventPageContainer = ({event, match, fetchEventInfo}) => {
     useEffect(() => {
         fetchEventInfo(eventId)
     },[eventId,fetchEventInfo]);
+    // console.log(event)
     return (
         <section className='event-item-page-container'>
             <EventItemPage event={event}/>

@@ -8,9 +8,10 @@ const GenerateSeats = (seatNumbers) => {
             {
                 seatNumbers.map((seatNumber) => {
                     return <Seat seatNumber={seatNumber} key={seatNumber}/>
+
                 })
             }
         </div>
     )
 }
-export default GenerateSeats
+export default GenerateSeats;
