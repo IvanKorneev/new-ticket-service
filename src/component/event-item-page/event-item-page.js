@@ -1,6 +1,7 @@
 import React from "react";
 import './event-item-page.sass'
 import {getData} from "../helpers";
+import {Link} from "react-router-dom";
 
 
 const EventItemPage = ({event}) => {
@@ -28,7 +29,8 @@ const EventItemPage = ({event}) => {
                         <p> Price range : <span className='event-details'>{minPrice} - {maxPrice}</span></p>
                     </div>
                     <div className='event-buy-tickets'>
-                        Buy Tickets
+                        <Link to="/tickets"> Buy Tickets</Link>
+
                     </div>
                 </div>
             </div>
