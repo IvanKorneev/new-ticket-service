@@ -59,3 +59,12 @@ export const getEvents = async (authorization = '', currentPage = 1, pageSize = 
         });
     return getEventsResponse;
 };
+
+
+export const getHallStructureByEventId = async (eventId, isShort = false, authorization = '') => {
+    let response = await axios.get(`${_apiBase}/hall/${eventId}/${isShort}`)
+        .catch(error => {
+            throw new Error(`${error}Getting events isn\`t ok.`)
+        });
+    return response
+}

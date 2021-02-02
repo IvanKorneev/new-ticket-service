@@ -1,4 +1,4 @@
-import {getEventInfo, getEvents, getUpcomingEvents, login} from "../../api/api";
+import {getEventInfo, getEvents, getHallStructureByEventId, getUpcomingEvents, login} from "../../api/api";
 
 const eventLoaded = (newEvent) => {
     return {
@@ -71,6 +71,14 @@ const resetUserData = () => {
         payload: {}
     }
 };
+
+const priceLoaded = (newPrice) => {
+    return {
+        type: 'PRICE_RANGES',
+        payload: newPrice
+    }
+}
+
 export const fetchEvents = (currentPage, pageSize) => {
     return (dispatch) => {
         getEvents('', currentPage, pageSize)
@@ -102,6 +110,11 @@ export const fetchLogin = (email, password, ...params) => {
     }
 };
 
+export const fetchGetHallStructureByEventId = (eventId) => {
+    return (dispatch) => {
+        getHallStructureByEventId(eventId).then((response) => dispatch(priceLoaded(response.data.priceRanges)))
+    }
+}
 
 export {
     showBar,
