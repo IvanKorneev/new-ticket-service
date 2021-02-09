@@ -22,7 +22,7 @@ const TicketPageContainer = ({event, fetchGetHallStructureByEventId, priceRanges
             <TicketsPage eventInfo={event}/>
             <div className='tickets-page-wrapper'>
                 <div className='schemes-container'>
-                    <TicketsHallSchemes eventHall={hall}/>
+                    <TicketsHallSchemes eventHall={hall} priceRanges={priceRanges}/>
                 </div>
                 <PriceRange priceRanges={priceRanges}/>
             </div>

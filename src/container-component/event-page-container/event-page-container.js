@@ -28,4 +28,4 @@ const mapDispatchToProps = {
     fetchEventInfo
 };
 
-export default (connect(mapStateToProps, mapDispatchToProps)(EventPageContainer));
+export default connect(mapStateToProps, mapDispatchToProps)(EventPageContainer);

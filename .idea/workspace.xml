@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0704845-c2ac-4a6c-9668-e59f88e6b723" name="Default Changelist" comment="add async function getHall....">
-      <change afterPath="$PROJECT_DIR$/src/component/tikets-hall-chemes/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/tikets-hall-chemes/tickets-hall-schemes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/tikets-hall-chemes/tickets-hall-schemes.js.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/selectors/price-range.js" afterDir="false" />
+    <list default="true" id="a0704845-c2ac-4a6c-9668-e59f88e6b723" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/app/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/event-item-page/event-item-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/event-item-page/event-item-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/generate-seats/generate-seats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/generate-seats/generate-seats.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/generate-seats/generate-seats.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/generate-seats/generate-seats.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/halls-schemes/halls-schemes-large/halls-schemes-large.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/halls-schemes/halls-schemes-large/halls-schemes-large.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/halls-schemes/hells-schemes-small/halls-schemes-small.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/halls-schemes/hells-schemes-small/halls-schemes-small.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/helpers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/helpers/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/price-range/price-range.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/price-range/price-range.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/price-range/price-range.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/price-range/price-range.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/seat/seat.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/seat/seat.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/tickets-page/tickets-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/tickets-page/tickets-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/tickets-page/tickets-page.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/tickets-page/tickets-page.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/tikets-hall-chemes/tickets-hall-schemes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/tikets-hall-chemes/tickets-hall-schemes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container-component/event-page-container/event-page-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/event-page-container/event-page-container.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/container-component/halls-schemes-container/halls-schemes-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/halls-schemes-container/halls-schemes-container.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container-component/halls-schemes-container/halls-schemes-container.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/halls-schemes-container/halls-schemes-container.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/container-component/tickets-page-container/tickets-page-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/tickets-page-container/tickets-page-container.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container-component/tickets-page-container/tickets-page-container.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/tickets-page-container/tickets-page-container.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +45,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Хлам/ticket_service" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />

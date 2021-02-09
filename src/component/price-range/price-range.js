@@ -2,9 +2,9 @@ import React from "react";
 import './price-range.sass';
 
 const PriceRange = ({priceRanges}) => {
-    console.log(priceRanges)
+
     const priceRangesRender = (arr) => {
-        return arr.map(({color,price}, index) => {
+        return arr.map(({color, price}, index) => {
             let style = {background: color};
             return (
                 <div key={index} style={style} className='price-ranges'>

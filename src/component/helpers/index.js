@@ -22,6 +22,9 @@ const getZero = (num) => {
         return num;
     }
 };
+
+
+
 const fieldsData = [
     {placeholder: "Name*", name: "name", validate: [requiredField]},
     {placeholder: "Surname*", name: "surname", validate: [requiredField]},

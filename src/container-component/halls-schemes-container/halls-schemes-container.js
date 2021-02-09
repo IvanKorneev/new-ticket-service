@@ -3,17 +3,16 @@ import './halls-schemes-container.sass'
 import HallsSchemesSmall from "../../component/halls-schemes/hells-schemes-small";
 import HallsSchemesLarge from "../../component/halls-schemes/halls-schemes-large";
 
-const HallsSchemesContainer = () => {
+const HallsSchemesContainer = (priceRanges) => {
     const [hall1, setHall] = useState(true)
 
     const renderHall = () => {
         if (hall1) {
-            return <HallsSchemesSmall/>
+            return <HallsSchemesSmall priceRanges={priceRanges}/>
         } else {
-            return <HallsSchemesLarge/>
+            return <HallsSchemesLarge priceRanges={priceRanges}/>
         }
     }
-
     return (
         <div className='schemes-wrapper'>
             <h1>HALLS SCHEMES</h1>
@@ -31,4 +30,6 @@ const HallsSchemesContainer = () => {
         </div>
     )
 }
+
+
 export default HallsSchemesContainer;
