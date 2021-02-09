@@ -8,9 +8,7 @@ const HallsSchemesContainer = () => {
 
     const renderHall = () => {
         if (hall1) {
-            return (
-                <HallsSchemesSmall/>
-            )
+            return <HallsSchemesSmall/>
         } else {
             return <HallsSchemesLarge/>
         }

@@ -1,30 +1,38 @@
-import React,{useEffect} from "react";
+import React, {useEffect} from "react";
 import './tickets-page-container.sass';
 import {connect} from "react-redux";
 import {getEvent} from "../../store/selectors/event-page-selectors";
 import TicketsPage from "../../component/tickets-page";
 import PriceRange from "../../component/price-range";
 import {fetchGetHallStructureByEventId} from "../../store/actions";
+import {getPriceRange} from "../../store/selectors/price-range";
+import TicketsHallSchemes from "../../component/tikets-hall-chemes";
 
 
-const TicketPageContainer = ({event,fetchGetHallStructureByEventId,priceRanges}) => {
+const TicketPageContainer = ({event, fetchGetHallStructureByEventId, priceRanges}) => {
+    const {eventId, hall} = event
     useEffect(() => {
-        fetchGetHallStructureByEventId(event.eventId)
-    }, [fetchGetHallStructureByEventId,event.eventId])
+        fetchGetHallStructureByEventId(eventId)
+    }, [fetchGetHallStructureByEventId, eventId])
 
 
     return (
-        <section>
+        <section className='tickets-page-container'>
             <div><h1>Tickets</h1></div>
             <TicketsPage eventInfo={event}/>
-            <PriceRange priceRanges={priceRanges}/>
+            <div className='tickets-page-wrapper'>
+                <div className='schemes-container'>
+                    <TicketsHallSchemes eventHall={hall}/>
+                </div>
+                <PriceRange priceRanges={priceRanges}/>
+            </div>
         </section>
     )
 }
 const mapStateToProps = (state) => {
     return {
         event: getEvent(state),
-        priceRanges:state.ticketsPrice.priceRanges
+        priceRanges: getPriceRange(state)
     }
 };
 const mapDispatchToProps = {

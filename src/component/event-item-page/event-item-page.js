@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 
 
 const EventItemPage = ({event}) => {
-    const {eventName, artist, eventStart, description, ticketsAvailable, minPrice, maxPrice, images} = event;
+    const {eventName, artist, eventStart, description, ticketsAvailable, minPrice, maxPrice, images,eventId} = event;
 
     return (
         <div className='event-item-page'>
@@ -29,7 +29,7 @@ const EventItemPage = ({event}) => {
                         <p> Price range : <span className='event-details'>{minPrice} - {maxPrice}</span></p>
                     </div>
                     <div className='event-buy-tickets'>
-                        <Link to="/tickets"> Buy Tickets</Link>
+                        <Link to={'/hall/' + eventId}> Buy Tickets</Link>
 
                     </div>
                 </div>

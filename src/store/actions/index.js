@@ -96,6 +96,7 @@ export const fetchAside = () => {
 export const fetchEventInfo = (eventId) => {
     return (dispatch) => {
         getEventInfo(eventId).then((response) => dispatch(eventPageLoaded(response.data)))
+            .catch((error) => dispatch(eventsError(error)))
     }
 };
 
@@ -110,9 +111,10 @@ export const fetchLogin = (email, password, ...params) => {
     }
 };
 
-export const fetchGetHallStructureByEventId = (eventId) => {
+export const fetchGetHallStructureByEventId = (eventId, isShort) => {
     return (dispatch) => {
-        getHallStructureByEventId(eventId).then((response) => dispatch(priceLoaded(response.data.priceRanges)))
+        getHallStructureByEventId(eventId, isShort).then((response) => dispatch(priceLoaded(response.data.priceRanges)))
+            .catch((error) => dispatch(eventsError(error)))
     }
 }
 
