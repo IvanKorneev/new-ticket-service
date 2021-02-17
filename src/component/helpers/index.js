@@ -23,6 +23,19 @@ const getZero = (num) => {
     }
 };
 
+const rowColor = (arr, row) => {
+    let obj;
+    for (let i = 0; i < arr.length; i++) {
+        let Row = arr[i].rows.find((item) => {
+            return +item === row;
+        });
+        if (Row) {
+            obj = arr[i];
+            return obj.color;
+        }
+    }
+};
+
 
 
 const fieldsData = [
@@ -45,5 +58,6 @@ const fieldsData = [
 export {
     getData,
     getTime,
+    rowColor,
     fieldsData
 };

@@ -8,4 +8,4 @@ const Seat = ({seatNumber}) => {
         </div>
     )
 }
-export default Seat;
+export  default Seat

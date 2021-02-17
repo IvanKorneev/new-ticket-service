@@ -78,6 +78,11 @@ const priceLoaded = (newPrice) => {
         payload: newPrice
     }
 }
+const priceIndicator = () => {
+    return {
+        type: 'PRICE_INDICATOR'
+    }
+}
 
 export const fetchEvents = (currentPage, pageSize) => {
     return (dispatch) => {
@@ -126,4 +131,5 @@ export {
     resetUserData,
     resetLoginError,
     loadingIndicatorLogin,
+    priceIndicator
 };

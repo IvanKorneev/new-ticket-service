@@ -2,18 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0704845-c2ac-4a6c-9668-e59f88e6b723" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.firebaserc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/firebase-hosting-pull-request.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/tickets-cart/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/tickets-cart/tickets-cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/tickets-cart/tickets-cart.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/container-component/tickets-cart-container/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/container-component/tickets-cart-container/tickets-cart-container.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/container-component/tickets-cart-container/tickets-cart-container.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/generate-seats/generate-seats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/generate-seats/generate-seats.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/generate-seats/generate-seats.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/generate-seats/generate-seats.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/halls-schemes/halls-schemes-large/halls-schemes-large.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/halls-schemes/halls-schemes-large/halls-schemes-large.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/halls-schemes/hells-schemes-small/halls-schemes-small.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/halls-schemes/hells-schemes-small/halls-schemes-small.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/header-info/header-info.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/header-info/header-info.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/helpers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/helpers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/price-range/price-range.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/price-range/price-range.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/price-range/price-range.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/price-range/price-range.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/seat/seat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/seat/seat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/seat/seat.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/seat/seat.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/tikets-hall-chemes/tickets-hall-schemes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/tikets-hall-chemes/tickets-hall-schemes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container-component/event-page-container/event-page-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/event-page-container/event-page-container.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container-component/halls-schemes-container/halls-schemes-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/halls-schemes-container/halls-schemes-container.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/container-component/tickets-page-container/tickets-page-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/tickets-page-container/tickets-page-container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/tickets-price.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/tickets-price.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +34,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="Sass File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -45,7 +55,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Хлам/ticket_service" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled1" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -70,6 +80,16 @@
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="npm start" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -80,6 +100,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -209,6 +234,14 @@
       <workItem from="1612450233059" duration="4893000" />
       <workItem from="1612772479968" duration="6603000" />
       <workItem from="1612853572788" duration="268000" />
+      <workItem from="1612949021010" duration="3693000" />
+      <workItem from="1612963652175" duration="394000" />
+      <workItem from="1612964957682" duration="2079000" />
+      <workItem from="1613113534406" duration="3742000" />
+      <workItem from="1613287945681" duration="2763000" />
+      <workItem from="1613378359907" duration="1537000" />
+      <workItem from="1613458406261" duration="758000" />
+      <workItem from="1613551317358" duration="9382000" />
     </task>
     <task id="LOCAL-00001" summary="&#10;creating a project structure">
       <created>1599552635453</created>
@@ -462,7 +495,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612275769901</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="add price-range filters">
+      <created>1612883212702</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1612883212702</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -481,7 +521,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" pagination refactor" />
     <MESSAGE value="login-page changes" />
     <MESSAGE value="add axios" />
     <MESSAGE value="add axios step 1" />
@@ -506,6 +545,7 @@
     <MESSAGE value="add component tickets-page tickets-page-container" />
     <MESSAGE value="add component add-to-cart , price-range" />
     <MESSAGE value="add async function getHall...." />
-    <option name="LAST_COMMIT_MESSAGE" value="add async function getHall...." />
+    <MESSAGE value="add price-range filters" />
+    <option name="LAST_COMMIT_MESSAGE" value="add price-range filters" />
   </component>
 </project>
