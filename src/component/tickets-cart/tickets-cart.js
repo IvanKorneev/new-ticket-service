@@ -1,9 +1,13 @@
 import React from "react";
 import './tickets-cart.sass'
 
-const TicketsCart = ()=>{
-    return(
-        <div></div>
+const TicketsCart = ({totalTickets,totalPrice}) => {
+    return (
+        <div>
+            <p>{totalTickets}</p>
+            <p>{totalPrice}</p>
+
+        </div>
     )
 }
 export default TicketsCart;

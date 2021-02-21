@@ -10,7 +10,7 @@ import LoginPageContainer from "../../container-component/login-page-container";
 import RegistrationPageContainer
     from "../../container-component/registration-page-container";
 import ConditionsPage from "../conditions-page";
-import HallsSchemesContainer from "../../container-component/halls-schemes-container";
+import HallsSchemesContainer from "../halls-schemes-bar";
 import TicketPageContainer from "../../container-component/tickets-page-container/tickets-page-container";
 
 

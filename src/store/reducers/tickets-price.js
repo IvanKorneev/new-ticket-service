@@ -1,7 +1,9 @@
 const initialState = {
     priceRanges: [],
     lockedSeats: [],
-    loading: false
+    loading: false,
+    totalPrice : 200,
+    totalTickets:3
 };
 export default (state = initialState, action) => {
     switch (action.type) {

@@ -9,11 +9,25 @@ import {getPriceRange} from "../../store/selectors/price-range";
 import TicketsHallSchemes from "../../component/tikets-hall-chemes";
 import {getLoading} from "../../store/selectors/login-page-selectors";
 import Spinner from "../../component/spinner";
+import TicketsCart from "../../component/tickets-cart";
+import {getTotalPrice} from "../../store/selectors/total-price";
+import {getTotalTickets} from "../../store/selectors/total-tickets";
 
 
-const TicketPageContainer = ({event, fetchGetHallStructureByEventId, priceRanges,priceIndicator,loading}) => {
+const TicketPageContainer = ({
+                                 event,
+                                 fetchGetHallStructureByEventId,
+                                 priceRanges,
+                                 priceIndicator,
+                                 loading,
+                                 totalPrice,
+                                 totalTickets
+                             }) => {
+
+
     const {eventId, hall} = event;
     priceIndicator()
+
     useEffect(() => {
         fetchGetHallStructureByEventId(eventId)
     }, [fetchGetHallStructureByEventId, eventId])
@@ -32,6 +46,9 @@ const TicketPageContainer = ({event, fetchGetHallStructureByEventId, priceRanges
                 </div>
                 <PriceRange priceRanges={priceRanges}/>
             </div>
+            <div className='tickets-page-wrapper'>
+                <TicketsCart totalPrice={totalPrice} totalTickets={totalTickets}/>
+            </div>
         </section>
     )
 }
@@ -39,7 +56,9 @@ const mapStateToProps = (state) => {
     return {
         event: getEvent(state),
         priceRanges: getPriceRange(state),
-        loading: getLoading(state)
+        loading: getLoading(state),
+        totalPrice: getTotalPrice(state),
+        totalTickets: getTotalTickets(state)
     }
 };
 const mapDispatchToProps = {

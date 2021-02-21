@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import './halls-schemes-container.sass'
-import HallsSchemesSmall from "../../component/halls-schemes/hells-schemes-small";
-import HallsSchemesLarge from "../../component/halls-schemes/halls-schemes-large";
+import HallsSchemesSmall from "../halls-schemes/hells-schemes-small";
+import HallsSchemesLarge from "../halls-schemes/halls-schemes-large";
 
 const HallsSchemesContainer = (priceRanges) => {
     const [hall1, setHall] = useState(true)

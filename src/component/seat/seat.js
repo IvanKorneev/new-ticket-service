@@ -1,11 +1,14 @@
 import React from "react";
 import './seat.sass';
 
-const Seat = ({seatNumber}) => {
+const Seat = ({seatNumber,row}) => {
     return (
-        <div className='seat'>
+        <div className='seat' onClick={()=>{
+            console.log(seatNumber)
+            console.log(row)
+        }}>
             {seatNumber}
         </div>
     )
 }
-export  default Seat
+export default Seat

@@ -2,28 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0704845-c2ac-4a6c-9668-e59f88e6b723" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.firebaserc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/workflows/firebase-hosting-pull-request.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/tickets-cart/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/tickets-cart/tickets-cart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/tickets-cart/tickets-cart.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/container-component/tickets-cart-container/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/container-component/tickets-cart-container/tickets-cart-container.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/container-component/tickets-cart-container/tickets-cart-container.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/selectors/total-price.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/selectors/total-tickets.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/app/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/generate-seats/generate-seats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/generate-seats/generate-seats.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/halls-schemes/halls-schemes-large/halls-schemes-large.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/halls-schemes/halls-schemes-large/halls-schemes-large.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/halls-schemes/hells-schemes-small/halls-schemes-small.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/halls-schemes/hells-schemes-small/halls-schemes-small.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/header-info/header-info.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/header-info/header-info.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/helpers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/helpers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/price-range/price-range.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/price-range/price-range.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/seat/seat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/seat/seat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/seat/seat.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/seat/seat.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/tickets-cart/tickets-cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/tickets-cart/tickets-cart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/tikets-hall-chemes/tickets-hall-schemes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/tikets-hall-chemes/tickets-hall-schemes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container-component/halls-schemes-container/halls-schemes-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/halls-schemes-bar/halls-schemes-container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container-component/halls-schemes-container/halls-schemes-container.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/halls-schemes-bar/halls-schemes-container.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container-component/halls-schemes-container/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/halls-schemes-bar/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/container-component/tickets-page-container/tickets-page-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/tickets-page-container/tickets-page-container.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container-component/tickets-page-container/tickets-page-container.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/tickets-page-container/tickets-page-container.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/reducers/tickets-price.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/tickets-price.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +52,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Хлам/shop" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -70,6 +67,7 @@
       <recent name="C:\Users\User\WebstormProjects\new-ticket-service\src\component" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\new-ticket-service\src\component" />
       <recent name="C:\Users\User\WebstormProjects\new-ticket-service\src\component\halls-schemes\hells-schemes-small" />
       <recent name="C:\Users\User\WebstormProjects\new-ticket-service\src\store" />
       <recent name="C:\Users\User\WebstormProjects\new-ticket-service\src\container-component" />
@@ -241,7 +239,8 @@
       <workItem from="1613287945681" duration="2763000" />
       <workItem from="1613378359907" duration="1537000" />
       <workItem from="1613458406261" duration="758000" />
-      <workItem from="1613551317358" duration="9382000" />
+      <workItem from="1613551317358" duration="14301000" />
+      <workItem from="1613897415355" duration="14237000" />
     </task>
     <task id="LOCAL-00001" summary="&#10;creating a project structure">
       <created>1599552635453</created>
@@ -502,7 +501,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612883212702</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="add Redux-tools">
+      <created>1613572464007</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1613572464008</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -521,7 +527,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="login-page changes" />
     <MESSAGE value="add axios" />
     <MESSAGE value="add axios step 1" />
     <MESSAGE value="add combineReducers" />
@@ -546,6 +551,7 @@
     <MESSAGE value="add component add-to-cart , price-range" />
     <MESSAGE value="add async function getHall...." />
     <MESSAGE value="add price-range filters" />
-    <option name="LAST_COMMIT_MESSAGE" value="add price-range filters" />
+    <MESSAGE value="add Redux-tools" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Redux-tools" />
   </component>
 </project>

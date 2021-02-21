@@ -2,7 +2,7 @@ import React from "react";
 import './halls-schemes-small.sass'
 import GenerateSeats from "../../generate-seats";
 
-const HallsSchemesSmall = (priceRanges) => {
+const HallsSchemesSmall = (priceRanges, onAddedToCart) => {
     return (
         <div className='hall-container'>
             <section className='hall'>
