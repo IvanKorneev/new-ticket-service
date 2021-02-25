@@ -4,9 +4,7 @@ import './pagination.sass'
 const Pagination = ({totalEventsCount, pageSize, currentPage, onPageChanged, portionSize = 5}) => {
 
     let pagesCount = Math.ceil(totalEventsCount / pageSize);
-
     let pages = [];
-
     for (let i = 1; i <= pagesCount; i++) {
         pages.push(i);
     }

@@ -4,7 +4,7 @@ import Seat from "../seat";
 import {rowColor} from "../helpers";
 
 
-const GenerateSeats = (seatNumbers, {priceRanges}, row) => {
+const GenerateSeats = (seatNumbers, {priceRanges, onAddedToCart}, row) => {
 
     return (
         <div className="row"
@@ -12,7 +12,7 @@ const GenerateSeats = (seatNumbers, {priceRanges}, row) => {
             {
                 seatNumbers.map((seatNumber) => {
                     return <Seat seatNumber={seatNumber} key={seatNumber} priceRanges={priceRanges} row={row}
-                                />
+                                 onAddedToCart={onAddedToCart}/>
 
                 })
             }

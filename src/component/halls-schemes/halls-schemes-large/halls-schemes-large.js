@@ -2,7 +2,7 @@ import React from "react";
 import './halls-schemes-large.sass';
 import GenerateSeats from "../../generate-seats";
 
-const HallsSchemesLarge = (priceRanges) => {
+const HallsSchemesLarge = (props) => {
     return (
         <section className='hall-container-large'>
             {/*<h1>HALLS SCHEMES</h1>*/}
@@ -16,55 +16,55 @@ const HallsSchemesLarge = (priceRanges) => {
 
             <div className='hall-large'>
                 <div className='hall-large-left'>
-                    {GenerateSeats([1, 2, 3],priceRanges,1)}
-                    {GenerateSeats([1, 2, 3, 4],priceRanges,2)}
-                    {GenerateSeats([1, 2, 3, 4, 5],priceRanges,3)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6],priceRanges,4)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7],priceRanges,5)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8],priceRanges,6)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9],priceRanges,7)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10],priceRanges,8)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10],priceRanges,9)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9],priceRanges,10)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8],priceRanges,11)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7],priceRanges,12)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6],priceRanges,13)}
-                    {GenerateSeats([1, 2, 3, 4, 5],priceRanges,14)}
+                    {GenerateSeats([1, 2, 3],props,1)}
+                    {GenerateSeats([1, 2, 3, 4],props,2)}
+                    {GenerateSeats([1, 2, 3, 4, 5],props,3)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6],props,4)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7],props,5)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8],props,6)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9],props,7)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10],props,8)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10],props,9)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9],props,10)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8],props,11)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7],props,12)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6],props,13)}
+                    {GenerateSeats([1, 2, 3, 4, 5],props,14)}
                 </div>
 
                 <div className='hall-large-center'>
-                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],priceRanges,1)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],priceRanges,2)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17],priceRanges,3)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],priceRanges,4)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],priceRanges,5)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],priceRanges,6)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21],priceRanges,7)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22],priceRanges,8)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],priceRanges,9)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22],priceRanges,10)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21],priceRanges,11)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],priceRanges,12)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21],priceRanges,13)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22],priceRanges,14)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],priceRanges,15)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],props,1)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],props,2)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17],props,3)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],props,4)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],props,5)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],props,6)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21],props,7)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22],props,8)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],props,9)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22],props,10)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21],props,11)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],props,12)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21],props,13)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22],props,14)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],props,15)}
                 </div>
 
                 <div className='hall-large-right'>
-                    {GenerateSeats([1, 2, 3],priceRanges,1)}
-                    {GenerateSeats([1, 2, 3, 4],priceRanges,2)}
-                    {GenerateSeats([1, 2, 3, 4, 5],priceRanges,3)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6],priceRanges,4)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7],priceRanges,5)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8],priceRanges,6)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9],priceRanges,7)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10],priceRanges,8)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10],priceRanges,9)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9],priceRanges,10)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8],priceRanges,11)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7],priceRanges,12)}
-                    {GenerateSeats([1, 2, 3, 4, 5, 6],priceRanges,13)}
-                    {GenerateSeats([1, 2, 3, 4, 5],priceRanges,14)}
+                    {GenerateSeats([1, 2, 3],props,1)}
+                    {GenerateSeats([1, 2, 3, 4],props,2)}
+                    {GenerateSeats([1, 2, 3, 4, 5],props,3)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6],props,4)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7],props,5)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8],props,6)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9],props,7)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10],props,8)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9, 10],props,9)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8, 9],props,10)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7, 8],props,11)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6, 7],props,12)}
+                    {GenerateSeats([1, 2, 3, 4, 5, 6],props,13)}
+                    {GenerateSeats([1, 2, 3, 4, 5],props,14)}
 
                 </div>
             </div>

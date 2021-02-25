@@ -24,6 +24,22 @@ const TicketPageContainer = ({
                                  totalTickets
                              }) => {
 
+    const onAddedToCart = (row, seatNumber, priceRanges) => {
+        console.log(row)
+        console.log(seatNumber)
+        console.log(priceRanges)
+    }
+
+    const priceRangesRender = (priceRanges) => {
+        return priceRanges.map(({color, price}, index) => {
+            let style = {background: color};
+            return (
+                <div key={index} style={style} className='price-ranges'>
+                    <span className='price-ranges-items'>&euro; {price}</span>
+                </div>
+            )
+        })
+    };
 
     const {eventId, hall} = event;
     priceIndicator()
@@ -42,9 +58,9 @@ const TicketPageContainer = ({
             <TicketsPage eventInfo={event}/>
             <div className='tickets-page-wrapper'>
                 <div className='schemes-container'>
-                    <TicketsHallSchemes eventHall={hall} priceRanges={priceRanges}/>
+                    <TicketsHallSchemes eventHall={hall} priceRanges={priceRanges} onAddedToCart={onAddedToCart}/>
                 </div>
-                <PriceRange priceRanges={priceRanges}/>
+                <PriceRange priceRanges={priceRanges} priceRangesRender={priceRangesRender}/>
             </div>
             <div className='tickets-page-wrapper'>
                 <TicketsCart totalPrice={totalPrice} totalTickets={totalTickets}/>

@@ -3,13 +3,13 @@ import HallsSchemesSmall from "../halls-schemes/hells-schemes-small";
 import HallsSchemesLarge from "../halls-schemes/halls-schemes-large";
 
 
-const TicketsHallSchemes = ({eventHall, priceRanges}) => {
+const TicketsHallSchemes = ({eventHall, priceRanges, onAddedToCart}) => {
 
     if (eventHall === 1) {
-        return <HallsSchemesSmall priceRanges={priceRanges} />
+        return <HallsSchemesSmall priceRanges={priceRanges} onAddedToCart={onAddedToCart}/>
     }
     if (eventHall === 2) {
-        return <HallsSchemesLarge priceRanges={priceRanges}/>
+        return <HallsSchemesLarge priceRanges={priceRanges} onAddedToCart={onAddedToCart}/>
     } else {
         return <div>
             &&&
