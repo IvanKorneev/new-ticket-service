@@ -1,17 +1,17 @@
 import React from "react";
 import './generate-seats.sass'
 import Seat from "../seat";
-import {rowColor} from "../helpers";
+import {getDataFromPriceRanges} from "../helpers";
 
 
 const GenerateSeats = (seatNumbers, {priceRanges, onAddedToCart}, row) => {
 
     return (
         <div className="row"
-             style={{background: rowColor(priceRanges, row)}}>
+             style={{background: getDataFromPriceRanges(priceRanges, row, 'color')}}>
             {
                 seatNumbers.map((seatNumber) => {
-                    return <Seat seatNumber={seatNumber} key={seatNumber} priceRanges={priceRanges} row={row}
+                    return <Seat seatNumber={seatNumber} key={seatNumber} price={getDataFromPriceRanges(priceRanges, row, 'price')} priceRanges={priceRanges} row={row}
                                  onAddedToCart={onAddedToCart}/>
 
                 })

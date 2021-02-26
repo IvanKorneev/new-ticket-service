@@ -1,7 +1,7 @@
 import React from "react";
 import HeaderInfo from "../header-info";
 import Main from "../main";
-import Footer from "../footer-info";
+import FooterInfo from "../footer-info";
 import "./app.sass";
 import {Redirect, Route,Switch} from 'react-router-dom';
 import EventPageContainer from '../../container-component/event-page-container';
@@ -31,7 +31,7 @@ const App = () => {
                 <Redirect to="/events"/>
                 </Switch>
             </section>
-            <Footer/>
+            <FooterInfo/>
         </div>
     )
 };

@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0704845-c2ac-4a6c-9668-e59f88e6b723" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/store/reducers/tickets-addtocart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/container-component/login-done-container/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/container-component/login-done-container/login-done-container.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/app/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/footer-info/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/footer-info/footer-info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/footer-info/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/footer-info/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/generate-seats/generate-seats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/generate-seats/generate-seats.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/halls-schemes/halls-schemes-large/halls-schemes-large.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/halls-schemes/halls-schemes-large/halls-schemes-large.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/halls-schemes/hells-schemes-small/halls-schemes-small.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/halls-schemes/hells-schemes-small/halls-schemes-small.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/pagination/pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/pagination/pagination.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/price-range/price-range.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/price-range/price-range.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/helpers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/helpers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/login-done/login-done.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/login-done/login-done.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/seat/seat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/seat/seat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/tikets-hall-chemes/tickets-hall-schemes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/tikets-hall-chemes/tickets-hall-schemes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container-component/tickets-cart-container/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container-component/tickets-cart-container/tickets-cart-container.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container-component/tickets-cart-container/tickets-cart-container.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container-component/login-page-container/login-page-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/login-page-container/login-page-container.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/container-component/tickets-page-container/tickets-page-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/tickets-page-container/tickets-page-container.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,6 +235,7 @@
       <workItem from="1613551317358" duration="14301000" />
       <workItem from="1613897415355" duration="14237000" />
       <workItem from="1614234970227" duration="3488000" />
+      <workItem from="1614328987150" duration="918000" />
     </task>
     <task id="LOCAL-00001" summary="&#10;creating a project structure">
       <created>1599552635453</created>

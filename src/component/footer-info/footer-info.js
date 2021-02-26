@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../images/logo_col.svg";
 import './footer-info.sass'
 
-const Footer = () => {
+const FooterInfo = () => {
     return (
         <section className='footer'>
             <div className='footer-img'>
@@ -31,4 +31,4 @@ const Footer = () => {
         </section>
     )
 };
-export default Footer;
+export default FooterInfo;

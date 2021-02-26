@@ -23,7 +23,7 @@ const getZero = (num) => {
     }
 };
 
-const rowColor = (arr, row) => {
+const getDataFromPriceRanges = (arr, row, param='color') => {
     let obj;
     for (let i = 0; i < arr.length; i++) {
         let Row = arr[i].rows.find((item) => {
@@ -31,12 +31,11 @@ const rowColor = (arr, row) => {
         });
         if (Row) {
             obj = arr[i];
-            return obj.color;
+            if(param === 'color' ) return obj.color;
+            else if(param === 'price' ) return obj.price;
         }
     }
 };
-
-
 
 const fieldsData = [
     {placeholder: "Name*", name: "name", validate: [requiredField]},
@@ -58,6 +57,6 @@ const fieldsData = [
 export {
     getData,
     getTime,
-    rowColor,
+    getDataFromPriceRanges,
     fieldsData
 };

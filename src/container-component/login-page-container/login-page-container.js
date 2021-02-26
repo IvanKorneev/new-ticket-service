@@ -3,9 +3,9 @@ import {fetchLogin, loadingIndicatorLogin} from "../../store/actions";
 import {connect} from "react-redux";
 import {reduxForm} from "redux-form";
 import LoginPage from "../../component/login-page";
-import LoginDone from "../../component/login-done";
 import {getLoginData, getLoading} from "../../store/selectors/login-page-selectors";
 import Spinner from "../../component/spinner";
+import LoginDoneContainer from "../login-done-container/login-done-container";
 
 
 const LoginReduxForm = reduxForm({form: 'Login'})(LoginPage);
@@ -16,7 +16,7 @@ const LoginPageContainer = ({fetchLogin, loginData, error, loading, loadingIndic
         loadingIndicatorLogin()
     };
     if (loginData.token) {
-        return <LoginDone data={loginData}/>
+        return <LoginDoneContainer/>
     }
     if (loading) {
         return <Spinner/>

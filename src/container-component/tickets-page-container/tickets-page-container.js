@@ -24,10 +24,10 @@ const TicketPageContainer = ({
                                  totalTickets
                              }) => {
 
-    const onAddedToCart = (row, seatNumber, priceRanges) => {
-        console.log(row)
+    const onAddedToCart = (seatNumber, row, price) => {
         console.log(seatNumber)
-        console.log(priceRanges)
+        console.log(row)
+        console.log(price)
     }
 
     const priceRangesRender = (priceRanges) => {
