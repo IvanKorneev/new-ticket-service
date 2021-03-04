@@ -10,7 +10,6 @@ export const getUpcomingEvents = async () => {
     return response
 };
 
-
 export const getEventInfo = async (eventId) => {
     let response = await axios.get(`${_apiBase}/events/${eventId}`)
         .catch(error => {
@@ -19,7 +18,6 @@ export const getEventInfo = async (eventId) => {
 
     return response
 };
-
 
 export const login = async (email, password) => {
     let url = `${_apiBase}/login`;

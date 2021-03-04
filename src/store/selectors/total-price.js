@@ -1,4 +1,3 @@
-
-export const getTotalPrice = (state)=>{
+export const getTotalPrice = (state) => {
     return state.ticketsPrice.totalPrice
 }

@@ -4,7 +4,7 @@ import {connect} from "react-redux";
 import {getEvent} from "../../store/selectors/event-page-selectors";
 import TicketsPage from "../../component/tickets-page";
 import PriceRange from "../../component/price-range";
-import {fetchGetHallStructureByEventId, priceIndicator} from "../../store/actions";
+import {addToCart, fetchGetHallStructureByEventId, priceIndicator} from "../../store/actions";
 import {getPriceRange} from "../../store/selectors/price-range";
 import TicketsHallSchemes from "../../component/tikets-hall-chemes";
 import {getLoading} from "../../store/selectors/login-page-selectors";
@@ -12,6 +12,8 @@ import Spinner from "../../component/spinner";
 import TicketsCart from "../../component/tickets-cart";
 import {getTotalPrice} from "../../store/selectors/total-price";
 import {getTotalTickets} from "../../store/selectors/total-tickets";
+import {getCartItems} from "../../store/selectors/cart-Items";
+import CartRowList from "../../component/cart-row";
 
 
 const TicketPageContainer = ({
@@ -21,13 +23,13 @@ const TicketPageContainer = ({
                                  priceIndicator,
                                  loading,
                                  totalPrice,
-                                 totalTickets
+                                 totalTickets,
+                                 getAddToCart,
+                                 cartItems
                              }) => {
 
-    const onAddedToCart = (seatNumber, row, price) => {
-        console.log(seatNumber)
-        console.log(row)
-        console.log(price)
+    const onAddedToCart = (row, seatNumber, price) => {
+        getAddToCart(row, seatNumber, price)
     }
 
     const priceRangesRender = (priceRanges) => {
@@ -62,6 +64,9 @@ const TicketPageContainer = ({
                 </div>
                 <PriceRange priceRanges={priceRanges} priceRangesRender={priceRangesRender}/>
             </div>
+            <div>
+                <CartRowList cart={cartItems}/>
+            </div>
             <div className='tickets-page-wrapper'>
                 <TicketsCart totalPrice={totalPrice} totalTickets={totalTickets}/>
             </div>
@@ -74,12 +79,14 @@ const mapStateToProps = (state) => {
         priceRanges: getPriceRange(state),
         loading: getLoading(state),
         totalPrice: getTotalPrice(state),
-        totalTickets: getTotalTickets(state)
+        totalTickets: getTotalTickets(state),
+        cartItems: getCartItems(state)
     }
 };
 const mapDispatchToProps = {
     fetchGetHallStructureByEventId,
-    priceIndicator
+    priceIndicator,
+    getAddToCart: (row, seatNumber, price) => addToCart(row, seatNumber, price)
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(TicketPageContainer);

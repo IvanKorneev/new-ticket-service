@@ -1,4 +1,10 @@
-import {getEventInfo, getEvents, getHallStructureByEventId, getUpcomingEvents, login} from "../../api/api";
+import {
+    getEventInfo,
+    getEvents,
+    getHallStructureByEventId,
+    getUpcomingEvents,
+    login
+} from "../../api/api";
 
 const eventLoaded = (newEvent) => {
     return {
@@ -84,6 +90,13 @@ const priceIndicator = () => {
     }
 }
 
+const addToCart = (row, seatNumber, price) => {
+    return {
+        type: 'ADD_TO_CART',
+        payload: {row, seatNumber, price}
+    }
+}
+
 export const fetchEvents = (currentPage, pageSize) => {
     return (dispatch) => {
         getEvents('', currentPage, pageSize)
@@ -91,6 +104,8 @@ export const fetchEvents = (currentPage, pageSize) => {
             .catch((error) => dispatch(eventsError(error)))
     };
 };
+
+
 export const fetchAside = () => {
     return (dispatch) => {
         getUpcomingEvents().then((response) => dispatch(asideLoaded(response.data.events)))
@@ -131,5 +146,6 @@ export {
     resetUserData,
     resetLoginError,
     loadingIndicatorLogin,
-    priceIndicator
+    priceIndicator,
+    addToCart
 };
