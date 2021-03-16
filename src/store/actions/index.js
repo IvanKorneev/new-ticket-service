@@ -90,10 +90,10 @@ const priceIndicator = () => {
     }
 }
 
-const addToCart = (row, seatNumber, price) => {
+const addToCart = (seatNumber, row, price,nam) => {
     return {
         type: 'ADD_TO_CART',
-        payload: {row, seatNumber, price}
+        payload: {seatNumber, row, price,nam}
     }
 }
 

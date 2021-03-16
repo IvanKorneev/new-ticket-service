@@ -2,13 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0704845-c2ac-4a6c-9668-e59f88e6b723" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/container-component/shopping-cart-container/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/container-component/shopping-cart-container/shopping-cart-container.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/container-component/shopping-cart-container/shopping-cart-container.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/app/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/cart-row-item/cart-row-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/cart-row-item/cart-row-item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/cart-row-item/cart-row-item.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/cart-row-item/cart-row-item.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/cart-row/cart-row-list..sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/cart-row/cart-row-list..sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/cart-row/cart-row-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/cart-row/cart-row-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/event-item-page/event-item-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/event-item-page/event-item-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/tickets-cart/tickets-cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/tickets-cart/tickets-cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/tickets-cart/tickets-cart.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/tickets-cart/tickets-cart.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/container-component/tickets-page-container/tickets-page-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/tickets-page-container/tickets-page-container.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/tickets-addtocart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/tickets-addtocart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/tickets-addtocart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/tickets-cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/tickets-price.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/tickets-price.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/selectors/total-price.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/selectors/total-price.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/selectors/total-tickets.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/selectors/total-tickets.js" afterDir="false" />
     </list>
@@ -50,7 +60,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Хлам/ticket_service" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -243,7 +253,11 @@
       <workItem from="1614328987150" duration="12077000" />
       <workItem from="1614589146220" duration="1766000" />
       <workItem from="1614591900797" duration="7034000" />
-      <workItem from="1614846394522" duration="2517000" />
+      <workItem from="1614846394522" duration="3338000" />
+      <workItem from="1615214256770" duration="11455000" />
+      <workItem from="1615468718344" duration="6477000" />
+      <workItem from="1615911328603" duration="249000" />
+      <workItem from="1615911641426" duration="2644000" />
     </task>
     <task id="LOCAL-00001" summary="&#10;creating a project structure">
       <created>1599552635453</created>
@@ -518,7 +532,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614329972859</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="add component cart-row-item.js,&#10;cart-row-list">
+      <created>1614849051875</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1614849051875</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -537,7 +558,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add axios step 1" />
     <MESSAGE value="add combineReducers" />
     <MESSAGE value="fixed combineReducers" />
     <MESSAGE value="add Redux-Form add Sunk" />
@@ -562,6 +582,7 @@
     <MESSAGE value="add price-range filters" />
     <MESSAGE value="add Redux-tools" />
     <MESSAGE value="add component login-done-container and refactor login-done" />
-    <option name="LAST_COMMIT_MESSAGE" value="add component login-done-container and refactor login-done" />
+    <MESSAGE value="add component cart-row-item.js,&#10;cart-row-list" />
+    <option name="LAST_COMMIT_MESSAGE" value="add component cart-row-item.js,&#10;cart-row-list" />
   </component>
 </project>

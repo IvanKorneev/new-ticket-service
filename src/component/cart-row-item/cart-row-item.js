@@ -1,13 +1,14 @@
 import React from "react";
+import './cart-row-item.sass';
 
-const CartRowItem = ({cartItem}) => {
-    const {row, seatNumber, price} = cartItem
+const CartRowItem = ({cartItem, onRemovedFromCart,id}) => {
+    const {row, seatNumber} = cartItem;
+
     return (
-        <div>
+        <div className='cart-row-item-container'>
             <span>{row}</span>
             <span>{seatNumber}</span>
-            <span>{price}</span>
-
+            <i className="fas fa-times" onClick={() => onRemovedFromCart(id)}/>
         </div>
     )
 }

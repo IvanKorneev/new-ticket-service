@@ -26,7 +26,7 @@ const EventItemPage = ({event}) => {
                     <div className='event-item-page-details'>
                         <p>Data : <span className='event-details'>{getData(eventStart)}</span></p>
                         <p>Tickets Available - <span className='event-details'>{ticketsAvailable}</span></p>
-                        <p> Price range : <span className='event-details'>{minPrice} - {maxPrice}</span></p>
+                        <p> Price range : <span className='event-details'>{minPrice} - {maxPrice} &euro;</span></p>
                     </div>
                     <div className='event-buy-tickets'>
                         <Link to={'/hall/' + eventId}> Buy Tickets</Link>

@@ -1,3 +1,3 @@
 export const getTotalTickets = (state) => {
-    return state.ticketsPrice.totalTickets
+    return state.ticketsAddToCart.totalTickets
 }

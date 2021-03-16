@@ -14,6 +14,7 @@ import {getTotalPrice} from "../../store/selectors/total-price";
 import {getTotalTickets} from "../../store/selectors/total-tickets";
 import {getCartItems} from "../../store/selectors/cart-Items";
 import CartRowList from "../../component/cart-row";
+import {Link} from "react-router-dom";
 
 
 const TicketPageContainer = ({
@@ -28,8 +29,11 @@ const TicketPageContainer = ({
                                  cartItems
                              }) => {
 
-    const onAddedToCart = (row, seatNumber, price) => {
-        getAddToCart(row, seatNumber, price)
+    const onAddedToCart = (seatNumber, row, price, nam) => {
+        getAddToCart(seatNumber, row, price, nam)
+    }
+    const onRemovedFromCart = (id) => {
+        console.log(id)
     }
 
     const priceRangesRender = (priceRanges) => {
@@ -65,11 +69,12 @@ const TicketPageContainer = ({
                 <PriceRange priceRanges={priceRanges} priceRangesRender={priceRangesRender}/>
             </div>
             <div>
-                <CartRowList cart={cartItems}/>
+                <CartRowList cart={cartItems} onRemovedFromCart={onRemovedFromCart}/>
             </div>
             <div className='tickets-page-wrapper'>
                 <TicketsCart totalPrice={totalPrice} totalTickets={totalTickets}/>
             </div>
+          <Link to={'/shopping-cart'}><button className='button-login-page'>TO THE CART</button></Link>
         </section>
     )
 }
@@ -86,7 +91,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = {
     fetchGetHallStructureByEventId,
     priceIndicator,
-    getAddToCart: (row, seatNumber, price) => addToCart(row, seatNumber, price)
+    getAddToCart: (seatNumber, row, price, nam) => addToCart(seatNumber, row, price, nam)
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(TicketPageContainer);

@@ -1,11 +1,17 @@
 import React from "react";
 import CartRowItem from "../cart-row-item";
+import './cart-row-list..sass';
 
-const CartRowList = ({cart}) => {
+const CartRowList = ({cart, onRemovedFromCart}) => {
     return (
-        <div>
-            {cart.map((cartItem,index) => {
-               return <CartRowItem key={index} cartItem={cartItem}/>
+        <div className='cart-row-list-container'>
+            <div className='cart-row-list'>
+                <span>Row</span>
+                <span>Place</span>
+            </div>
+            {cart.map((cartItem, index) => {
+                return <CartRowItem key={index} cartItem={cartItem} onRemovedFromCart={onRemovedFromCart}
+                                    id={index + 1}/>
             })}
         </div>
     )

@@ -1,7 +1,7 @@
 const initialState = {
     cartItems: [],
-    totalPrice: 200,
-    totalTickets: 3,
+    totalPrice: null,
+    totalTickets: null,
 };
 export default (state = initialState, action) => {
     switch (action.type) {
@@ -11,15 +11,20 @@ export default (state = initialState, action) => {
                 lockedSeats: action.payload
             };
         case 'ADD_TO_CART':
-
-               const cartItem = action.payload
-
+            const cartItem = action.payload
+            const price = cartItem.price
             return {
                 ...state,
-                cartItems:[
+                cartItems: [
                     ...state.cartItems,
                     cartItem
-                ]
+                ],
+                totalPrice: state.totalPrice + price,
+                totalTickets: state.totalTickets + 1
+            }
+        case 'REMOVED_TO_CART':
+            return {
+
             }
         default:
             return state;
