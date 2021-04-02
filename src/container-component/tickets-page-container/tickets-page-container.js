@@ -4,7 +4,13 @@ import {connect} from "react-redux";
 import {getEvent} from "../../store/selectors/event-page-selectors";
 import TicketsPage from "../../component/tickets-page";
 import PriceRange from "../../component/price-range";
-import {addToCart, fetchGetHallStructureByEventId, priceIndicator} from "../../store/actions";
+import {
+    addToCart,
+    fetchEventInfo,
+    fetchGetHallStructureByEventId,
+    priceIndicator,
+    removedToCart
+} from "../../store/actions";
 import {getPriceRange} from "../../store/selectors/price-range";
 import TicketsHallSchemes from "../../component/tikets-hall-chemes";
 import {getLoading} from "../../store/selectors/login-page-selectors";
@@ -16,24 +22,27 @@ import {getCartItems} from "../../store/selectors/cart-Items";
 import CartRowList from "../../component/cart-row";
 import {Link} from "react-router-dom";
 
-
 const TicketPageContainer = ({
                                  event,
                                  fetchGetHallStructureByEventId,
                                  priceRanges,
-                                 priceIndicator,
                                  loading,
                                  totalPrice,
                                  totalTickets,
                                  getAddToCart,
-                                 cartItems
+                                 cartItems,
+                                 match,
+                                 fetchEventInfo,
+                                 getRemovedFromCart
                              }) => {
 
-    const onAddedToCart = (seatNumber, row, price, nam) => {
-        getAddToCart(seatNumber, row, price, nam)
+    const onAddedToCart = (seatNumber, row, price, id) => {
+        getAddToCart(seatNumber, row, price, id)
     }
     const onRemovedFromCart = (id) => {
         console.log(id)
+        getRemovedFromCart(id)
+
     }
 
     const priceRangesRender = (priceRanges) => {
@@ -47,12 +56,14 @@ const TicketPageContainer = ({
         })
     };
 
-    const {eventId, hall} = event;
-    priceIndicator()
+    const {hall} = event;
+    const eventId = match.params.eventId;
+
 
     useEffect(() => {
         fetchGetHallStructureByEventId(eventId)
-    }, [fetchGetHallStructureByEventId, eventId])
+        fetchEventInfo(eventId)
+    }, [eventId, fetchGetHallStructureByEventId, fetchEventInfo])
 
     if (loading) {
         return <Spinner/>
@@ -60,7 +71,7 @@ const TicketPageContainer = ({
 
     return (
         <section className='tickets-page-container'>
-            <div><h1>Tickets</h1></div>
+            <h1>Tickets</h1>
             <TicketsPage eventInfo={event}/>
             <div className='tickets-page-wrapper'>
                 <div className='schemes-container'>
@@ -74,7 +85,9 @@ const TicketPageContainer = ({
             <div className='tickets-page-wrapper'>
                 <TicketsCart totalPrice={totalPrice} totalTickets={totalTickets}/>
             </div>
-          <Link to={'/shopping-cart'}><button className='button-login-page'>TO THE CART</button></Link>
+            <Link to={'/shopping-cart'}>
+                <button className='button-login-page'>TO THE CART</button>
+            </Link>
         </section>
     )
 }
@@ -91,7 +104,9 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = {
     fetchGetHallStructureByEventId,
     priceIndicator,
-    getAddToCart: (seatNumber, row, price, nam) => addToCart(seatNumber, row, price, nam)
+    fetchEventInfo,
+    getAddToCart: (seatNumber, row, price, id) => addToCart(seatNumber, row, price, id),
+    getRemovedFromCart: (id) => removedToCart(id)
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(TicketPageContainer);

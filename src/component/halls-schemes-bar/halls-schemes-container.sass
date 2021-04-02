@@ -1,31 +1,34 @@
 .schemes-wrapper
   @media (min-width: 1024px)
-    width: 62%
-    margin: 0 auto
-  @media (min-width: 1440px)
     width: 60%
+    margin: 0 auto
 
   h1
     font-size: 45px
     margin-top: 20px
-
-  .schemes-container
-    display: flex
-    justify-content: space-between
-    overflow-x: auto
 
   .schemes-container-button
     display: flex
     align-items: center
 
     i
-     color: #868685
-     &:hover
-      cursor: pointer
+      color: #868685
+
+      &:hover
+        cursor: pointer
 
 
     h1
       font-size: 45px
       margin-top: 20px
+
+
+.schemes-container
+  display: flex
+  justify-content: space-between
+  overflow-x: auto
+  @media (min-width: 1440px)
+    min-width: 560px
+    overflow-x: hidden
 
 

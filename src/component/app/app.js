@@ -28,7 +28,7 @@ const App = () => {
                     <Route path="/registration" component={RegistrationPageContainer}/>
                     <Route path="/event/:eventId" component={EventPageContainer}/>
                     <Route path="/halls" component={HallsSchemesContainer}/>
-                    <Route path="/hall/" component={TicketPageContainer}/>
+                    <Route path="/hall/:eventId" component={TicketPageContainer}/>
                     <Route path="/shopping-cart/" component={ShoppingCartContainer}/>
                     <Redirect to="/events"/>
                 </Switch>

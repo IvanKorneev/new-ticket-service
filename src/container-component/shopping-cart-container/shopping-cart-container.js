@@ -5,8 +5,11 @@ import CartRowList from "../../component/cart-row";
 import {getCartItems} from "../../store/selectors/cart-Items";
 import {getEvent} from "../../store/selectors/event-page-selectors";
 import TicketsPage from "../../component/tickets-page";
+import TicketsCart from "../../component/tickets-cart";
+import {getTotalPrice} from "../../store/selectors/total-price";
+import {getTotalTickets} from "../../store/selectors/total-tickets";
 
-const ShoppingCartContainer = ({cartItems, event}) => {
+const ShoppingCartContainer = ({cartItems, event,totalPrice,totalTickets}) => {
     return (
         <section className='shopping-cart-container'>
             <h1>SOPPING CART</h1>
@@ -17,6 +20,7 @@ const ShoppingCartContainer = ({cartItems, event}) => {
             <div className='cart-row-list-wrapper'>
                 <TicketsPage eventInfo={event}/>
                 <CartRowList cart={cartItems}/>
+                <TicketsCart totalPrice={totalPrice} totalTickets={totalTickets}/>
             </div>
         </section>
     )
@@ -24,7 +28,9 @@ const ShoppingCartContainer = ({cartItems, event}) => {
 const mapStateToProps = (state) => {
     return {
         event: getEvent(state),
-        cartItems: getCartItems(state)
+        cartItems: getCartItems(state),
+        totalPrice: getTotalPrice(state),
+        totalTickets: getTotalTickets(state)
     }
 };
 const mapDispatchToProps = {}

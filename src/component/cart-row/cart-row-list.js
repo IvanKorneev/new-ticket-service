@@ -3,6 +3,7 @@ import CartRowItem from "../cart-row-item";
 import './cart-row-list..sass';
 
 const CartRowList = ({cart, onRemovedFromCart}) => {
+
     return (
         <div className='cart-row-list-container'>
             <div className='cart-row-list'>
@@ -10,7 +11,9 @@ const CartRowList = ({cart, onRemovedFromCart}) => {
                 <span>Place</span>
             </div>
             {cart.map((cartItem, index) => {
-                return <CartRowItem key={index} cartItem={cartItem} onRemovedFromCart={onRemovedFromCart}
+                return <CartRowItem key={index}
+                                    cartItem={cartItem}
+                                    onRemovedFromCart={onRemovedFromCart}
                                     id={index + 1}/>
             })}
         </div>

@@ -90,10 +90,16 @@ const priceIndicator = () => {
     }
 }
 
-const addToCart = (seatNumber, row, price,nam) => {
+const addToCart = (seatNumber, row, price, id) => {
     return {
         type: 'ADD_TO_CART',
-        payload: {seatNumber, row, price,nam}
+        payload: {seatNumber, row, price, id}
+    }
+}
+const removedToCart = (removedId) => {
+    return {
+        type: 'REMOVED_TO_CART',
+        payload: {removedId}
     }
 }
 
@@ -147,5 +153,6 @@ export {
     resetLoginError,
     loadingIndicatorLogin,
     priceIndicator,
-    addToCart
+    addToCart,
+    removedToCart
 };

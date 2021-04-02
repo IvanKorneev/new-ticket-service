@@ -1,7 +1,7 @@
 import React from "react";
 import './cart-row-item.sass';
 
-const CartRowItem = ({cartItem, onRemovedFromCart,id}) => {
+const CartRowItem = ({cartItem, onRemovedFromCart, id}) => {
     const {row, seatNumber} = cartItem;
 
     return (

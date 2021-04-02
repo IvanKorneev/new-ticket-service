@@ -1,14 +1,10 @@
-.hall-container
+.hall-container-small
   @media (min-width: 768px)
+    width: 100%
+    max-width: 560px
     display: flex
     flex-direction: column
-    @media (min-width: 1024px)
-      margin: 0 auto
-
-  .hall
-    display: flex
-    @media (min-width: 768px)
-      margin: 0 auto
+    margin: 0 auto
 
   .title
     display: flex
@@ -32,6 +28,17 @@
     display: flex
     justify-content: space-between
 
+  .hall-exit
+    display: flex
+    flex-direction: column
+
+    span
+      color: #07ace8
+      font-weight: bold
+      display: flex
+      justify-content: center
+      margin: 0 0 5px 0
+
     .eingang-ausgang
       display: flex
       padding: 20px
@@ -41,18 +48,6 @@
       width: 50px
       border: 2px solid #07ace8
       color: #07ace8
-
-    span
-      color: #07ace8
-      font-weight: bold
-      display: flex
-      justify-content: center
-      margin: 0 0 5px 0
-
-
-  .hall-exit
-    display: flex
-    flex-direction: column
 
   h2
     width: 80%
@@ -69,4 +64,9 @@
     color: #3575b8
     font-weight: bold
     font-size: 20px
+
+
+
+
+
 
