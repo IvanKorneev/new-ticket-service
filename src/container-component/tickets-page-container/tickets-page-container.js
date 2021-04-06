@@ -9,7 +9,7 @@ import {
     fetchEventInfo,
     fetchGetHallStructureByEventId,
     priceIndicator,
-    removedToCart
+    removedFromCart
 } from "../../store/actions";
 import {getPriceRange} from "../../store/selectors/price-range";
 import TicketsHallSchemes from "../../component/tikets-hall-chemes";
@@ -33,16 +33,15 @@ const TicketPageContainer = ({
                                  cartItems,
                                  match,
                                  fetchEventInfo,
-                                 getRemovedFromCart
+                                 getRemovedFromCart,
                              }) => {
 
     const onAddedToCart = (seatNumber, row, price, id) => {
         getAddToCart(seatNumber, row, price, id)
-    }
-    const onRemovedFromCart = (id) => {
-        console.log(id)
-        getRemovedFromCart(id)
 
+    }
+    const onRemovedFromCart = (id, price) => {
+        getRemovedFromCart(id, price)
     }
 
     const priceRangesRender = (priceRanges) => {
@@ -98,7 +97,7 @@ const mapStateToProps = (state) => {
         loading: getLoading(state),
         totalPrice: getTotalPrice(state),
         totalTickets: getTotalTickets(state),
-        cartItems: getCartItems(state)
+        cartItems: getCartItems(state),
     }
 };
 const mapDispatchToProps = {
@@ -106,7 +105,7 @@ const mapDispatchToProps = {
     priceIndicator,
     fetchEventInfo,
     getAddToCart: (seatNumber, row, price, id) => addToCart(seatNumber, row, price, id),
-    getRemovedFromCart: (id) => removedToCart(id)
+    getRemovedFromCart: (id, price) => removedFromCart(id, price)
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(TicketPageContainer);

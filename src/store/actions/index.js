@@ -96,12 +96,13 @@ const addToCart = (seatNumber, row, price, id) => {
         payload: {seatNumber, row, price, id}
     }
 }
-const removedToCart = (removedId) => {
+const removedFromCart = (removedId, price) => {
     return {
-        type: 'REMOVED_TO_CART',
-        payload: {removedId}
+        type: 'REMOVED_FROM_CART',
+        payload: {removedId, price}
     }
 }
+
 
 export const fetchEvents = (currentPage, pageSize) => {
     return (dispatch) => {
@@ -154,5 +155,5 @@ export {
     loadingIndicatorLogin,
     priceIndicator,
     addToCart,
-    removedToCart
+    removedFromCart
 };

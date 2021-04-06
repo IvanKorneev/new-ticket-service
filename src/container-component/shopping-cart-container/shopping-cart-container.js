@@ -8,8 +8,12 @@ import TicketsPage from "../../component/tickets-page";
 import TicketsCart from "../../component/tickets-cart";
 import {getTotalPrice} from "../../store/selectors/total-price";
 import {getTotalTickets} from "../../store/selectors/total-tickets";
+import {removedFromCart} from "../../store/actions";
 
-const ShoppingCartContainer = ({cartItems, event,totalPrice,totalTickets}) => {
+const ShoppingCartContainer = ({cartItems, event, totalPrice, totalTickets,getRemovedFromCart}) => {
+    const onRemovedFromCart = (id, price) => {
+        getRemovedFromCart(id, price)
+    }
     return (
         <section className='shopping-cart-container'>
             <h1>SOPPING CART</h1>
@@ -19,7 +23,7 @@ const ShoppingCartContainer = ({cartItems, event,totalPrice,totalTickets}) => {
             </div>
             <div className='cart-row-list-wrapper'>
                 <TicketsPage eventInfo={event}/>
-                <CartRowList cart={cartItems}/>
+                <CartRowList cart={cartItems} onRemovedFromCart={onRemovedFromCart}/>
                 <TicketsCart totalPrice={totalPrice} totalTickets={totalTickets}/>
             </div>
         </section>
@@ -33,5 +37,7 @@ const mapStateToProps = (state) => {
         totalTickets: getTotalTickets(state)
     }
 };
-const mapDispatchToProps = {}
+const mapDispatchToProps = {
+    getRemovedFromCart: (id, price) => removedFromCart(id, price)
+}
 export default connect(mapStateToProps, mapDispatchToProps)(ShoppingCartContainer);

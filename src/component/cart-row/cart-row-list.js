@@ -14,7 +14,7 @@ const CartRowList = ({cart, onRemovedFromCart}) => {
                 return <CartRowItem key={index}
                                     cartItem={cartItem}
                                     onRemovedFromCart={onRemovedFromCart}
-                                    id={index + 1}/>
+                                    id={cartItem.id}/>
             })}
         </div>
     )
