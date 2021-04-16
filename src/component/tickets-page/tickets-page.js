@@ -5,7 +5,7 @@ import {getData} from "../helpers";
 const TicketsPage = ({eventInfo}) => {
     const {artist, eventName, eventStart} = eventInfo
     return (
-        <div className='tickets-page'>
+        <div className='global-tickets-page-title'>
             <div className='tickets-page-artist'>
                 {artist}|
             </div>

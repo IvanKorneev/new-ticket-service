@@ -7,7 +7,7 @@ const Paying = ({event, totalPrice, totalTickets}) => {
     return (
         <section>
             <h1 className='global-title'>Paying</h1>
-            <div className='tickets-page'>
+            <div className='global-tickets-page-title'>
                 <div className='tickets-page-artist'>
                     {artist}|
                 </div>
@@ -17,9 +17,9 @@ const Paying = ({event, totalPrice, totalTickets}) => {
                 <div className='tickets-page-eventStart'>
                     {getData(eventStart)}
                 </div>
-                <div>
-                    {totalPrice}
-                    {totalTickets}
+                <div className='global-tickets-cart-container-title'>
+                    <span>{totalTickets} tickets</span>
+                    <span>&euro; {totalPrice}</span>
                 </div>
             </div>
         </section>

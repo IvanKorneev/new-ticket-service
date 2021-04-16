@@ -3,29 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a0704845-c2ac-4a6c-9668-e59f88e6b723" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/app/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/app/app.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/app/app.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/conditions-page/conditions-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/conditions-page/conditions-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/conditions-page/conditions-page.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/conditions-page/conditions-page.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/error/error.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/error/error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/error/error.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/error/error.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/event-item-page/event-item-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/event-item-page/event-item-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/event-item-page/event-item-page.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/event-item-page/event-item-page.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/events-list/event-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/events-list/event-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/halls-schemes-bar/halls-schemes-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/halls-schemes-bar/halls-schemes-container.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/halls-schemes-bar/halls-schemes-container.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/halls-schemes-bar/halls-schemes-container.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/login-page/login-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/login-page/login-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/login-page/login-page.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/login-page/login-page.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/main/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/main/main.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/paying/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/paying/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/paying/paying.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/paying/paying.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/registration-page/registration-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/registration-page/registration-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/registration-page/registration-page.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/registration-page/registration-page.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container-component/paying-container/paying-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/paying-container/paying-container.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container-component/shopping-cart-container/shopping-cart-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/shopping-cart-container/shopping-cart-container.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container-component/shopping-cart-container/shopping-cart-container.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/shopping-cart-container/shopping-cart-container.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container-component/tickets-page-container/tickets-page-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/tickets-page-container/tickets-page-container.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container-component/tickets-page-container/tickets-page-container.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/tickets-page-container/tickets-page-container.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/tickets-page/tickets-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/tickets-page/tickets-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/tickets-page/tickets-page.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/tickets-page/tickets-page.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +255,7 @@
       <workItem from="1617947474251" duration="3578000" />
       <workItem from="1618132856075" duration="4142000" />
       <workItem from="1618221566612" duration="3230000" />
-      <workItem from="1618553969006" duration="15218000" />
+      <workItem from="1618553969006" duration="16298000" />
     </task>
     <task id="LOCAL-00001" summary="&#10;creating a project structure">
       <created>1599552635453</created>
@@ -591,7 +572,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618565513129</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="add global style 'global-title'">
+      <created>1618572105599</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1618572105599</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -610,7 +598,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add component Registration" />
     <MESSAGE value="add Registration functionality" />
     <MESSAGE value="add component Conditions end refactor css" />
     <MESSAGE value="add Reselect" />
@@ -635,6 +622,7 @@
     <MESSAGE value="add style cart-row-list,shopping-cart-container,price-range,tickets-cart" />
     <MESSAGE value="add component paying-container" />
     <MESSAGE value="add component paying" />
-    <option name="LAST_COMMIT_MESSAGE" value="add component paying" />
+    <MESSAGE value="add global style 'global-title'" />
+    <option name="LAST_COMMIT_MESSAGE" value="add global style 'global-title'" />
   </component>
 </project>
