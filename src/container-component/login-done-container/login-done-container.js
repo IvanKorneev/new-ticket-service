@@ -4,11 +4,11 @@ import {connect} from "react-redux";
 import LoginDone from "../../component/login-done";
 
 const LoginDoneContainer = ({ logOut, resetUserData, resetLoginError,resetError,loginData}) => {
+
     const onLogOut = () => {
         logOut(resetUserData);
         resetError(resetLoginError);
-        localStorage.removeItem('email');
-        localStorage.removeItem('token');
+
     };
     return (
         <LoginDone data={loginData} onLogOut={onLogOut}/>

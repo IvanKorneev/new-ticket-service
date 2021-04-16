@@ -35,7 +35,6 @@ export default (state = initialState, action) => {
                 ],
                 totalPrice: state.totalPrice - removedCartItemPrice,
                 totalTickets: state.totalTickets - 1
-
             }
         default:
             return state;

@@ -36,6 +36,7 @@ const TicketPageContainer = ({
                                  getRemovedFromCart,
                              }) => {
 
+
     const onAddedToCart = (seatNumber, row, price, id) => {
         getAddToCart(seatNumber, row, price, id)
 
@@ -72,21 +73,23 @@ const TicketPageContainer = ({
         <section className='tickets-page-container'>
             <h1>Tickets</h1>
             <TicketsPage eventInfo={event}/>
-            <div className='tickets-page-wrapper'>
-                <div className='schemes-container'>
-                    <TicketsHallSchemes eventHall={hall} priceRanges={priceRanges} onAddedToCart={onAddedToCart}/>
+            <div className='tickets-page-info'>
+                <div className='tickets-page-wrapper'>
+                    <div className='schemes-container'>
+                        <TicketsHallSchemes eventHall={hall} priceRanges={priceRanges} onAddedToCart={onAddedToCart}/>
+                    </div>
                 </div>
-                <PriceRange priceRanges={priceRanges} priceRangesRender={priceRangesRender}/>
+                <div className='tickets-cart-info'>
+                    <PriceRange priceRanges={priceRanges} priceRangesRender={priceRangesRender}/>
+                    <div className='tickets-cart-wrapper'>
+                        <CartRowList cart={cartItems} onRemovedFromCart={onRemovedFromCart}/>
+                        <TicketsCart totalPrice={totalPrice} totalTickets={totalTickets}/>
+                        <Link to={'/shopping-cart'}>
+                            <button className='button-login-page'>TO THE CART</button>
+                        </Link>
+                    </div>
+                </div>
             </div>
-            <div>
-                <CartRowList cart={cartItems} onRemovedFromCart={onRemovedFromCart}/>
-            </div>
-            <div className='tickets-page-wrapper'>
-                <TicketsCart totalPrice={totalPrice} totalTickets={totalTickets}/>
-            </div>
-            <Link to={'/shopping-cart'}>
-                <button className='button-login-page'>TO THE CART</button>
-            </Link>
         </section>
     )
 }

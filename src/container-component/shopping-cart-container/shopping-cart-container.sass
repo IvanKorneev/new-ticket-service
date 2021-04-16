@@ -1,10 +1,55 @@
 .shopping-cart-container
+  @media (min-width: 768px)
+    margin: 20px
+    h1
+      font-size: 45px
+  @media (min-width: 1024px)
+    width: 60%
+  @media (min-width: 1440px)
+    margin: 0 auto
+
+
   .shopping-cart-container-info
     display: flex
     justify-content: space-between
+
     p
     color: red
 
   .cart-row-list-wrapper
     border: 1px solid #6d6d67
     padding: 10px
+
+    .link-delete
+      display: flex
+      justify-content: flex-end
+
+      p
+        margin: 0
+        color: #ffc800
+
+    .shopping-cart-footer
+      display: flex
+      justify-content: space-between
+      margin-top: 15px
+
+      .shopping-cart-button
+        width: 200px
+        height: 35px
+        background: slategray
+        border-width: 0
+        color: white
+        font-size: 18px
+        font-weight: bold
+        border-radius: 5px
+
+      .shopping-cart-footer-checkbox
+        display: flex
+        align-items: center
+
+      p
+        margin: 0 0 0 5px
+
+      span
+        color: #ffc800
+

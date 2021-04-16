@@ -8,6 +8,26 @@
   @media (min-width: 1440px)
     width: 65%
 
+  .tickets-page-info
+    display: flex
+    flex-direction: column
+    @media (min-width: 1440px)
+      flex-direction: row
+      justify-content: space-between
+
+
+  .tickets-cart-info
+    @media (min-width: 768px)
+      display: flex
+      justify-content: space-between
+    @media (min-width: 1440px)
+      flex-direction: column
+
+    .tickets-cart-wrapper
+      @media (min-width: 768px)
+        margin-top: 50px
+
+
   h1
     margin: 10px 0
     @media (min-width: 768px)
@@ -25,3 +45,4 @@
         justify-content: center
       @media (min-width: 1024px)
         justify-content: space-between
+
