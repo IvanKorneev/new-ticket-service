@@ -1,10 +1,13 @@
 import React from "react";
 import {connect} from "react-redux";
 import './paying-container.sass'
+import Paying from "../../component/paying";
 
 const PayingContainer = () => {
     return (
-        <div></div>
+        <div>
+            <Paying/>
+        </div>
     )
 }
 const mapStateToProps = (state) => {
