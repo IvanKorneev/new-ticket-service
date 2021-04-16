@@ -9,7 +9,7 @@ const EventItemPage = ({event}) => {
 
     return (
         <div className='event-item-page'>
-            <h1>Events</h1>
+            <h1 className='global-title'>Events</h1>
             <div className='event-item-page-container'>
                 <div className='event-item-page-img'>
                     <img src={images} alt={artist}/>

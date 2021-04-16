@@ -5,7 +5,7 @@ import './events-list.sass'
 const EventsList = ({events}) => {
     return (
         <section className='events-container'>
-            <h2>Events</h2>
+            <h1 className='global-title'>Events</h1>
             <div className='events-list'>
                 {
                     events.map(eventsItem => {

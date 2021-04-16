@@ -21,7 +21,7 @@ const ShoppingCartContainer = ({getRemovedFromCart, event, cartItems, totalPrice
     }
     return (
         <section className='shopping-cart-container'>
-            <h1>SOPPING CART</h1>
+            <h1 className='global-title'>SOPPING CART</h1>
             <div className='shopping-cart-container-info'>
                 <p>The tickets shown here hov now been reserved for you for 10 minutes</p>
             </div>
@@ -33,7 +33,7 @@ const ShoppingCartContainer = ({getRemovedFromCart, event, cartItems, totalPrice
                 <CartRowList cart={cartItems} onRemovedFromCart={onRemovedFromCart}/>
                 <TicketsCart totalPrice={totalPrice} totalTickets={totalTickets}/>
                 <div className='shopping-cart-footer'>
-                    <button className='shopping-cart-button'>PAY</button>
+                    <Link to='/paying'><button className='shopping-cart-button'>PAY</button></Link>
                     <div className='shopping-cart-footer-checkbox'>
                         <input type='checkbox'/>
                         <p>I have read the <Link to='/conditions'><span>Terms and Conditions</span></Link> and fully agree with them</p>

@@ -15,7 +15,7 @@ const HallsSchemesContainer = (priceRanges) => {
     }
     return (
         <div className='schemes-wrapper'>
-            <h1>HALLS SCHEMES</h1>
+            <h1 className='global-title'>HALLS SCHEMES</h1>
             <section className='schemes-container'>
                 <div className="schemes-container-button">
                     <i className="fas fa-chevron-left fa-3x" onClick={() => setHall(!hall1)}/>

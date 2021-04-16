@@ -11,7 +11,7 @@ const LoginPage = (props) => {
 
     return (
         <section className='login-page-container'>
-            <h1>REGISTRATION</h1>
+            <h1 className='global-title'>REGISTRATION</h1>
             <div className='login-page'>
                 <div className='login-page-left'>
                     <span>I am already a customer.</span>

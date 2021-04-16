@@ -5,9 +5,9 @@ import './conditions-page.sass'
 const ConditionsPage = () => {
     return (
         <section className='conditions'>
-            <h1>TERMS AND CONDITIONS</h1>
+            <h1 className='global-title'>TERMS AND CONDITIONS</h1>
             <div>
-               <h4> 1. Scope of validity</h4>
+                <h4> 1. Scope of validity</h4>
                 The Terms and Conditions apply to legal relations between patrons, on the one hand, and the Berlin City
                 Hall Foundation, on the other, concerning the latter’s artistic establishments (Deutsche Oper Berlin,
                 Staatsoper Unter den Linden, Komische Oper Berlin and Staatsballett Berlin). Where the following refers
@@ -31,7 +31,7 @@ const ConditionsPage = () => {
                 must be paid in full.
             </div>
             <div>
-               <h4> 4. Provision of tickets</h4>
+                <h4> 4. Provision of tickets</h4>
                 Tickets will be sold in advance for a season at the times listed in the publications of the Berlin City
                 Hall Foundation. The Berlin City Hall Foundation reserves the right to limit the number of tickets per
                 buyer in individual cases. Severely disabled people can be given preferential treatment. Ticket orders

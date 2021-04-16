@@ -71,7 +71,7 @@ const TicketPageContainer = ({
 
     return (
         <section className='tickets-page-container'>
-            <h1>Tickets</h1>
+            <h1 className='global-title'>Tickets</h1>
             <TicketsPage eventInfo={event}/>
             <div className='tickets-page-info'>
                 <div className='tickets-page-wrapper'>

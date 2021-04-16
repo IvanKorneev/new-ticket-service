@@ -10,7 +10,7 @@ const RegistrationPage = (props) => {
     const {handleSubmit} = props;
     return (
         <section className='registration-container-page'>
-            <h1>REGISTRATION</h1>
+            <h1 className='global-title'>REGISTRATION</h1>
             <div className='registration-page'>
                 <span>Contact information</span>
                 <form onSubmit={handleSubmit} className='form-registration'>
