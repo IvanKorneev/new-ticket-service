@@ -12,9 +12,11 @@ const EventsItem = ({eventsPropsItem}) => {
             <Link to={'/event/' + eventId}>
                 <img src={images[0]} alt={artist}/>
             </Link>
-            <div className='events-item-artist'>{artist}</div>
-            <div className='events-item-event-name'>{eventName}</div>
-            <div className='events-item-line'/>
+            <div className='events-title-container'>
+                <div className='events-item-artist'>{artist}</div>
+                <div className='events-item-line'/>
+                <div className='events-item-event-name'>{eventName}</div>
+            </div>
             <div className='events-item-event-date'>{getData(eventStart)}</div>
         </div>
     )

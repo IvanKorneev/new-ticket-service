@@ -1,7 +1,5 @@
 .shopping-cart-container
-  @media (min-width: 768px)
-    margin: 20px
-
+  margin: 0 auto
 
   .shopping-cart-container-info
     display: flex
@@ -9,6 +7,7 @@
 
     p
     color: red
+    font-weight: bold
 
   .cart-row-list-wrapper
     border: 1px solid #6d6d67
@@ -21,11 +20,15 @@
       p
         margin: 0
         color: #ffc800
+        font-weight: bold
 
     .shopping-cart-footer
       display: flex
       justify-content: space-between
       margin-top: 15px
+      flex-direction: column
+      @media (min-width: 768px)
+        flex-direction: row
 
       .shopping-cart-button
         width: 200px
@@ -40,6 +43,9 @@
       .shopping-cart-footer-checkbox
         display: flex
         align-items: center
+        margin-top: 20px
+        @media (min-width: 768px)
+          margin-top: 0px
 
       p
         margin: 0 0 0 5px
