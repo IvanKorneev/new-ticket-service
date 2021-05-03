@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0704845-c2ac-4a6c-9668-e59f88e6b723" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/login-done/login-done.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/login-done/login-done.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/login-page/login-page.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/login-page/login-page.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/paying/paying.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/paying/paying.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container-component/shopping-cart-container/shopping-cart-container.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/shopping-cart-container/shopping-cart-container.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -594,7 +598,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619370832833</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="add  style batons">
+      <created>1620039203022</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1620039203022</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -613,7 +624,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add Reselect" />
     <MESSAGE value="&#10;bug fix error message and loading indicator" />
     <MESSAGE value="changed class components to hooks" />
     <MESSAGE value="small bug fixes registration-page-container.js" />
@@ -638,6 +648,7 @@
     <MESSAGE value="add global style 'global-title'" />
     <MESSAGE value="add global style '.global-tickets-page-title&#10;                  .global-tickets-cart-container-title'" />
     <MESSAGE value="add  style paying.sass and refactor events-item.sass events-item-pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="add  style paying.sass and refactor events-item.sass events-item-pages" />
+    <MESSAGE value="add  style batons" />
+    <option name="LAST_COMMIT_MESSAGE" value="add  style batons" />
   </component>
 </project>
