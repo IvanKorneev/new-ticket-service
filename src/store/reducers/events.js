@@ -4,7 +4,7 @@ const initialState = {
     error: null,
     pageSize: 4,
     totalEventsCount: 12,
-    currentPage: 1
+    currentPage: 2
 };
 export default  (state = initialState, action) => {
     switch (action.type) {

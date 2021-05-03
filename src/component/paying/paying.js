@@ -5,7 +5,7 @@ import {getData} from "../helpers";
 const Paying = ({event, totalPrice, totalTickets}) => {
     const {artist, eventName, eventStart} = event
     return (
-        <section>
+        <section className='paying-section'>
             <h1 className='global-title'>Paying</h1>
             <div className='paying'>
                 <div className='global-tickets-page-title'>
@@ -24,12 +24,28 @@ const Paying = ({event, totalPrice, totalTickets}) => {
                     <span>&euro; {totalPrice}</span>
                 </div>
                 <div className='paying-cards-icons'>
-                    <i className="fab fa-cc-paypal"></i>
-                    <i className="fab fa-cc-visa"></i>
-                    <i className="fab fa-cc-amex"></i>
-                    <i className="fab fa-cc-stripe"></i>
-                    <i className="fab fa-bitcoin"></i>
+                    <div className='paying-cards-icons-wrapper'>
+                        <input type='checkbox'/>
+                        <i className="fab fa-cc-paypal"></i>
+                    </div>
+                    <div className='paying-cards-icons-wrapper'>
+                        <input type='checkbox'/>
+                        <i className="fab fa-cc-visa"></i>
+                    </div>
+                    <div className='paying-cards-icons-wrapper'>
+                        <input type='checkbox'/>
+                        <i className="fab fa-cc-amex"></i>
+                    </div>
+                    <div className='paying-cards-icons-wrapper'>
+                        <input type='checkbox'/>
+                        <i className="fab fa-cc-stripe"></i>
+                    </div>
+                    <div className='paying-cards-icons-wrapper'>
+                        <input type='checkbox'/>
+                        <i className="fab fa-bitcoin"></i>
+                    </div>
                 </div>
+                <button className='shopping-cart-button-wrapper'>PAY</button>
             </div>
         </section>
     )

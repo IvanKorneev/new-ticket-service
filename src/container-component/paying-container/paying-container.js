@@ -8,9 +8,7 @@ import {getTotalTickets} from "../../store/selectors/total-tickets";
 
 const PayingContainer = ({event, totalPrice, totalTickets}) => {
     return (
-        <div>
-            <Paying event={event} totalPrice={totalPrice} totalTickets={totalTickets}/>
-        </div>
+        <Paying event={event} totalPrice={totalPrice} totalTickets={totalTickets}/>
     )
 }
 const mapStateToProps = (state) => {

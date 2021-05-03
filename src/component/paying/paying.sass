@@ -1,21 +1,38 @@
-//.credit-cart
-//  display: flex
-//  flex-direction: column
-//  border: 1px solid #6d6d67
-//  .paying-container
-//    display: flex
-//    justify-content: flex-end
-//  .tickets-paying-price
-//    display: flex
+.paying-section
+  margin: 0 auto
+  @media (min-width: 1024px)
+    width: 55%
 
-.paying
-  display: flex
-  flex-direction: column
-  border: 1px solid #6d6d67
-  padding: 10px
+  .paying
+    display: flex
+    flex-direction: column
+    border: 1px solid #6d6d67
+    padding: 10px
 
-  .paying-cards-icons
-    font-size: 50px
-    color: #6d6d67
-    i
-      padding: 5px
+    .paying-cards-icons
+      display: flex
+      font-size: 35px
+      color: #6d6d67
+      margin-top: 15px
+
+      i
+        padding: 5px
+
+      .paying-cards-icons-wrapper
+        display: flex
+        justify-content: center
+        align-items: center
+
+
+    .shopping-cart-button-wrapper
+      width: 200px
+      height: 35px
+      background: slategray
+      border-width: 0
+      color: white
+      font-size: 18px
+      font-weight: bold
+      border-radius: 5px
+      margin-top: 15px
+      @media (min-width: 768px)
+        align-self: flex-end
