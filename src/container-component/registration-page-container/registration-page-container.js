@@ -6,6 +6,7 @@ import {fetchLogin, loadingIndicatorLogin} from "../../store/actions";
 import LoginDone from "../../component/login-done";
 import {getLoading, getLoginData} from "../../store/selectors/login-page-selectors";
 import Spinner from "../../component/spinner";
+import LoginDoneContainer from "../login-done-container/login-done-container";
 
 
 const RegistrationReduxForm = reduxForm({form: 'Registration'})(RegistrationPage);
@@ -18,7 +19,7 @@ const RegistrationPageContainer = ({fetchLogin, loginData, loading, loadingIndic
     };
 
     if (loginData.token) {
-        return <LoginDone data={loginData}/>
+        return <LoginDoneContainer/>
     }
     if (loading) {
         return <Spinner/>
@@ -34,7 +35,6 @@ const mapStateToProps = (state) => {
     }
 };
 const mapDispatchToProps = {
-
     fetchLogin,
     loadingIndicatorLogin
 };

@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a0704845-c2ac-4a6c-9668-e59f88e6b723" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/login-done/login-done.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/login-done/login-done.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/login-page/login-page.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/login-page/login-page.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/paying/paying.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/paying/paying.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container-component/shopping-cart-container/shopping-cart-container.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/shopping-cart-container/shopping-cart-container.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container-component/login-done-container/login-done-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/login-done-container/login-done-container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container-component/registration-page-container/registration-page-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/registration-page-container/registration-page-container.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,13 +259,6 @@
       <workItem from="1619354145336" duration="9111000" />
       <workItem from="1620033197393" duration="14000" />
       <workItem from="1620033249650" duration="2024000" />
-    </task>
-    <task id="LOCAL-00001" summary="&#10;creating a project structure">
-      <created>1599552635453</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1599552635453</updated>
     </task>
     <task id="LOCAL-00002" summary="mapStateToProps  mapDispatchToProps getevents">
       <created>1599743857786</created>
@@ -605,7 +596,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620039203022</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="add buttons style">
+      <created>1620039568853</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1620039568853</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -624,7 +622,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="&#10;bug fix error message and loading indicator" />
     <MESSAGE value="changed class components to hooks" />
     <MESSAGE value="small bug fixes registration-page-container.js" />
     <MESSAGE value="add style component Conditions-page" />
@@ -649,6 +646,7 @@
     <MESSAGE value="add global style '.global-tickets-page-title&#10;                  .global-tickets-cart-container-title'" />
     <MESSAGE value="add  style paying.sass and refactor events-item.sass events-item-pages" />
     <MESSAGE value="add  style batons" />
-    <option name="LAST_COMMIT_MESSAGE" value="add  style batons" />
+    <MESSAGE value="add buttons style" />
+    <option name="LAST_COMMIT_MESSAGE" value="add buttons style" />
   </component>
 </project>
