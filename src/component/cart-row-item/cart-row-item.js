@@ -3,6 +3,7 @@ import './cart-row-item.sass';
 
 const CartRowItem = ({cartItem, onRemovedFromCart}) => {
     const {row, seatNumber, id, price} = cartItem;
+
     return (
         <div className='cart-row-item-container'>
             <span>{row}</span>

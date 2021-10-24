@@ -3,7 +3,6 @@ import {connect} from "react-redux";
 import {reduxForm} from "redux-form";
 import RegistrationPage from "../../component/registration-page";
 import {fetchLogin, loadingIndicatorLogin} from "../../store/actions";
-import LoginDone from "../../component/login-done";
 import {getLoading, getLoginData} from "../../store/selectors/login-page-selectors";
 import Spinner from "../../component/spinner";
 import LoginDoneContainer from "../login-done-container/login-done-container";

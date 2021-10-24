@@ -11,6 +11,7 @@ import LoginDoneContainer from "../login-done-container/login-done-container";
 const LoginReduxForm = reduxForm({form: 'Login'})(LoginPage);
 
 const LoginPageContainer = ({fetchLogin, loginData, error, loading, loadingIndicatorLogin}) => {
+    console.log(loginData)
     const onClickFormLogin = (formData) => {
         fetchLogin(formData.email, formData.password);
         loadingIndicatorLogin()

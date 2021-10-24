@@ -1,9 +1,18 @@
-const initialState = {
+type initialStateType = {
+    loginData:{
+        email:string|null,
+        token:string|null
+    }|{},
+    loading:boolean,
+    error:boolean
+}
+const initialState:initialStateType = {
     loading: false,
     loginData: {},
+    error:false
 
 };
-export default (state = initialState, action) => {
+export default (state = initialState, action:any):initialStateType => {
     switch (action.type) {
         case 'SET_USER_DATA':
             return {

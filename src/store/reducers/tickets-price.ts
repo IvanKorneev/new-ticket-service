@@ -1,9 +1,16 @@
-const initialState = {
+type initialStateType = {
+    priceRanges:{
+        color:string,
+        price:number,
+        rows:Array<number>
+    }[],
+    loading:boolean
+}
+const initialState: initialStateType = {
     priceRanges: [],
-    lockedSeats: [],
     loading: false,
 };
-export default (state = initialState, action) => {
+export default (state = initialState, action: any): initialStateType => {
     switch (action.type) {
         case 'PRICE_RANGES':
             return {
@@ -14,11 +21,6 @@ export default (state = initialState, action) => {
             return {
                 ...state,
                 loading: true,
-            };
-        case 'LOCKED_SEATS':
-            return {
-                ...state,
-                lockedSeats: action.payload
             };
         default:
             return state;

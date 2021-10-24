@@ -17,6 +17,7 @@ import {
 
 
 const EventsListContainer = ({events, loading, error, pageSize,setEventsPages, totalEventsCount, currentPage, loadingIndicator, fetchEvents}) => {
+
     useEffect(() => {
         loadingIndicator();
         fetchEvents(currentPage, pageSize)

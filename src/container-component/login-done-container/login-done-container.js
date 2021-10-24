@@ -1,7 +1,8 @@
 import React from "react";
 import {resetLoginError, resetUserData} from "../../store/actions";
-import {connect} from "react-redux";
 import LoginDone from "../../component/login-done";
+import {connect} from "react-redux";
+
 
 const LoginDoneContainer = ({logOut, resetUserData, resetLoginError, resetError, loginData}) => {
 

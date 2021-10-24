@@ -1,4 +1,27 @@
-const initialState = {
+type initialStateType1 = {
+    eventsState: {
+        artist: string|null,
+        description: string|null,
+        eventDurationHours: number|null,
+        eventId: number|null,
+        eventName: string|null,
+        eventStart: number|null,
+        eventType: number|null,
+        hall: number|null,
+        images: Array<string>,
+        maxPrice: number|null,
+        minPrice: number|null,
+        ticketsAvailable: number|null
+    }[],
+    loading:boolean,
+    error:boolean|null,
+    pageSize: number,
+    totalEventsCount: number,
+    currentPage:number
+
+}
+
+const initialState:initialStateType1 = {
     eventsState: [],
     loading: false,
     error: null,
@@ -6,7 +29,7 @@ const initialState = {
     totalEventsCount: 12,
     currentPage: 2
 };
-export default  (state = initialState, action) => {
+export default  (state = initialState, action:any):initialStateType1 => {
     switch (action.type) {
         case 'LOADING_INDICATOR':
             return {

@@ -1,4 +1,5 @@
 import Calendar from "react-calendar";
+import 'react-calendar/dist/Calendar.css';
 import AsideItem from "../aside-items";
 import React from "react";
 import './aside-list.sass'

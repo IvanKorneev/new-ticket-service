@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0704845-c2ac-4a6c-9668-e59f88e6b723" name="Default Changelist" comment="">
+    <list default="true" id="a0704845-c2ac-4a6c-9668-e59f88e6b723" name="Default Changelist" comment="refactoring function onLogOut in registration">
+      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/aside-list/aside-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/aside-list/aside-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/cart-row-item/cart-row-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/cart-row-item/cart-row-item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container-component/events-list-container/events-list-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/events-list-container/events-list-container.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/container-component/login-done-container/login-done-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/login-done-container/login-done-container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container-component/login-page-container/login-page-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/login-page-container/login-page-container.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/container-component/registration-page-container/registration-page-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/registration-page-container/registration-page-container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container-component/shopping-cart-container/shopping-cart-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/shopping-cart-container/shopping-cart-container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container-component/tickets-page-container/tickets-page-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/tickets-page-container/tickets-page-container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/aside.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/aside.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/event-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/event-page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/events.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/login-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/login-page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/showbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/showbar.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/tickets-cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/tickets-cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/tickets-price.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/tickets-price.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/selectors/aside-list-selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/selectors/aside-list-selectors.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,14 +61,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="ts.external.directory.path" value="C:\Users\User\WebstormProjects\учебная инфа\new-ticket-service\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -259,13 +279,96 @@
       <workItem from="1619354145336" duration="9111000" />
       <workItem from="1620033197393" duration="14000" />
       <workItem from="1620033249650" duration="2024000" />
-    </task>
-    <task id="LOCAL-00002" summary="mapStateToProps  mapDispatchToProps getevents">
-      <created>1599743857786</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1599743857786</updated>
+      <workItem from="1620113396465" duration="600000" />
+      <workItem from="1620121185731" duration="1993000" />
+      <workItem from="1621928319766" duration="1061000" />
+      <workItem from="1622013032901" duration="508000" />
+      <workItem from="1622392070409" duration="4407000" />
+      <workItem from="1622559200456" duration="139000" />
+      <workItem from="1622978761114" duration="82000" />
+      <workItem from="1623087413820" duration="707000" />
+      <workItem from="1623168264290" duration="29000" />
+      <workItem from="1623170650665" duration="4131000" />
+      <workItem from="1623249758954" duration="3510000" />
+      <workItem from="1623257059646" duration="19000" />
+      <workItem from="1623321935519" duration="1649000" />
+      <workItem from="1623578135624" duration="528000" />
+      <workItem from="1623579044345" duration="186000" />
+      <workItem from="1623661366369" duration="638000" />
+      <workItem from="1623662672423" duration="437000" />
+      <workItem from="1624783092110" duration="1498000" />
+      <workItem from="1624784806346" duration="604000" />
+      <workItem from="1624789552087" duration="325000" />
+      <workItem from="1624790865373" duration="268000" />
+      <workItem from="1624791391431" duration="1499000" />
+      <workItem from="1624793134548" duration="452000" />
+      <workItem from="1624812982107" duration="1868000" />
+      <workItem from="1625475965901" duration="2458000" />
+      <workItem from="1625560973221" duration="14000" />
+      <workItem from="1625561670871" duration="663000" />
+      <workItem from="1625645425593" duration="453000" />
+      <workItem from="1625728396216" duration="1043000" />
+      <workItem from="1625729723135" duration="606000" />
+      <workItem from="1625735313587" duration="273000" />
+      <workItem from="1626355433349" duration="1207000" />
+      <workItem from="1626361981975" duration="12000" />
+      <workItem from="1626677227777" duration="282000" />
+      <workItem from="1626678100701" duration="601000" />
+      <workItem from="1626684559783" duration="951000" />
+      <workItem from="1626687534317" duration="388000" />
+      <workItem from="1626687991691" duration="1644000" />
+      <workItem from="1626702601007" duration="42000" />
+      <workItem from="1626851764777" duration="249000" />
+      <workItem from="1626854688760" duration="191000" />
+      <workItem from="1626855885691" duration="147000" />
+      <workItem from="1626868678136" duration="190000" />
+      <workItem from="1626875362930" duration="98000" />
+      <workItem from="1626878705316" duration="48000" />
+      <workItem from="1626941911385" duration="623000" />
+      <workItem from="1626946906739" duration="636000" />
+      <workItem from="1626949883633" duration="607000" />
+      <workItem from="1627019220996" duration="276000" />
+      <workItem from="1627905249433" duration="622000" />
+      <workItem from="1627976312584" duration="232000" />
+      <workItem from="1627979026294" duration="103000" />
+      <workItem from="1628077164471" duration="598000" />
+      <workItem from="1628510715312" duration="148000" />
+      <workItem from="1628512867067" duration="329000" />
+      <workItem from="1628513316645" duration="1403000" />
+      <workItem from="1628522109317" duration="1143000" />
+      <workItem from="1628581640955" duration="127000" />
+      <workItem from="1628585817209" duration="38000" />
+      <workItem from="1628601251815" duration="417000" />
+      <workItem from="1629884168412" duration="5054000" />
+      <workItem from="1630317475090" duration="901000" />
+      <workItem from="1630319697925" duration="3635000" />
+      <workItem from="1630329226279" duration="234000" />
+      <workItem from="1630329875948" duration="156000" />
+      <workItem from="1630330335373" duration="613000" />
+      <workItem from="1630341415507" duration="4438000" />
+      <workItem from="1632039448479" duration="139000" />
+      <workItem from="1632048420696" duration="2025000" />
+      <workItem from="1632123418407" duration="55000" />
+      <workItem from="1632128951332" duration="678000" />
+      <workItem from="1632644331636" duration="58000" />
+      <workItem from="1632651275668" duration="402000" />
+      <workItem from="1632730802288" duration="108000" />
+      <workItem from="1633608019879" duration="1238000" />
+      <workItem from="1633629181015" duration="8000" />
+      <workItem from="1633868203743" duration="505000" />
+      <workItem from="1633869199961" duration="1941000" />
+      <workItem from="1633933843561" duration="1995000" />
+      <workItem from="1633944640568" duration="3000" />
+      <workItem from="1633944876376" duration="40000" />
+      <workItem from="1634563686063" duration="92000" />
+      <workItem from="1634651971590" duration="12000" />
+      <workItem from="1634725422743" duration="1548000" />
+      <workItem from="1635059215948" duration="1056000" />
+      <workItem from="1635065263251" duration="2451000" />
+      <workItem from="1635067744850" duration="2121000" />
+      <workItem from="1635070131833" duration="523000" />
+      <workItem from="1635070668995" duration="1104000" />
+      <workItem from="1635071791553" duration="2037000" />
     </task>
     <task id="LOCAL-00003" summary="add Sass 1">
       <created>1599996035505</created>
@@ -603,7 +706,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620039568853</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="refactoring function onLogOut in registration">
+      <created>1620040889456</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1620040889456</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -622,7 +732,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed class components to hooks" />
     <MESSAGE value="small bug fixes registration-page-container.js" />
     <MESSAGE value="add style component Conditions-page" />
     <MESSAGE value="add component halls-scheme" />
@@ -647,6 +756,11 @@
     <MESSAGE value="add  style paying.sass and refactor events-item.sass events-item-pages" />
     <MESSAGE value="add  style batons" />
     <MESSAGE value="add buttons style" />
-    <option name="LAST_COMMIT_MESSAGE" value="add buttons style" />
+    <MESSAGE value="refactoring function onLogOut in registration" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring function onLogOut in registration" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

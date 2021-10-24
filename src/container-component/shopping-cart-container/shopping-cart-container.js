@@ -19,6 +19,7 @@ const ShoppingCartContainer = ({getRemovedFromCart, event, cartItems, totalPrice
     const onRemovedFromCart = (id, price) => {
         getRemovedFromCart(id, price)
     }
+
     return (
         <section className='shopping-cart-container'>
             <h1 className='global-title'>SOPPING CART</h1>

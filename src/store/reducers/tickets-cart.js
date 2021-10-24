@@ -1,3 +1,4 @@
+
 const initialState = {
     cartItems: [],
     totalPrice: null,
@@ -5,11 +6,6 @@ const initialState = {
 };
 export default (state = initialState, action) => {
     switch (action.type) {
-        case 'LOCKED_SEATS':
-            return {
-                ...state,
-                lockedSeats: action.payload
-            };
         case 'ADD_TO_CART':
             const newCartItem = action.payload;
             const newPrice = newCartItem.price;
