@@ -1,3 +1,5 @@
+import {ASIDE_LOADED} from "../types";
+
 type initialStateType = {
     asideState: {
         artist: string |null,
@@ -22,7 +24,7 @@ export default (state = initialState, action: any): initialStateType => {
                 error: null,
 
             };
-        case 'ASIDE_LOADED':
+        case ASIDE_LOADED:
             return {
                 ...state,
                 asideState: action.payload,

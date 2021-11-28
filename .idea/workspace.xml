@@ -1,27 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0704845-c2ac-4a6c-9668-e59f88e6b723" name="Default Changelist" comment="refactoring function onLogOut in registration">
-      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
+    <list default="true" id="a0704845-c2ac-4a6c-9668-e59f88e6b723" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/aside-list/aside-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/aside-list/aside-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/cart-row-item/cart-row-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/cart-row-item/cart-row-item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container-component/events-list-container/events-list-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/events-list-container/events-list-container.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container-component/login-done-container/login-done-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/login-done-container/login-done-container.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container-component/login-page-container/login-page-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/login-page-container/login-page-container.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container-component/registration-page-container/registration-page-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/registration-page-container/registration-page-container.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container-component/shopping-cart-container/shopping-cart-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/shopping-cart-container/shopping-cart-container.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container-component/tickets-page-container/tickets-page-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/tickets-page-container/tickets-page-container.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/aside.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/aside.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/event-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/event-page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/events.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/login-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/login-page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/showbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/showbar.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/tickets-cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/tickets-cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/tickets-price.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/tickets-price.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/selectors/aside-list-selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/selectors/aside-list-selectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/aside.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/aside.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/events.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/events.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/login-page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/login-page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/showbar.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/showbar.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/tickets-price.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/tickets-price.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="Sass File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -368,14 +356,18 @@
       <workItem from="1635067744850" duration="2121000" />
       <workItem from="1635070131833" duration="523000" />
       <workItem from="1635070668995" duration="1104000" />
-      <workItem from="1635071791553" duration="2037000" />
-    </task>
-    <task id="LOCAL-00003" summary="add Sass 1">
-      <created>1599996035505</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1599996035505</updated>
+      <workItem from="1635071791553" duration="6242000" />
+      <workItem from="1635173360043" duration="595000" />
+      <workItem from="1635185133427" duration="749000" />
+      <workItem from="1635840811344" duration="1028000" />
+      <workItem from="1635843135388" duration="889000" />
+      <workItem from="1636190077124" duration="671000" />
+      <workItem from="1636192238303" duration="457000" />
+      <workItem from="1636193515738" duration="51000" />
+      <workItem from="1636194365629" duration="776000" />
+      <workItem from="1636621374695" duration="2021000" />
+      <workItem from="1637676344328" duration="53000" />
+      <workItem from="1638089328585" duration="2974000" />
     </task>
     <task id="LOCAL-00004" summary="add component aside">
       <created>1600073357458</created>
@@ -713,7 +705,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620040889456</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="add typeScript and refactor reducer files in typeScript">
+      <created>1635076508590</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1635076508590</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -732,7 +731,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="small bug fixes registration-page-container.js" />
     <MESSAGE value="add style component Conditions-page" />
     <MESSAGE value="add component halls-scheme" />
     <MESSAGE value="added styles to the HallsSchemes component" />
@@ -757,7 +755,8 @@
     <MESSAGE value="add  style batons" />
     <MESSAGE value="add buttons style" />
     <MESSAGE value="refactoring function onLogOut in registration" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring function onLogOut in registration" />
+    <MESSAGE value="add typeScript and refactor reducer files in typeScript" />
+    <option name="LAST_COMMIT_MESSAGE" value="add typeScript and refactor reducer files in typeScript" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,3 +1,5 @@
+import {PRICE_INDICATOR, PRICE_RANGES} from "../types";
+
 type initialStateType = {
     priceRanges:{
         color:string,
@@ -12,12 +14,12 @@ const initialState: initialStateType = {
 };
 export default (state = initialState, action: any): initialStateType => {
     switch (action.type) {
-        case 'PRICE_RANGES':
+        case PRICE_RANGES:
             return {
                 ...state,
                 priceRanges: action.payload
             };
-        case 'PRICE_INDICATOR':
+        case PRICE_INDICATOR:
             return {
                 ...state,
                 loading: true,

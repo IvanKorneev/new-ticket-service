@@ -1,3 +1,5 @@
+import {SHOW_BAR} from "../types";
+
 type initialStateType = {
     showBar:boolean|null
 }
@@ -6,7 +8,7 @@ const initialState:initialStateType = {
 };
 export default (state = initialState, action: any):initialStateType => {
     switch (action.type) {
-        case 'SHOW_BAR':
+        case SHOW_BAR:
             return {
                 ...state,
                 showBar: action.payload

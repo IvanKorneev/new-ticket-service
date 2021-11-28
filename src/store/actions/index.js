@@ -5,100 +5,116 @@ import {
     getUpcomingEvents,
     login
 } from "../../api/api";
+import {
+    ASIDE_LOADED,
+    EVENT_LOADED,
+    LOADING_INDICATOR,
+    SHOW_BAR,
+    LOADING_INDICATOR_LOGIN,
+    EVENTS_ERROR,
+    SET_EVENTS_PAGE,
+    EVENT_PAGE_LOADED,
+    SET_USER_DATA,
+    LOGIN_ERROR,
+    RESET_LOGIN_ERROR,
+    RESET_USER_DATA,
+    PRICE_RANGES,
+    PRICE_INDICATOR, ADD_TO_CART, REMOVED_FROM_CART
+} from "../types";
 
 const eventLoaded = (newEvent) => {
     return {
-        type: 'EVENT_LOADED',
+        type: EVENT_LOADED,
         payload: newEvent
     }
 };
 const asideLoaded = (newAside) => {
     return {
-        type: 'ASIDE_LOADED',
+        type: ASIDE_LOADED,
         payload: newAside
     }
 };
 const showBar = (newShowbar) => {
     return {
-        type: 'SHOW_BAR',
+        type: SHOW_BAR,
         payload: newShowbar
     }
 };
 const loadingIndicator = () => {
     return {
-        type: 'LOADING_INDICATOR'
+        type: LOADING_INDICATOR
     }
 };
 const loadingIndicatorLogin = () => {
     return {
-        type: 'LOADING_INDICATOR_LOGIN'
+        type: LOADING_INDICATOR_LOGIN
     }
 };
 const eventsError = (error) => {
     return {
-        type: 'EVENTS_ERROR',
+        type: EVENTS_ERROR,
         payload: error
     }
 };
 const setEventsPages = (currentPage) => {
     return {
-        type: 'SET_EVENTS_PAGE',
+        type: SET_EVENTS_PAGE,
         payload: currentPage
     }
 };
 const eventPageLoaded = (newPage) => {
     return {
-        type: 'EVENT_PAGE_LOADED',
+        type: EVENT_PAGE_LOADED,
         payload: newPage
     }
 };
 const setUserData = (email, token, ...params) => {
     return {
-        type: 'SET_USER_DATA',
+        type: SET_USER_DATA,
         payload: {email, token, ...params}
     }
 };
 const loginError = (error) => {
     return {
-        type: 'LOGIN_ERROR',
+        type: LOGIN_ERROR,
         payload: error
     }
 };
 const resetLoginError = () => {
     return {
-        type: 'RESET_LOGIN_ERROR',
+        type: RESET_LOGIN_ERROR,
         payload: ''
     }
 };
 
 const resetUserData = () => {
     return {
-        type: 'RESET_USER_DATA',
+        type: RESET_USER_DATA,
         payload: {}
     }
 };
 
 const priceLoaded = (newPrice) => {
     return {
-        type: 'PRICE_RANGES',
+        type: PRICE_RANGES,
         payload: newPrice
     }
 }
 const priceIndicator = () => {
     return {
-        type: 'PRICE_INDICATOR'
+        type: PRICE_INDICATOR
     }
 }
 
 const addToCart = (seatNumber, row, price, id) => {
     return {
-        type: 'ADD_TO_CART',
+        type: ADD_TO_CART,
         payload: {seatNumber, row, price, id}
     }
 }
 const removedFromCart = (removedId, price) => {
     return {
-        type: 'REMOVED_FROM_CART',
+        type: REMOVED_FROM_CART,
         payload: {removedId, price}
     }
 }

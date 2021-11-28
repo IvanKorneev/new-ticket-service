@@ -1,3 +1,5 @@
+import {EVENT_LOADED, EVENTS_ERROR, LOADING_INDICATOR, SET_EVENTS_PAGE} from "../types";
+
 type initialStateType1 = {
     eventsState: {
         artist: string|null,
@@ -31,14 +33,14 @@ const initialState:initialStateType1 = {
 };
 export default  (state = initialState, action:any):initialStateType1 => {
     switch (action.type) {
-        case 'LOADING_INDICATOR':
+        case LOADING_INDICATOR:
             return {
                 ...state,
                 loading: true,
                 error: null
             };
 
-        case 'EVENT_LOADED':
+        case EVENT_LOADED:
             return {
                 ...state,
                 eventsState: action.payload,
@@ -46,14 +48,14 @@ export default  (state = initialState, action:any):initialStateType1 => {
                 error: null
             };
 
-        case 'EVENTS_ERROR':
+        case EVENTS_ERROR:
             return {
                 ...state,
                 eventsState: [],
                 loading: false,
                 error: action.payload
             };
-        case 'SET_EVENTS_PAGE':
+        case SET_EVENTS_PAGE:
             return {
                 ...state,
                 currentPage: action.payload

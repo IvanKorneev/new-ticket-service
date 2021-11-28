@@ -1,3 +1,5 @@
+import {LOADING_INDICATOR_LOGIN, LOGIN_ERROR, RESET_LOGIN_ERROR, RESET_USER_DATA, SET_USER_DATA} from "../types";
+
 type initialStateType = {
     loginData:{
         email:string|null,
@@ -14,30 +16,30 @@ const initialState:initialStateType = {
 };
 export default (state = initialState, action:any):initialStateType => {
     switch (action.type) {
-        case 'SET_USER_DATA':
+        case SET_USER_DATA:
             return {
                 ...state,
                 loading: false,
                 loginData: action.payload
             };
-        case 'LOADING_INDICATOR_LOGIN':
+        case LOADING_INDICATOR_LOGIN:
             return {
                 ...state,
                 loading: true,
             };
-        case 'LOGIN_ERROR':
+        case LOGIN_ERROR:
             return {
                 ...state,
                 loading: false,
                 error: action.payload
             };
-        case 'RESET_LOGIN_ERROR':
+        case RESET_LOGIN_ERROR:
             return {
                 ...state,
                 loading: false,
                 error: action.payload
             };
-        case 'RESET_USER_DATA':
+        case RESET_USER_DATA:
             return {
                 ...state,
                 loading: false,
