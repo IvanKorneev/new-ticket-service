@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import {connect} from 'react-redux'
+import {useDispatch, useSelector} from "react-redux";
 import {loadingIndicator, fetchEvents, setEventsPages} from "../../store/actions";
 import Spinner from "../../component/spinner";
 import Error from "../../component/error";
@@ -16,16 +16,24 @@ import {
 } from "../../store/selectors/events-list-selectors";
 
 
-const EventsListContainer = ({events, loading, error, pageSize,setEventsPages, totalEventsCount, currentPage, loadingIndicator, fetchEvents}) => {
+const EventsListContainer = () => {
+
+    const events = useSelector(getEvents);
+    const loading = useSelector(getLoading);
+    const error = useSelector(getError);
+    const pageSize = useSelector(getPageSize);
+    const totalEventsCount = useSelector(getTotalEventsCount);
+    const currentPage = useSelector(getCurrentPage);
+    const dispatch = useDispatch();
 
     useEffect(() => {
-        loadingIndicator();
-        fetchEvents(currentPage, pageSize)
-    },[currentPage,fetchEvents,loadingIndicator,pageSize]);
+        dispatch(loadingIndicator());
+        dispatch(fetchEvents(currentPage, pageSize));
+    }, [currentPage, fetchEvents, loadingIndicator, pageSize]);
 
     const onPageChanged = (pageNumber) => {
-        setEventsPages(pageNumber);
-        fetchEvents(pageNumber, pageSize);
+        dispatch(setEventsPages(pageNumber));
+        dispatch(fetchEvents(pageNumber, pageSize));
     };
 
     if (loading) {
@@ -45,26 +53,6 @@ const EventsListContainer = ({events, loading, error, pageSize,setEventsPages, t
     )
 };
 
-
-const mapStateToProps = (state) => {
-
-    return {
-        events: getEvents(state),
-        loading: getLoading(state),
-        error: getError(state),
-        pageSize: getPageSize(state),
-        totalEventsCount: getTotalEventsCount(state),
-        currentPage: getCurrentPage(state)
-
-    }
-};
-
-const mapDispatchToProps = {
-    loadingIndicator,
-    setEventsPages,
-    fetchEvents
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(EventsListContainer);
+export default EventsListContainer;
 
 

@@ -1,22 +1,28 @@
 import React from "react";
-import {fetchLogin, loadingIndicatorLogin} from "../../store/actions";
-import {connect} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {reduxForm} from "redux-form";
 import LoginPage from "../../component/login-page";
 import {getLoginData, getLoading} from "../../store/selectors/login-page-selectors";
 import Spinner from "../../component/spinner";
 import LoginDoneContainer from "../login-done-container/login-done-container";
+import {fetchLogin, loadingIndicatorLogin} from "../../store/actions";
 
 
 const LoginReduxForm = reduxForm({form: 'Login'})(LoginPage);
 
-const LoginPageContainer = ({fetchLogin, loginData, error, loading, loadingIndicatorLogin}) => {
-    console.log(loginData)
+const LoginPageContainer = () => {
+
+    const loginData = useSelector(getLoginData);
+    const { error } = useSelector(state => state.loginPage);
+    const loading = useSelector(getLoading);
+
+    const dispatch = useDispatch();
+
     const onClickFormLogin = (formData) => {
-        fetchLogin(formData.email, formData.password);
-        loadingIndicatorLogin()
+        dispatch(fetchLogin(formData.email, formData.password));
+        dispatch(loadingIndicatorLogin());
     };
-    if (loginData.token) {
+    if (loginData?.token) {
         return <LoginDoneContainer/>
     }
     if (loading) {
@@ -27,15 +33,5 @@ const LoginPageContainer = ({fetchLogin, loginData, error, loading, loadingIndic
         <LoginReduxForm onSubmit={onClickFormLogin} errorlogin={error}/>
     )
 };
-const mapStateToProps = (state) => {
-    return {
-        loginData: getLoginData(state),
-        error: state.loginPage.error,
-        loading: getLoading(state)
-    }
-};
-const mapDispatchToProps = {
-    fetchLogin,
-    loadingIndicatorLogin
-};
-export default connect(mapStateToProps, mapDispatchToProps)(LoginPageContainer);
+
+export default LoginPageContainer;

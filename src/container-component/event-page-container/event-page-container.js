@@ -1,15 +1,21 @@
 import React, {useEffect} from "react";
+import {useDispatch,useSelector} from "react-redux";
 import './event-page-container.sass'
-import {connect} from "react-redux";
+
 import EventItemPage from "../../component/event-item-page";
 import {fetchEventInfo} from "../../store/actions";
 import {getEvent} from "../../store/selectors/event-page-selectors";
 
 
-const EventPageContainer = ({event, match, fetchEventInfo}) => {
+
+const EventPageContainer = ({ match}) => {
     const eventId = match.params.eventId;
+
+    const event = useSelector(getEvent);
+    const dispatch = useDispatch();
+
     useEffect(() => {
-        fetchEventInfo(eventId)
+        dispatch(fetchEventInfo(eventId))
     },[eventId,fetchEventInfo]);
 
     return (
@@ -19,13 +25,4 @@ const EventPageContainer = ({event, match, fetchEventInfo}) => {
     );
 };
 
-const mapStateToProps = (state) => {
-    return {
-        event: getEvent(state)
-    }
-};
-const mapDispatchToProps = {
-    fetchEventInfo
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(EventPageContainer);
+export default EventPageContainer;

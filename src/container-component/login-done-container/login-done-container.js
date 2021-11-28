@@ -1,14 +1,16 @@
 import React from "react";
-import {resetLoginError, resetUserData} from "../../store/actions";
+import {useDispatch, useSelector} from "react-redux";
 import LoginDone from "../../component/login-done";
-import {connect} from "react-redux";
+import {resetLoginError, resetUserData} from "../../store/actions";
 
 
-const LoginDoneContainer = ({logOut, resetUserData, resetLoginError, resetError, loginData}) => {
 
+const LoginDoneContainer = () => {
+    const {loginData} = useSelector(state => state.loginPage);
+    const dispatch = useDispatch();
     const onLogOut = () => {
-        logOut(resetUserData);
-        resetError(resetLoginError);
+        dispatch(resetUserData())
+        dispatch(resetLoginError())
         localStorage.removeItem('email')
         localStorage.removeItem('token')
     };
@@ -16,15 +18,4 @@ const LoginDoneContainer = ({logOut, resetUserData, resetLoginError, resetError,
         <LoginDone data={loginData} onLogOut={onLogOut}/>
     )
 }
-const mapStateToProps = (state) => {
-    return {
-        loginData: state.loginPage.loginData
-    }
-};
-
-
-const mapDispatchToProps = (dispatch) => ({
-    logOut: (val) => dispatch(resetUserData(val)),
-    resetError: (val) => dispatch(resetLoginError(val))
-});
-export default connect(mapStateToProps, mapDispatchToProps)(LoginDoneContainer);
+export default LoginDoneContainer;

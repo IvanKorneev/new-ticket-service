@@ -3,13 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="a0704845-c2ac-4a6c-9668-e59f88e6b723" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/aside.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/aside.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/events.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/events.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/login-page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/login-page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/showbar.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/showbar.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/tickets-price.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/tickets-price.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container-component/aside-list-container/aside-list-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/aside-list-container/aside-list-container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container-component/event-page-container/event-page-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/event-page-container/event-page-container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container-component/events-list-container/events-list-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/events-list-container/events-list-container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container-component/login-done-container/login-done-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/login-done-container/login-done-container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container-component/login-page-container/login-page-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/login-page-container/login-page-container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container-component/paying-container/paying-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/paying-container/paying-container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container-component/registration-page-container/registration-page-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/registration-page-container/registration-page-container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container-component/shopping-cart-container/shopping-cart-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/shopping-cart-container/shopping-cart-container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container-component/tickets-page-container/tickets-page-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container-component/tickets-page-container/tickets-page-container.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -367,14 +369,7 @@
       <workItem from="1636194365629" duration="776000" />
       <workItem from="1636621374695" duration="2021000" />
       <workItem from="1637676344328" duration="53000" />
-      <workItem from="1638089328585" duration="2974000" />
-    </task>
-    <task id="LOCAL-00004" summary="add component aside">
-      <created>1600073357458</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1600073357458</updated>
+      <workItem from="1638089328585" duration="11884000" />
     </task>
     <task id="LOCAL-00005" summary="add Spinner and Error indicator">
       <created>1600176304754</created>
@@ -712,7 +707,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635076508590</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="add types">
+      <created>1638101663602</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1638101663603</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -731,7 +733,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add style component Conditions-page" />
     <MESSAGE value="add component halls-scheme" />
     <MESSAGE value="added styles to the HallsSchemes component" />
     <MESSAGE value="refactor to the HallsSchemes component add Media queries" />
@@ -756,7 +757,8 @@
     <MESSAGE value="add buttons style" />
     <MESSAGE value="refactoring function onLogOut in registration" />
     <MESSAGE value="add typeScript and refactor reducer files in typeScript" />
-    <option name="LAST_COMMIT_MESSAGE" value="add typeScript and refactor reducer files in typeScript" />
+    <MESSAGE value="add types" />
+    <option name="LAST_COMMIT_MESSAGE" value="add types" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

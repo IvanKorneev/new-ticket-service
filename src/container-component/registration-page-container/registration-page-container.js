@@ -1,20 +1,23 @@
 import React from "react";
-import {connect} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {reduxForm} from "redux-form";
 import RegistrationPage from "../../component/registration-page";
-import {fetchLogin, loadingIndicatorLogin} from "../../store/actions";
 import {getLoading, getLoginData} from "../../store/selectors/login-page-selectors";
 import Spinner from "../../component/spinner";
 import LoginDoneContainer from "../login-done-container/login-done-container";
+import {fetchLogin, loadingIndicatorLogin} from "../../store/actions";
 
 
 const RegistrationReduxForm = reduxForm({form: 'Registration'})(RegistrationPage);
 
-const RegistrationPageContainer = ({fetchLogin, loginData, loading, loadingIndicatorLogin}) => {
+const RegistrationPageContainer = () => {
+    const loginData = useSelector(getLoginData);
+    const loading = useSelector(getLoading);
+    const dispatch = useDispatch();
 
     const onClickFormRegistration = (formDataReg) => {
-        fetchLogin(formDataReg.email, formDataReg.password, formDataReg);
-        loadingIndicatorLogin()
+        dispatch(fetchLogin(formDataReg.email, formDataReg.password, formDataReg));
+        dispatch(loadingIndicatorLogin());
     };
 
     if (loginData.token) {
@@ -27,16 +30,7 @@ const RegistrationPageContainer = ({fetchLogin, loginData, loading, loadingIndic
         <RegistrationReduxForm onSubmit={onClickFormRegistration}/>
     )
 };
-const mapStateToProps = (state) => {
-    return {
-        loginData: getLoginData(state),
-        loading: getLoading(state)
-    }
-};
-const mapDispatchToProps = {
-    fetchLogin,
-    loadingIndicatorLogin
-};
 
-export default connect(mapStateToProps, mapDispatchToProps)(RegistrationPageContainer);
+
+export default RegistrationPageContainer;
 

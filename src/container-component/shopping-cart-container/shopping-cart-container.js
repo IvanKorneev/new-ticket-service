@@ -1,6 +1,7 @@
 import React from "react";
 import './shopping-cart-container.sass';
-import {connect} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
+
 import CartRowList from "../../component/cart-row";
 import {getCartItems} from "../../store/selectors/cart-Items";
 import {getEvent} from "../../store/selectors/event-page-selectors";
@@ -8,16 +9,22 @@ import TicketsPage from "../../component/tickets-page";
 import TicketsCart from "../../component/tickets-cart";
 import {getTotalPrice} from "../../store/selectors/total-price";
 import {getTotalTickets} from "../../store/selectors/total-tickets";
-import {removedFromCart} from "../../store/actions";
+
 import Main from "../../component/main";
 import {Link} from "react-router-dom";
+import {removedFromCart} from "../../store/actions";
 
-const ShoppingCartContainer = ({getRemovedFromCart, event, cartItems, totalPrice, totalTickets}) => {
+const ShoppingCartContainer = () => {
+    const event = useSelector(getEvent);
+    const cartItems = useSelector(getCartItems);
+    const totalPrice = useSelector(getTotalPrice);
+    const totalTickets = useSelector(getTotalTickets);
+    const dispatch = useDispatch();
     if (totalPrice === null) {
         return <Main/>
     }
     const onRemovedFromCart = (id, price) => {
-        getRemovedFromCart(id, price)
+        dispatch(removedFromCart(id, price))
     }
 
     return (
@@ -34,25 +41,17 @@ const ShoppingCartContainer = ({getRemovedFromCart, event, cartItems, totalPrice
                 <CartRowList cart={cartItems} onRemovedFromCart={onRemovedFromCart}/>
                 <TicketsCart totalPrice={totalPrice} totalTickets={totalTickets}/>
                 <div className='shopping-cart-footer'>
-                    <Link to='/paying'><button className='shopping-cart-button'>PAY</button></Link>
+                    <Link to='/paying'>
+                        <button className='shopping-cart-button'>PAY</button>
+                    </Link>
                     <div className='shopping-cart-footer-checkbox'>
                         <input type='checkbox'/>
-                        <p>I have read the <Link to='/conditions'><span>Terms and Conditions</span></Link> and fully agree with them</p>
+                        <p>I have read the <Link to='/conditions'><span>Terms and Conditions</span></Link> and fully
+                            agree with them</p>
                     </div>
                 </div>
             </div>
         </section>
     )
 }
-const mapStateToProps = (state) => {
-    return {
-        event: getEvent(state),
-        cartItems: getCartItems(state),
-        totalPrice: getTotalPrice(state),
-        totalTickets: getTotalTickets(state)
-    }
-};
-const mapDispatchToProps = {
-    getRemovedFromCart: (id, price) => removedFromCart(id, price)
-}
-export default connect(mapStateToProps, mapDispatchToProps)(ShoppingCartContainer);
+export default ShoppingCartContainer;
